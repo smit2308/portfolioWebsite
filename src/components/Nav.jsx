@@ -26,20 +26,18 @@ const toggleMenu = () => {
 
   return (
     
-      <div className='absolute  flex  justify-between items-center  z-30  w-full max-container pb-4 pt-2 lg:px-10 px-6 '>
-        <Button
-        label= "Resume" />
+      <div className='absolute  flex justify-between  items-center  z-30  w-full max-container pb-4 pt-4 lg:px-10 px-6 '>
+        <h className='font-display text-xl max-sm:text-lg sm:text-secondary max-sm:text-primary'>
+          Smit Shewale
+        </h>
         
      
-       <ul className='max-lg:hidden flex flex-row items-center gap-10 text-primary text-lg font-medium mr-10'>
+       <ul className='max-lg:hidden flex flex-row   gap-10 text-primary text-lg font-montserrat font-medium '>
           {navLinks.map((item)=>(
             <li key={item.label}>
-              <Link to={item.path}
-                
-                className=' '
-                >
+              <a href={item.path} className=' '     >
                   {item.label}
-                </Link>
+                </a>
             </li>
           )
           )}
@@ -47,8 +45,10 @@ const toggleMenu = () => {
 
         <div className='lg:hidden '>
           <button className='hover:scale-110'>          
-            <HiBars3 size={32} color='slate'/>
+            <HiBars3 size={28} color='primary'/>
           </button>
+
+
 
         </div>
        

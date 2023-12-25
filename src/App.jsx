@@ -1,30 +1,19 @@
 import React from "react"
 import {Routes, Route} from "react-router-dom"
-import {Home, Projects, Connect} from "./root/pages"
-import RootLayout  from "./root/RootLayout"
+import {Home, Projects, Connect} from "./sections"
 import Nav from "./components/Nav"
 
 export default function App() {
   return (
-    <main className="  flex flex-col  max-container ">
+    <main className="  flex flex-col items-center bg-primary ">
       
         <Nav />
         
       
-        <div className=" "> 
-        <Routes>
+        <Home />
 
-          <Route element={<RootLayout />}>
-            <Route index element={<Home />} />
-            <Route path="/projects" element={<Projects />} />
-            <Route path="/connect" element={<Connect />} />
-
-           
-          </Route>
-
-        </Routes>
-
-        </div>
+        <Projects />
+        <Connect />
     </main>
   )
 }

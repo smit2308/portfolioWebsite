@@ -24,10 +24,11 @@ export default {
 
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
+        display: ['DM Serif Display', 'serif']
       },
 
       colors: {
-        'primary': "#F5F5F5",
+        'primary': "#F1F1F1",
         "secondary": "#333333",
         "accent": "#C1434C",
       },
