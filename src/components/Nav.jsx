@@ -26,7 +26,7 @@ const toggleMenu = () => {
 
   return (
     
-      <div className='absolute  flex  justify-between items-center  z-30  w-full max-container pb-4 pt-2 px-10 '>
+      <div className='absolute  flex  justify-between items-center  z-30  w-full max-container pb-4 pt-2 lg:px-10 px-6 '>
         <Button
         label= "Resume" />
         
@@ -45,7 +45,7 @@ const toggleMenu = () => {
           )}
         </ul>
 
-        <div className='lg:hidden place-self-end'>
+        <div className='lg:hidden '>
           <button className='hover:scale-110'>          
             <HiBars3 size={32} color='slate'/>
           </button>
