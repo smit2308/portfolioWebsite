@@ -27,7 +27,7 @@ const Home = () => {
 
       </div>
 
-      <div className='bg-[#b03e49] h-screen flex xl:w-[600px] lg:w-[500px] md:w-[400px] sm:w-1/2 max-sm:w-screen  overflow-hidden  max-sm:z-0 max-sm:absolute  ' >
+      <div className='bg-[#b03e49] h-screen flex xl:w-[600px] lg:w-[500px] md:w-[400px] sm:w-1/2 max-sm:w-screen  overflow-hidden  max-sm:z-0 max-sm:absolute max-sm:top-0 max-sm:left-0 ' >
 
         <img className='sm:object-cover w-full  z-10 max-lg:hidden   '
         src={Myimage}/>
