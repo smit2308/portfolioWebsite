@@ -12,7 +12,7 @@ const Home = () => {
           Welcome To My Portfolio
         </h1>
 
-        <h2 className='2xl:text-7xl xl:text-6xl lg:text-5xl sm:text-4xl max-sm:text-3xl max-sm:text-center  text-secondary max-sm:text-primary font-medium leading-normal'>
+        <h2 className='2xl:text-7xl xl:text-6xl md:text-5xl sm:text-4xl max-sm:text-3xl max-sm:text-center  text-secondary max-sm:text-primary font-medium leading-normal'>
           I’m A Software Engineer
         </h2>
 
@@ -27,21 +27,21 @@ const Home = () => {
 
       </div>
 
-      <div className='bg-[#b03e49] h-screen flex xl:w-[600px] lg:w-[500px] md:w-[400px] sm:w-1/2 max-sm:w-screen  overflow-hidden  max-sm:z-0 max-sm:absolute max-sm:top-0 max-sm:left-0 ' >
+      <div className='bg-[#b03e49] h-screen flex xl:w-[600px] lg:w-[500px] md:w-[400px] sm:w-1/2 max-sm:w-screen  overflow-hidden  max-sm:z-0 max-sm:absolute  max-sm:brightness-75 ' >
 
-        <img className='sm:object-cover w-full  z-10 max-lg:hidden   '
+        <img className='sm:object-cover w-full  z-10 max-lg:hidden'
         src={Myimage}/>
 
-        <img className='sm:object-cover w-full object-left  z-10 lg:hidden  max-sm:object-none max-sm:object-left-bottom   max-sm:brightness-75   '
+        <img className='sm:object-cover w-full object-left  z-10 lg:hidden  max-sm:object-cover max-sm:object-center  '
         src={Myimage_small}/>
 
-        {/* <div className='absolute bg-[#b03e49] w-full h-screen z-0 flex items-center  p-10 ' >
+        <div className='absolute bg-[#b03e49] w-full h-screen z-0 flex items-center  p-10 ' >
           <div className='w-2/5 bg-gray-200'>
           </div>          
           <h className='text-4xl rotate-90 text-primary'>
             Lets Work Together
           </h>
-        </div> */}
+        </div>
 
       </div>
 
