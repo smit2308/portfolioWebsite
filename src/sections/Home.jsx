@@ -13,7 +13,7 @@ const Home = () => {
                   Welcome To My Portfolio, I’m A 
                 </h1>
 
-                <h2 className='font-display  xl:text-[160px] lg:text-[120px] xl:leading-[140px] lg:leading-[100px] md:text-[100px] md:leading-[80px] sm:text-[80px] sm:leading-[60px] text-[60px] leading-[48px] 
+                <h2 className='font-display  xl:text-[150px] xl:leading-[130px] lg:text-[120px]  lg:leading-[100px] md:text-[100px] md:leading-[80px] sm:text-[70px] sm:leading-[60px] text-[60px] leading-[48px] 
                 max-sm:text-center  text-secondary max-sm:text-primary font-medium mb-4 '>
                   Software Engineer
                 </h2>
@@ -22,7 +22,7 @@ const Home = () => {
                 <Button
                   label='Resume'
                   bgColor={'bg-none'}
-                  textColor={'text-primary'}
+                  textColor={'text-secondary'}
                 /> 
         </div>
 
