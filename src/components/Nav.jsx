@@ -8,6 +8,7 @@ import { Link } from 'react-router-dom'
 import {Routes, Route} from 'react-router-dom';
 import { useState } from 'react'
 
+import { HiBars3 } from "react-icons/hi2";
 
 
 const Nav = () => {
@@ -25,12 +26,12 @@ const toggleMenu = () => {
 
   return (
     
-      <div className='absolute  flex  justify-between xl:px-32 lg:px-20  md:px-20 sm:px-10 my-4 z-30 bg-none max-container w-full '>
+      <div className='absolute  flex  justify-between items-center  z-30  w-full max-container pb-4 pt-2 px-10 '>
         <Button
         label= "Resume" />
         
      
-       <ul className='flex flex-row items-center gap-10   text-lg font-medium'>
+       <ul className='max-lg:hidden flex flex-row items-center gap-10 text-primary text-lg font-medium mr-10'>
           {navLinks.map((item)=>(
             <li key={item.label}>
               <Link to={item.path}
@@ -44,7 +45,12 @@ const toggleMenu = () => {
           )}
         </ul>
 
-        
+        <div className='lg:hidden place-self-end'>
+          <button className='hover:scale-110'>          
+            <HiBars3 size={32} color='slate'/>
+          </button>
+
+        </div>
        
 {/* 
        {isMenuOpen && (
@@ -68,17 +74,7 @@ const toggleMenu = () => {
         
                 
       
-        {/* <div className='lg:hidden place-self-end'>
-          <button>          
-            <img
-             onClick={toggleMenu}
-            src={hamburger}
-            alt='"Hamburger'
-            width={25}
-            height={25} />
-          </button>
 
-        </div> */}
 
                   {/* Collapsible Mobile Links */}
 

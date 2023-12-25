@@ -9,10 +9,8 @@
   padding: 0;
   box-sizing: border-box;
   scroll-behavior: smooth;
-  max-width: 1440px;
-  margin: 0 auto;
   font-family: "Montserrat", sans-serif;
-  /* background-color: whitesmoke; */
+  /* overflow:hidden; */
 }
 
 @layer components {

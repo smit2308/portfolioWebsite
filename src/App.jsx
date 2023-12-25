@@ -6,11 +6,12 @@ import Nav from "./components/Nav"
 
 export default function App() {
   return (
-    <main className="   flex flex-col  bg-red-400 h-screen">
+    <main className="  flex flex-col  max-container ">
       
         <Nav />
+        
       
-        <div className="mb-10 xl:px-32 lg:px-20  md:px-20 sm:px-10 z-0 "> 
+        <div className=" "> 
         <Routes>
 
           <Route element={<RootLayout />}>

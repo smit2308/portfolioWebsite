@@ -11,12 +11,12 @@ const Button = ({onClick, label, iconURL, bgColor, textColor, borderColor, fullW
   return (
     
     <button 
-      className={`flex flex-row justify-between gap-2 items-center px-[24px] py-[14px]  text-lg rounded-[10px] font-medium shadow-element1 shadow-element2 hover:bg-secondary hover:text-primary transition duration-300 ease-in-out
+      className={`flex flex-row max-w-fit justify-between gap-2 items-center px-[24px] py-[14px]  text-lg rounded-[10px] font-medium shadow-element1 shadow-element2 hover:bg-secondary hover:text-primary transition duration-300 ease-in-out
                 ${
                   bgColor ? `${bgColor} $
                   ${textColor ? textColor : "text-secondary"}`
                   :
-                  " bg-primary  text-secondary"
+                  " bg-white  text-secondary"
                 }
                 ${fullWidth && 'w-full'}"}
 

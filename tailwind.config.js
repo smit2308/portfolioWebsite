@@ -14,7 +14,9 @@ export default {
       '2xl': '32px',
       '3xl': '40px',
       '4xl': '48px',
-      '5xl': '80px',
+      '5xl': '60px',
+      '6xl': '72px',
+      '7xl': '80px',
     },
     
 
@@ -52,6 +54,8 @@ export default {
   
         '2xl': '1440px', 
         // => @media (min-width: 1440px) { ... }
+
+        
     },
   },
 },
