@@ -65,7 +65,7 @@ const toggleMenu = () => {
                 <li key={item.label} className='w-full text-center '>
                   <a
                     href={item.path}
-                    className=' font-monsterrat leading-normal text-xl  text-secondary '
+                    className=' font-monsterrat leading-normal text-lg  text-secondary '
                     onClick={toggleMenu}
                   >
                     {item.label}
