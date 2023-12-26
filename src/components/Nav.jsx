@@ -27,9 +27,9 @@ const toggleMenu = () => {
   return (
     
       <div className='absolute  flex justify-between  items-center  z-30  w-full max-container pb-4 pt-4 lg:px-10 px-6 '>
-        <h className='font-display text-xl max-sm:text-lg sm:text-secondary max-sm:text-primary'>
+        <h1 className='font-display text-xl max-sm:text-lg sm:text-secondary max-sm:text-primary'>
           Smit Shewale
-        </h>
+        </h1>
         
      
        <ul className='max-lg:hidden flex flex-row   gap-10 text-primary text-lg font-montserrat font-medium '>
