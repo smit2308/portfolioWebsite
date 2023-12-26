@@ -45,7 +45,7 @@ const toggleMenu = () => {
 
         <div className='lg:hidden '>
           <button className='hover:scale-110'>          
-            <HiBars3 size={28} color='primary'/>
+            <HiBars3 size={28} color='whitesmoke'/>
           </button>
 
 
