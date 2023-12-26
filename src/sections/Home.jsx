@@ -74,10 +74,10 @@ const Home = () => {
 
       <div className='bg-[#b03e49] h-screen flex  xl:w-[1100px] lg:w-[800px] sm:w-[600px]  max-sm:w-screen  max-sm:z-0 max-sm:absolute  max-sm:brightness-75 ' >
 
-        <img className='sm:object-cover w-full  z-10 max-lg:hidden'
+        <img className='sm:object-cover w-full   max-lg:hidden'
         src={Myimage}/>
 
-        <img className='sm:object-cover w-full object-left  z-10 lg:hidden  max-sm:object-cover   '
+        <img className='sm:object-cover w-full object-left  lg:hidden  max-sm:object-cover   '
         src={Myimage_small}/>
 
         {/* <div className='absolute bg-[#b03e49] w-full h-screen z-0 flex items-center  p-10' >
