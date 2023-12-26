@@ -44,7 +44,9 @@ const toggleMenu = () => {
         </ul>
 
         <div className='lg:hidden '>
-          <button className='hover:scale-110'>          
+          <button className='hover:scale-110'
+            onClick={toggleMenu}
+            >          
             <HiBars3 size={28} color='whitesmoke'/>
           </button>
 
@@ -52,24 +54,27 @@ const toggleMenu = () => {
 
         </div>
        
-{/* 
+
        {isMenuOpen && (
-          <div className='absolute top-full left-0 w-full bg-white lg:hidden rounded-2xl  shadow-nav -mt-1 pb-10 '>
-            <ul className='flex flex-col items-center gap-2'>
+          <div className='absolute left-0 top-0 w-full rounded-b-lg shadow-xl bg-primary lg:hidden  shadow-nav -mt-1 pb-10 '>
+                 <h1 className='p-10 font-display text-xl text-center max-sm:text-lg sm:text-secondary '>
+          Smit Shewale
+        </h1>
+            <ul className='flex flex-col gap-4'>
               {navLinks.map((item) => (
                 <li key={item.label} className='w-full text-center '>
-                  <Link
-                    to={item.path}
-                    className=' font-monsterrat leading-normal text-xl  text-gray-900 hover:text-rose-600 my-2'
+                  <a
+                    href={item.path}
+                    className=' font-monsterrat leading-normal text-xl  text-secondary '
                     onClick={toggleMenu}
                   >
                     {item.label}
-                  </Link>
+                  </a>
                 </li>
               ))}
             </ul>
           </div>
-        )} */}
+        )}
 
         
                 

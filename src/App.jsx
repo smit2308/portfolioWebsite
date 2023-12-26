@@ -8,8 +8,8 @@ export default function App() {
     <main className="  flex flex-col items-center bg-primary ">
       
         <Nav />
-        
-        <div className=" w-full  bg-[linear-gradient(to_right,_#F1F1F1_60%,_#b03e49_40%)]"> 
+        {/*  bg-[linear-gradient(to_right,_#F1F1F1_60%,_#b03e49_40%)] */}
+        <div className=" w-full bg-[linear-gradient(to_right,_#F1F1F1_70%,_#b03e49_40%)]"> 
         <Home />
         </div>
         

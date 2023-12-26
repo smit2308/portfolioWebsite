@@ -13,8 +13,8 @@ const Home = () => {
     words: ["Software Engineer", "UI/UX Designer", "Video -Editor"],
     loop: {},
     typeSpeed: 100,
-    deleteSpeed: 60,
-    delaySpeed: 2000,
+    deleteSpeed: 80,
+    delaySpeed: 1600,
   
   })
 
@@ -63,7 +63,7 @@ const Home = () => {
 
     
         
-        <p className='w-full border-l-2 sm:border-secondary sm:pb-6 pr-16 sm:px-10 max-sm:pl-4 max-sm:mb-10 lg:text-lg sm:text-sm max-sm:text-xs  text-secondary max-sm:text-primary font-light leading-normal  '>
+        <p className='w-full border-l-2  sm:border-secondary sm:pb-6 pr-16 sm:px-10 max-sm:pl-4 max-sm:mb-10 lg:text-lg sm:text-sm max-sm:text-xs  text-secondary max-sm:text-primary font-light leading-normal  '>
                   Crafting unique digital experiences as a Web Designer and Developer, I also excel in videography and video editing.
                   Let's create something extraordinary together
                 </p>
