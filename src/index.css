@@ -20,6 +20,13 @@
   .max-container {
     max-width: 1440px;
     margin: 0 auto;
+
+    
   }
 
+  .hide-scrollbar::-webkit-scrollbar {
+    display: none; /* Hide scrollbar for WebKit browsers */
 }
+
+}
+

@@ -5,7 +5,7 @@ import Nav from "./components/Nav"
 
 export default function App() {
   return (
-    <main className="  flex flex-col items-center bg-primary ">
+    <main className="  flex flex-col gap-40 items-center bg-primary ">
       
         <Nav />
         {/*  bg-[linear-gradient(to_right,_#F1F1F1_60%,_#b03e49_40%)] */}

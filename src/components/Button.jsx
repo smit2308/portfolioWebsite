@@ -4,7 +4,7 @@ import { HiArrowSmallDown } from "react-icons/hi2";
 
 
 
-const Button = ({onClick, label, iconURL, bgColor, textColor, borderColor, fullWidth, width, iconWidth, iconHeight,...buttonProps}) => {
+const Button = ({onClick,logoTilt, label, iconURL, bgColor, textColor, borderColor, fullWidth, width, iconWidth, iconHeight,...buttonProps}) => {
 
 
 
@@ -37,8 +37,7 @@ const Button = ({onClick, label, iconURL, bgColor, textColor, borderColor, fullW
             src={iconURL}
             width={iconWidth ? iconWidth : 24}
             height={iconHeight}
-            alt='arrow right icon'
-            className='fill-red-600 ' />
+            alt='arrow right icon'/>
            ):("")}
 
            

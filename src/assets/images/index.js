@@ -10,6 +10,7 @@ import SkateboardThumbnail from './Skateboard_thumbnail.png';
 import SocialThumbnail from './Social_thumbnail.png';
 import Myimage from './Myimage.png';
 import Myimage_small from './Myimage_small.png';
+import Kenko_thumbnail from './Kenko_thumbnail.png';
 
 export {
   AtmThumbnail,
@@ -22,7 +23,9 @@ export {
   RctneThumbnail,
   SkateboardThumbnail,
   SocialThumbnail,
-
+  Kenko_thumbnail,
+  
     Myimage,
     Myimage_small,
+   
 };

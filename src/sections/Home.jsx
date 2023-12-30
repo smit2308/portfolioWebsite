@@ -29,17 +29,17 @@ const Home = () => {
   }, []);
 
   return (
-    <section className='max-container h-screen w-full flex flex-row max-sm:flex-col items-center justify-between max-sm:justify-center  md:pl-10 pl-6 max-sm:p-0  '>
+    <section className='max-container h-screen w-full flex flex-row max-sm:flex-col items-center justify-between max-sm:justify-center  lg:pl-16 md:pl-10 pl-6 max-sm:p-0  '>
       
       <div className='h-screen w-full flex flex-col justify-between max-sm:items-center  pr-6   overflow-hidden transition-all ease-in-out delay-100 max-sm:z-10  max-sm:px-6'>
 
         <div className='my-auto flex flex-col gap-2 max-sm:items-center max-sm:gap-2'>
-        <h1 className='font-montserrat italic lg:text-xl sm:text-sm max-sm:text-xs max-sm:text-center text-secondary max-sm:text-primary font-light leading-normal '>
+        <h2 className='font-montserrat italic lg:text-xl sm:text-sm max-sm:text-xs max-sm:text-center text-secondary max-sm:text-primary font-light leading-normal '>
                   Welcome To My Portfolio, I’m A 
-                </h1>
-                
-                <div className='xl:h-64 lg:h-52 md:h-40 sm:h-32 max-sm:h-28'> 
-                <h2 className='pb-6 h-full font-display  xl:text-[150px] xl:leading-[130px] lg:text-[120px]  lg:leading-[100px] md:text-[100px] md:leading-[80px] sm:text-[70px] sm:leading-[60px] text-[60px] leading-[48px] 
+                </h2>
+                {/*text-[12vw] xl:text-[150px] lg:text-[120px] md:text-[100px] sm:text-[70px]  xl:leading-[130px]  lg:leading-[100px]  md:leading-[80px]  sm:leading-[60px]  max-sm:text-[60px] max-sm:leading-[48px] */}
+                <div className='max-xl:h-[20vw] h-64 max-sm:h-32'> 
+                <h1 className='pb-6 h-full font-display  xl:text-[150px] xl:leading-[130px] max-xl:text-[12vw] max-xl:leading-[10vw] max-sm:text-[72px] max-sm:leading-[56px] 
                 max-sm:text-center  text-secondary max-sm:text-primary font-medium  '>
                   {/* Software Engineer */}
                   {text}
@@ -49,7 +49,7 @@ const Home = () => {
                     direction='up' 
                     springConfig={presets.slow}>{TEXTS[index % TEXTS.length]}</TextTransition> */}
                  
-                </h2>
+                </h1>
                 </div>
                 
 

@@ -36,7 +36,8 @@ export default {
       boxShadow: {
          'element1': "0px 12px 42px -4px rgba(24, 39, 75, 0.12)",
          'element2': "0px 8px 18px -6px rgba(24, 39, 75, 0.12)",
-          'image': "0px 18px 88px -4px rgba(24, 39, 75, 0.14), 0px 8px 28px -6px rgba(24, 39, 75, 0.12)"
+          'image1': "0px 18px 88px -4px rgba(24, 39, 75, 0.14)",
+          'image2' : "0px 8px 28px -6px rgba(24, 39, 75, 0.12)"
       },
 
       screens: {

@@ -22,7 +22,8 @@ import {  AtmThumbnail,
     Ray1Thumbnail,
     RctneThumbnail,
     SkateboardThumbnail,
-    SocialThumbnail } from '../assets/images';
+    SocialThumbnail,
+    Kenko_thumbnail } from '../assets/images';
 
 
 export const navLinks = [
@@ -31,6 +32,42 @@ export const navLinks = [
     { href: "#about-us", label: "Projects & Skills", path: "/projects" },
     { href: "#products", label: "Connect", path: "/connect" },
 
+]
+
+export const workFeatured = [
+
+    {
+        id: "Coding",
+        thumbnail: SkateboardThumbnail,
+        title: "Skateboard Retail Website",
+        description: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
+        skills: [
+            { name: "HTML", logo: htmlLogo },
+            { name: "CSS", logo: cssLogo },
+            { name: "JavaScript", logo: javascriptLogo },
+            { name: "React", logo: reactLogo },
+        ]
+    },
+
+    {
+        id: "UI/UX",
+        thumbnail: SocialThumbnail,
+        title: "Social Media App",
+        description: "A social media app, designed in Figma which has all the features of all the social media apps combined into one",
+        skills: [
+            { name: "Figma", logo: htmlLogo },
+        ]
+    },
+
+    {
+        id: "Video Editing",
+        thumbnail: Kenko_thumbnail,
+        title: "Kenko interview",
+        description : 'Filmed and Edited an interview for the USC Startup Garage using iphone and Sony fs5 mii and editing using Adobe Premiere Pro',
+        skills: [
+            { name: "Adobe Premiere Pro", logo: htmlLogo },
+        ]
+    }
 ]
 
 export const codingProjects = [
