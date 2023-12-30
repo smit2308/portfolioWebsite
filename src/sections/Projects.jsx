@@ -56,12 +56,14 @@ const Projects = () => {
 
   return (
 
-    <section className='w-full flex flex-col   lg:p-16 md:p-10 p-6 max-container '>
-      <div className='w-full flex flex-row gap-40 justify-between  items-center  '>
+    <section className='w-full flex flex-col max-sm:gap-10  lg:p-16 md:p-10 p-6 max-container '>
+      <div className='w-full flex sm:flex-row flex-col sm:gap-10 md:gap-20 lg:gap-40 sm:justify-between  items-center  '>
 
-        <h1 className='font-display italic text-[120px]   text-secondary'>Work</h1>
+        <h1 className='font-display italic text-[80px] lg:text-[120px]   text-secondary'>   
+          Work
+        </h1>
 
-        <h1 className='  h-fit font-montserrat font-light leadinng-normal text-lg text-right pr-20  text-secondary border-r-2  sm:border-secondary'>
+        <h1 className='  h-fit font-montserrat font-light leadinng-normal sm:text-sm lg:text-lg sm:text-right text-center lg:pr-20 pr-6 text-secondary border-r-2  sm:border-secondary'>
           Crafting unique digital experiences as a Web Designer and Developer, 
           I also excel in videography and video editing. 
           Let's create something extraordinary together
@@ -71,9 +73,9 @@ const Projects = () => {
 
       
 
-      <div className='flex flex-row justify-end '>
+      <div className='flex sm:flex-row flex-col sm:justify-end max-sm:items-center '>
            {/* relative */}
-        <div className='  w-max  h-max mt-20  flex flex-col font-montserrat text-xl font-light italic gap-8 border-l-2 border-secondary px-12'>
+        <div className='sm:w-max  h-max sm:mt-20 max-sm:items-center  flex sm:flex-col flex-wrap font-montserrat text-sm sm:text-lg lg:text-xl font-light italic gap-8 border-l-2 border-secondary xl:px-16 px-8  '>
           
           <h2 id='coding'>Coding</h2>
           <h2 id="ui">UI/UX</h2>
@@ -88,21 +90,21 @@ const Projects = () => {
           />
         </div>
 
-        <div className='w-full  max-h-[720px] overflow-y-scroll hide-scrollbar  '>
+        <div className='w-full h-[560px]  sm:max-h-[720px] overflow-y-scroll hide-scrollbar   '>
 
-          <div className='flex flex-col gap-20 mt-20 '>
+          <div className='flex flex-col gap-20 mt-10 sm:mt-20  lg:justify-start '>
 
           {workFeatured.map((project, index) => (
-              <div id={project.id} className='flex flex-wrap gap-10  justify-center mb-20'>
+              <div id={project.id} className='flex lg:flex-row flex-col gap-10  lg:justify-center items-center mb-20 sm:px-6'>
                 
               {/* <h2 className='font-montserrat text-7xl text-secondary'>{index+1}</h2> */}
-              <img className='h-[600px] rounded-xl shadow-2xl'
+              <img className='h-[340px] md:h-[400px] xl:h-[500px] 2xl:h-[600px] rounded-xl shadow-2xl'
                 src={project.thumbnail} 
                 alt={project.title} />
 
-              <div className='flex flex-col gap-4 justify-center w-80 ' >
+              <div className='flex flex-col gap-4 justify-center max-w-96 xl:pr-20 ' >
 
-                <p className='font-montserrat text-lg font-light leading-normal bg-slate-200 '> 
+                <p className='font-montserrat text-xs sm:text-sm lg:text-lg font-light leading-normal  '> 
                 React Skateboard Retail website, inspired by Zumiez. 
                 Currently front-end only, with an interactive back-end coming soon!
                 </p>
@@ -110,7 +112,7 @@ const Projects = () => {
                 <div className='flex flex-wrap gap-2'>
 
                   {project.skills.map(skill => (
-                    <img className='w-[48px]'
+                    <img className='sm:w-[48px] w-[24px]'
                       src={skill.logo} 
                       alt={skill.name} />
                     ))}
