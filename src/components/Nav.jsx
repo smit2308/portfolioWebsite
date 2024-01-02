@@ -48,9 +48,9 @@ useEffect(() => {
        <ul className='max-lg:hidden flex flex-row   gap-10 text-primary text-lg font-montserrat font-medium '>
           {navLinks.map((item)=>(
             <li key={item.label}>
-              <a href={item.path} className=' '     >
+              <Link to={item.path} className=' '     >
                   {item.label}
-                </a>
+                </Link>
             </li>
           )
           )}

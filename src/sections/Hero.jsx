@@ -7,7 +7,7 @@ import TextTransition, { presets } from 'react-text-transition';
 
 const TEXTS = ["Software Engineer", "UI/UX Designer", "Video-Editor"];
 
-const Home = () => {
+const Hero = () => {
 
   const [text] = useTypewriter({
     words: ["Software Engineer", "UI/UX Designer", "Video -Editor"],
@@ -96,4 +96,4 @@ const Home = () => {
   )
 }
 
-export default Home
+export default Hero

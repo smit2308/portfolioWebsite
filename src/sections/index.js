@@ -1,8 +1,8 @@
-import Home from "./Home";
-import Projects from "./Projects";
+import Hero from "./Hero";
+import Work from "./Work";
 import Connect from "./Connect";
 export{
-    Home,
-    Projects,
+    Hero,
+    Work,
     Connect,
 }
