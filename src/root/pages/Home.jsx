@@ -1,6 +1,6 @@
 import React from "react"
 import {Routes, Route} from "react-router-dom"
-import {Hero, Work, Connect} from "../../sections"
+import {Hero, Work, Connect, About} from "../../sections"
 import Nav from "../../components/Nav"
 
 export default function Home() {
@@ -15,7 +15,8 @@ export default function Home() {
         
 
         <Work />
-        <Connect />
+  
+        <About />
     </main>
   )
 }

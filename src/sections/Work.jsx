@@ -132,7 +132,7 @@ const Work = () => {
 
         </div>
 
-        <div className='sm:block mt-10'>
+        <div className='mt-10 sm:hidden'>
           <Button 
             label='More'
             bgColor={'bg-none'}
