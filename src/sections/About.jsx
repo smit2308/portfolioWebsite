@@ -10,14 +10,14 @@ const About = () => {
       };
 
   return (
-    <section className='h-screen w-full flex flex-col items-center max-container px-16 gap-10'>
-        <h1 className='font-display italic text-[80px] lg:text-[120px]  text-secondary'>
-            Have Questions?
+    <section className='h-screen w-full flex flex-col items-center max-container px-40 gap-10'>
+        <h1 className='font-montserrat italic font-thin text-[60px] lg:text-[100px]  text-secondary'>
+           <span className='font-display italic text-[80px] lg:text-[120px]'>Questions?</span>
         </h1>
 
         <div className='w-full flex flex-row justify-center gap-10'>
             <div className='w-1/2'> 
-                <p>Image tag</p>
+                <p>Image tagff</p>
             </div>
             <div className='w-1/2 flex flex-col justify-start  gap-6 bg-red-200f'>
 
@@ -25,6 +25,7 @@ const About = () => {
                 title='What can I create?'
                 children='I can create a wide range of digital products, from websites to mobile apps. ' 
             />
+   
 
             <Collapsible 
                 title='What is my Education'
