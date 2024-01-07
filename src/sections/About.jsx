@@ -10,7 +10,7 @@ const About = () => {
       };
 
   return (
-    <section className='h-screen w-full flex flex-col items-center max-container px-40 gap-10'>
+    <section className=' w-full flex flex-col items-center max-container px-40 gap-10'>
         <h1 className='font-montserrat italic font-thin text-[60px] lg:text-[100px]  text-secondary'>
            <span className='font-display italic text-[80px] lg:text-[120px]'>Questions?</span>
         </h1>
@@ -19,7 +19,7 @@ const About = () => {
             <div className='w-1/2'> 
                 <p>Image tagff</p>
             </div>
-            <div className='w-1/2 flex flex-col justify-start  gap-6 bg-red-200f'>
+            <div className='w-1/2 flex flex-col justify-start  gap-8 bg-red-200f'>
 
             <Collapsible 
                 title='What can I create?'

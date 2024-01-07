@@ -23,13 +23,11 @@ const Projects = () => {
 
   
   return (
-    <section className='w-full  max-container flex flex-col  gap-10 lg:px-16 md:px-10 px-6 my-20 '>
+    <section className='w-full  max-container flex flex-col  gap-20 lg:px-16 md:px-10 px-6 my-32 '>
 
-<div className='w-full flex sm:flex-row flex-col  sm:justify-evenly  items-center   '>
+<div className='w-full flex sm:flex-row flex-col   items-center   '>
 
-<h1 className='font-display italic text-[80px] lg:text-[120px] leading-0  text-secondary lg:mr-auto '>   
-  Projects
-</h1>
+
 
 <div className='sm:w-max  lg:gap-10 gap-4 max-sm:items-center  flex sm:flex-row 
             font-montserrfat text-secondary text-sm sm:text-lg lg:text-2xl  '>
@@ -55,13 +53,15 @@ const Projects = () => {
 </div>
 
 
+      
 
 
-
-          <div className='w-full  grid lg:grid-cols-3 grid-cols-2 gap-y-16'>
+          <div className='w-full  grid lg:grid-cols-3 grid-cols-2 sm:gap-y-16 gap-y-8 '>
             {
               projects.map((project) => (
-                <img src={project.thumbnail} alt={project.title} className=' xl:w-[340px] sm:w-[270px] w-[200px]  rounded-xl shadow-image1 place-self-center mx-6' />
+                <a href={project.demoLink!= "blank" ? project.demoLink : "/home"} target='_blank' className='w-max h-max self-center mx-auto' >
+                <img   src={project.thumbnail} alt={project.title} className=' xl:w-[340px] sm:w-[270px] xs:w-[200px] w-[140px]  rounded-xl shadow-image2 place-self-center hover:scale-105 hover:shadow-2xl transition-all ease-in-out ' />
+                 </a>
               ))
             }
           </div>

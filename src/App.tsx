@@ -7,7 +7,7 @@ import RootLayout from "./root/RootLayout"
 
 export default function App() {
   return (
-    <main className="flex flex-col items-center ">
+    <main className="flex flex-col items-center  ">
       
         <Nav />
         {/*  bg-[linear-gradient(to_right,_#F1F1F1_60%,_#b03e49_40%)] */}

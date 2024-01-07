@@ -30,7 +30,7 @@ export const navLinks = [
 
     { href: "#home", label: "Home", path: "/" },
     { href: "#about-us", label: "Projects & Skills", path: "/projects" },
-    { href: "#products", label: "Connect", path: "/connect" },
+    { href: "#products", label: "Connect", path: "/#connect" },
 
 ]
 
@@ -42,6 +42,7 @@ export const workFeatured = [
         title: "Skateboard Retail Website",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
         description: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
+        demoLink: "https://skateboard-tailwind.vercel.app/",
         skills: [
             { name: "HTML", logo: htmlLogo },
             { name: "CSS", logo: cssLogo },
@@ -56,6 +57,7 @@ export const workFeatured = [
         title: "Social Media App",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
         description: "A social media app, designed in Figma which has all the features of all the social media apps combined into one",
+        demoLink: "https://www.behance.net/gallery/166093555/Social-Media-App",
         skills: [
             { name: "Figma", logo: htmlLogo },
         ]
@@ -67,6 +69,7 @@ export const workFeatured = [
         title: "Kenko interview",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
         description : 'Filmed and Edited an interview for the USC Startup Garage using iphone and Sony fs5 mii and editing using Adobe Premiere Pro',
+        demoLink: "https://vimeo.com/manage/videos/897082575",
         skills: [
             { name: "Adobe Premiere Pro", logo: htmlLogo },
         ]
@@ -195,7 +198,7 @@ export const uiProjects = [
         thumbnail: SocialThumbnail,
         images: [],
         title: "All in one Social Media App",
-        demoLink: "Unavailable",
+        demoLink: "https://www.behance.net/gallery/166093555/Social-Media-App",
         repoLink: "https://github.com/AtharvTam/RCTNE",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
         description: "RAY is an Events Management App, tailored for the Rotaract Club of Thane North End. It streamlines event organization and participation, offers an event calendar, easy registration, and volunteer management, fostering active member engagement and connectivity in club activities",
@@ -264,7 +267,7 @@ export const videoProjects = [
         thumbnail: Kenko_thumbnail,
         images: [],
         title: "Kenko Startup Garage Interview",
-        demoLink: "Unavailable",
+        demoLink: "https://vimeo.com/manage/videos/897082575",
         repoLink: "https://github.com/AtharvTam/RCTNE",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
         description: "RAY is an Events Management App, tailored for the Rotaract Club of Thane North End. It streamlines event organization and participation, offers an event calendar, easy registration, and volunteer management, fostering active member engagement and connectivity in club activities",

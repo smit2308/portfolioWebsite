@@ -56,7 +56,7 @@ const Work = () => {
 
   return (
 
-    <section className='w-full h-screen flex flex-col max-sm:gap-10  lg:p-16 md:p-10 p-6 max-container  '>
+    <section className='w-full h-max flex flex-col max-sm:gap-10  lg:px-16 md:px-10 px-6 max-container  '>
       <div className='w-full flex sm:flex-row flex-col sm:gap-10 md:gap-20 lg:gap-40 sm:justify-between  items-center   '>
 
         <h1 className='font-display italic text-[80px] lg:text-[120px]   text-secondary'>   
@@ -93,7 +93,7 @@ const Work = () => {
 
         </div>
 
-        <div className='w-full  max-sm:max-h-[500px] sm:max-h-[640px]    lg:max-h-[480px] xl:max-h-[600px]   overflow-y-scroll hide-scrollbar '>
+        <div className='w-full  max-sm:max-h-[500px] sm:max-h-[620px]    lg:max-h-[480px] xl:max-h-[600px]   overflow-y-scroll hide-scrollbar '>
 
           <div className=' flex flex-col mt-10  lg:justify-start '>
 

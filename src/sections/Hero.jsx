@@ -38,7 +38,7 @@ const Hero = () => {
                   Welcome To My Portfolio, I’m A 
                 </h2>
                 {/*text-[12vw] xl:text-[150px] lg:text-[120px] md:text-[100px] sm:text-[70px]  xl:leading-[130px]  lg:leading-[100px]  md:leading-[80px]  sm:leading-[60px]  max-sm:text-[60px] max-sm:leading-[48px] */}
-                <div className='max-xl:h-[20vw] h-64 max-sm:h-32'> 
+                <div className='max-xl:h-[20vw] h-64 max-sm:h-32 mb-4'> 
                 <h1 className='pb-6 h-full font-display  xl:text-[150px] xl:leading-[130px] max-xl:text-[12vw] max-xl:leading-[10vw] max-sm:text-[72px] max-sm:leading-[56px] 
                 max-sm:text-center  text-secondary max-sm:text-primary font-medium  '>
                   {/* Software Engineer */}
@@ -63,7 +63,7 @@ const Hero = () => {
 
     
         
-        <p className='w-full border-l-2  sm:border-secondary sm:pb-6 pr-16 sm:px-10 max-sm:pl-4 max-sm:mb-10 lg:text-lg sm:text-sm max-sm:text-xs  text-secondary max-sm:text-primary font-light leading-normal  '>
+        <p className='w-full border-l-2  sm:border-secondary sm:pb-6 sm:pr-16 sm:px-10 max-sm:pl-4 max-sm:mb-10 lg:text-lg sm:text-sm max-sm:text-xs  text-secondary max-sm:text-primary font-light leading-normal  '>
                   Crafting unique digital experiences as a Web Designer and Developer, I also excel in videography and video editing.
                   Let's create something extraordinary together
                 </p>
