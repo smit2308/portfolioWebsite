@@ -11,7 +11,7 @@ import SocialThumbnail from './Social_thumbnail.png';
 import Myimage from './Myimage.png';
 import Myimage_small from './Myimage_small.png';
 import Kenko_thumbnail from './Kenko_thumbnail.png';
-
+import About_image from './About_image.jpg';
 export {
   AtmThumbnail,
   CafeThumbnail,
@@ -27,5 +27,6 @@ export {
   
     Myimage,
     Myimage_small,
+    About_image,
    
 };

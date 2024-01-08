@@ -29,8 +29,8 @@ const Projects = () => {
 
 
 
-<div className='sm:w-max  lg:gap-10 gap-4 max-sm:items-center  flex sm:flex-row 
-            font-montserrfat text-secondary text-sm sm:text-lg lg:text-2xl  '>
+<div className=' sm:w-max  lg:gap-10 gap-4 max-sm:items-center  flex sm:flex-row 
+            font-montserrat text-secondary text-sm sm:text-lg lg:text-2xl  '>
           
           <button id='coding' className={` hover:text-accent ${activeButton === "coding" ? "text-accent border-b-2 border-accent" : ""}`}
             onClick={() => changeSection("coding")}>

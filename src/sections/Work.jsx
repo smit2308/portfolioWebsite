@@ -59,7 +59,7 @@ const Work = () => {
     <section className='w-full h-max flex flex-col max-sm:gap-10  lg:px-16 md:px-10 px-6 max-container  '>
       <div className='w-full flex sm:flex-row flex-col sm:gap-10 md:gap-20 lg:gap-40 sm:justify-between  items-center   '>
 
-        <h1 className='font-display italic text-[80px] lg:text-[120px]   text-secondary'>   
+        <h1 className='font-display italic text-[64px] lg:text-[120px]   text-secondary'>   
           Work
         </h1>
 
@@ -75,7 +75,7 @@ const Work = () => {
 
       <div className='flex sm:flex-row flex-col sm:justify-end max-sm:items-center '>
            {/* relative */}
-        <div className='sm:w-max  h-max sm:mt-20 max-sm:items-center  flex sm:flex-col flex-wrap font-montserrat text-sm sm:text-lg lg:text-xl  italic gap-8 border-l-2 sm:border-secondary xl:px-16 sm:px-8 mb-6 '>
+        <div className='max-sm:hidden sm:w-max  h-max sm:mt-20 max-sm:items-center  flex sm:flex-col flex-wrap font-montserrat text-sm sm:text-lg lg:text-xl  italic gap-8 border-l-2 sm:border-secondary xl:px-16 sm:px-8 mb-6 '>
           
           <h2 id='coding'>Coding</h2>
           <h2 id="ui">UI/UX</h2>
@@ -93,7 +93,7 @@ const Work = () => {
 
         </div>
 
-        <div className='w-full  max-sm:max-h-[500px] sm:max-h-[620px]    lg:max-h-[480px] xl:max-h-[600px]   overflow-y-scroll hide-scrollbar '>
+        <div className='w-full  max-sm:max-h-[500px] sm:max-h-[640px]    lg:max-h-[480px] xl:max-h-[600px]   overflow-y-scroll hide-scrollbar '>
 
           <div className=' flex flex-col mt-10  lg:justify-start '>
 
@@ -131,7 +131,7 @@ const Work = () => {
 
         </div>
 
-        <div className='mt-10 sm:hidden'>
+        <div className='sm:hidden'>
           <Button 
             label='More'
             bgColor={'bg-none'}

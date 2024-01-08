@@ -20,8 +20,8 @@ const Collapsible = (
 
   return (
     <motion.div     className='flex flex-col items-start gap-4 font-montserrat text-left text-secondary  pb-4 border-b-2 border-secondary    '>
-        <button onClick={toggle}   className=' w-full flex flex-row justify-between font-medium text-lg '>
-            <span>    {title}</span>
+        <button onClick={toggle}   className=' w-full flex flex-row justify-between font-medium lg:text-lg sm:text-md max-sm:text-sm'>
+            <span className=' '>    {title}</span>
 
             <AnimatePresence initial={false} mode="wait">
             <motion.div
@@ -73,7 +73,7 @@ const Collapsible = (
               opacity: 0,
             }}
             key={children}
-            className="font-light "
+            className="font-light  "
           >
             {children}
           </motion.div>

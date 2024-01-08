@@ -1,6 +1,7 @@
 import React from 'react'
 import { useState } from 'react';
 import { Collapsible     } from '../components';
+import { About_image } from '../assets/images';
 const About = () => {
 
     const [open, setOPen] = useState(false);
@@ -10,16 +11,16 @@ const About = () => {
       };
 
   return (
-    <section className=' w-full flex flex-col items-center max-container px-40 gap-10'>
+    <section className='h-full max-container w-full flex flex-col items-center max-container lg:px-16 md:px-10 px-6 max-md:gap-6 gap-16 '>
         <h1 className='font-montserrat italic font-thin text-[60px] lg:text-[100px]  text-secondary'>
-           <span className='font-display italic text-[80px] lg:text-[120px]'>Questions?</span>
+           <span className='font-display italic text-[64px] lg:text-[120px]'>Questions?</span>
         </h1>
 
-        <div className='w-full flex flex-row justify-center gap-10'>
-            <div className='w-1/2'> 
-                <p>Image tagff</p>
+        <div className='h-fit md:h-full w-full flex md:flex-row flex-col md:justify-center lg:gap-20 gap-10 items-center'>
+            <div className='md:w-1/2 w-full'> 
+                <img src={About_image} alt='about' className='w-full md:h-[600px] h-[300px] object-cover rounded-xl' />
             </div>
-            <div className='w-1/2 flex flex-col justify-start  gap-8 bg-red-200f'>
+            <div className='md:w-1/2 w-full flex flex-col justify-start  gap-8 bg-red-200f'>
 
             <Collapsible 
                 title='What can I create?'
