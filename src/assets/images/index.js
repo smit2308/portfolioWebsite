@@ -12,6 +12,8 @@ import Myimage from './Myimage.png';
 import Myimage_small from './Myimage_small.png';
 import Kenko_thumbnail from './Kenko_thumbnail.png';
 import About_image from './About_image.jpg';
+import Skateboard_1 from './Skateboard_1.png';
+import Skateboard_2 from './Skateboard_2.png';
 export {
   AtmThumbnail,
   CafeThumbnail,
@@ -28,5 +30,8 @@ export {
     Myimage,
     Myimage_small,
     About_image,
+
+    Skateboard_1,
+    Skateboard_2,
    
 };

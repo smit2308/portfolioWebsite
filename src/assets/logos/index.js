@@ -11,8 +11,8 @@ import pythonLogo from './icons8-python.svg';
 import reactLogo from './icons8-react.svg';
 import sqlLogo from './icons8-sql.png';
 import unityLogo from './icons8-unity.svg';
-
-
+import figmalogo from './icons8-figma.svg';
+import tailwindLogo from './icons8-tailwind-css.svg';
 // Export statements
 export {
   cSharpLogo,
@@ -27,4 +27,6 @@ export {
   reactLogo,
   sqlLogo,
   unityLogo,
+  figmalogo,
+  tailwindLogo,
 };

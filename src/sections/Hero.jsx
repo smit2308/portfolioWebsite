@@ -3,7 +3,7 @@ import { Myimage, Myimage_small } from '../assets/images'
 import Button from '../components/Button'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import TextTransition, { presets } from 'react-text-transition';
-
+import { HiArrowSmallDown } from "react-icons/hi2";
 
 const TEXTS = ["Software Engineer", "UI/UX Designer", "Video-Editor"];
 
@@ -31,7 +31,7 @@ const Hero = () => {
   return (
     <section className='max-container h-screen w-full flex flex-row max-sm:flex-col items-center justify-between max-sm:justify-center  lg:pl-16 md:pl-10 pl-6 max-sm:p-0  '>
       
-      <div className='h-screen w-full flex flex-col justify-between max-sm:items-center  pr-6   overflow-hidden transition-all ease-in-out delay-100 max-sm:z-10  max-sm:px-6'>
+      <div className='h-screen w-full flex flex-col justify-between max-sm:items-center  pr-6   overflow-hidden transition-all ease-in-out delay-100 max-sm:z-10  max-sm:px-6 '>
 
         <div className='my-auto flex flex-col gap-2 max-sm:items-center max-sm:gap-2'>
         <h2 className='font-montserrat italic lg:text-xl sm:text-sm max-sm:text-xs max-sm:text-center text-secondary max-sm:text-primary font-light leading-normal '>
@@ -56,8 +56,9 @@ const Hero = () => {
 
                 <Button
                   label='Resume'
-                  bgColor={'bg-none'}
+                  bgColor={'bg-primary'}
                   textColor={'text-secondary'}
+                  iconReact={<HiArrowSmallDown size={24} />}
                 /> 
         </div>
 

@@ -11,6 +11,8 @@ import {
     reactLogo,
     sqlLogo,
     unityLogo,
+    figmalogo,
+    tailwindLogo,
   } from '../assets/logos';
 
 import {  AtmThumbnail,
@@ -23,7 +25,15 @@ import {  AtmThumbnail,
     RctneThumbnail,
     SkateboardThumbnail,
     SocialThumbnail,
-    Kenko_thumbnail } from '../assets/images';
+    Kenko_thumbnail,
+
+    } from '../assets/images';
+
+import { 
+    Skateboard_1,
+    Skateboard_2,
+}
+from '../assets/images';
 
 
 export const navLinks = [
@@ -76,11 +86,14 @@ export const workFeatured = [
     }
 ]
 
-export const codingProjects = [
+    
+export const ProjectsData = {
+
+'codingProjects' : [
     {
         id: 1,
         thumbnail: SkateboardThumbnail,
-        images: [],
+        images: [Skateboard_1, Skateboard_2],
         title: "Skateboard Retail Website",
         demoLink: "https://skateboard-tailwind.vercel.app/",
         repoLink: "https://github.com/smit2308/skateboard-tailwind",
@@ -88,9 +101,11 @@ export const codingProjects = [
         description: "Discover my revamped skateboard website, inspired by Zumiez. It includes user-friendly Home, Products, About, and Contact pages. Sign up or log in to connect with the skate community. Currently front-end only, with an interactive back-end coming soon!",
         skills: [
             { name: "HTML", logo: htmlLogo },
+            { name: "Tailwind", logo: tailwindLogo },
             { name: "CSS", logo: cssLogo },
             { name: "JavaScript", logo: javascriptLogo },
             { name: "React", logo: reactLogo },
+            { name: "Figma", logo: figmalogo },
         ]
         
     },
@@ -156,30 +171,14 @@ export const codingProjects = [
     }
 
 
-]
+],
 
-export const uiProjects = [
-    {
-        id: 1,
-        thumbnail: SkateboardThumbnail,
-        images: [],
-        title: "Skateboard Retail Website",
-        demoLink: "https://skateboard-tailwind.vercel.app/",
-        repoLink: "https://github.com/smit2308/skateboard-tailwind",
-        shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
-        description: "Discover my revamped skateboard website, inspired by Zumiez. It includes user-friendly Home, Products, About, and Contact pages. Sign up or log in to connect with the skate community. Currently front-end only, with an interactive back-end coming soon!",
-        skills: [
-            { name: "HTML", logo: htmlLogo },
-            { name: "CSS", logo: cssLogo },
-            { name: "JavaScript", logo: javascriptLogo },
-            { name: "React", logo: reactLogo },
-        ]
-        
-    },
+'uiProjects' : [
+
 
     
     {
-        id: 2,
+        id: 1,
         thumbnail: EyespaceThumbnail,
         images: [],
         title: "Eyespace Opthalmology Website",
@@ -194,7 +193,7 @@ export const uiProjects = [
     },
 
     {
-        id: 3,
+        id: 2,
         thumbnail: SocialThumbnail,
         images: [],
         title: "All in one Social Media App",
@@ -210,7 +209,7 @@ export const uiProjects = [
 
 
     {
-        id: 4,
+        id: 3,
         thumbnail: RayThumbnail,
         images: [],
         title: "RAY Events management app",
@@ -225,7 +224,7 @@ export const uiProjects = [
     },
 
     {
-        id: 55,
+        id: 4,
         thumbnail: EyelabsThumbnail,
         images: [],
         title: "Eyelabs Website Front Page",
@@ -240,7 +239,7 @@ export const uiProjects = [
     },
 
     {
-        id: 6,
+        id: 5,
         thumbnail: RctneThumbnail,
         images: [],
         title: "Rotaract Club of Thane North End Website",
@@ -258,9 +257,9 @@ export const uiProjects = [
 
 
 
-]
+],
 
-export const videoProjects = [
+'videoProjects' : [
 
     {
         id: 1,
@@ -296,4 +295,4 @@ export const videoProjects = [
   
 
 
-]
+]}

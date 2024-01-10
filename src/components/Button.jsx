@@ -1,48 +1,54 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import { HiArrowSmallDown } from "react-icons/hi2";
 
 
 
-const Button = ({onClick,logoTilt, label, iconURL, bgColor, textColor, borderColor, fullWidth, width, iconWidth, iconHeight,...buttonProps}) => {
+
+const Button = ({ onClick, logoTilt, label, iconURL, iconReact, bgColor, textColor, borderColor, fullWidth, customHover, width, iconWidth, iconHeight, ...buttonProps }) => {
 
 
 
   return (
-    
-    <button 
-      className={`flex flex-row max-w-fit justify-between gap-2 items-center px-[24px] py-[14px]  text-lg max-sm:text-sm  rounded-[10px] font-medium shadow-element1 shadow-element2 hover:bg-secondary hover:text-primary transition duration-300 ease-in-out
-                ${
-                  bgColor ? `${bgColor} $
+
+    <button
+      className={`flex flex-row max-w-fit justify-between gap-2 items-center px-[24px] py-[14px]  text-lg max-sm:text-sm  rounded-[10px] font-medium shadow-lg transition duration-300 ease-in-out
+                ${customHover ? customHover : " hover:bg-secondary hover:text-primary"}
+                ${bgColor ? `${bgColor} $
                   ${textColor ? textColor : "text-secondary"}`
-                  :
-                  " bg-white  text-secondary"
-                }
+          :
+          " bg-primary  text-secondary"
+        }
                 ${fullWidth && 'w-full'}"}
 
                 
                 
               '}}`
-                }
-                
-                {...buttonProps}
-                
-                onClick={onClick}>
-        {label}
-        <HiArrowSmallDown/>
+      }
 
-        {iconURL ? (  
-             
-          <img 
-            src={iconURL}
-            width={iconWidth ? iconWidth : 24}
-            height={iconHeight}
-            alt='arrow right icon'/>
-           ):("")}
+      {...buttonProps}
 
-           
+      onClick={onClick}>
+      {label}
+
+
+      {iconURL ? (
+
+        <img
+          src={iconURL}
+          width={iconWidth ? iconWidth : 24}
+          height={iconHeight}
+          alt='arrow right icon' />
+      ) : ("")}
+
+      {iconReact ? (
+        <div className={`${logoTilt}`}>
+          {iconReact}
+        </div>
+      ) : ("")}
+
+
     </button>
-    
+
   )
 }
 

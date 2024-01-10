@@ -24,6 +24,13 @@
     
   }
 
+  .small-container {
+    max-width: 1024px;
+    margin: 0 auto;
+
+    
+  }
+
   .hide-scrollbar::-webkit-scrollbar {
     display: none; /* Hide scrollbar for WebKit browsers */
 }

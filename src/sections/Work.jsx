@@ -1,9 +1,8 @@
 import React from 'react'
-import { codingProjects } from '../constants'
 import { workFeatured } from '../constants'
 import Button from '../components/Button'
 import { useEffect } from 'react'
-
+import { HiArrowSmallDown } from "react-icons/hi2";
 const Work = () => {
 
 
@@ -87,6 +86,7 @@ const Work = () => {
             bgColor={'bg-none'}
             textColor={'text-secondary'}
             logoTilt={' -rotate-90'}
+            iconReact={<HiArrowSmallDown size={24} />}
 
           />
           </div>
@@ -95,7 +95,7 @@ const Work = () => {
 
         <div className='w-full  max-sm:max-h-[500px] sm:max-h-[640px]    lg:max-h-[480px] xl:max-h-[600px]   overflow-y-scroll hide-scrollbar '>
 
-          <div className=' flex flex-col mt-10  lg:justify-start '>
+          <div className=' flex flex-col mt-10  lg:justify-start items-center '>
 
           {workFeatured.map((project, index) => (
               <div id={project.id} className='flex lg:flex-row flex-col 2xl:gap-20 gap-10  lg:justify-between items-center mb-10 sm:mb-20  xl:pl-24 sm:pl-6 '>
@@ -125,21 +125,20 @@ const Work = () => {
 
           ))}
           
-
+                      
+        <div className='sm:hidden'>
+          <Button 
+            label='More'
+            textColor={'text-secondary'}
+            logoTilt={' -rotate-90'}
+            iconReact={<HiArrowSmallDown size={24} />}    
+          />
+          </div>
           </div>
 
 
         </div>
 
-        <div className='sm:hidden'>
-          <Button 
-            label='More'
-            bgColor={'bg-none'}
-            textColor={'text-secondary'}
-            logoTilt={' -rotate-90'}
-
-          />
-          </div>
 
       </div>
     </section>
