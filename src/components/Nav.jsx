@@ -48,9 +48,9 @@ useEffect(() => {
        <ul className='max-lg:hidden flex flex-row   gap-10 text-primary text-lg font-montserrat font-medium '>
           {navLinks.map((item)=>(
             <li key={item.label}>
-              <a href={item.path} className=' '     >
+              <Link to={item.path} className=' '     >
                   {item.label}
-                </a>
+                </Link>
             </li>
           )
           )}
@@ -78,13 +78,13 @@ useEffect(() => {
             <ul className='flex flex-col gap-4'>
               {navLinks.map((item) => (
                 <li key={item.label} className='w-full text-center '>
-                  <a
-                    href={item.path}
-                    className=' font-monsterrat leading-normal text-lg  text-secondary '
+                  <Link
+                    to={item.path}
+                    // className=' font-monsterrat leading-normal text-lg  text-secondary '
                     onClick={toggleMenu}
                   >
                     {item.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

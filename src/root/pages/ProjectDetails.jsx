@@ -46,6 +46,7 @@ const ProjectDetails = (props) => {
      
           
         <div className='flex flex-row gap-4'>
+          
           {proj.demoLink !== 'Unavailable' ? (
             <a href={proj.demoLink} target='_blank'>
             <Button label='Demo' 
