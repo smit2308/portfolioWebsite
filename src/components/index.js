@@ -1,6 +1,6 @@
 import Nav from "./Nav";
 import Button from "./Button";
 import Collapsible from "./Collapsible";
-
-
-export { Nav, Button, Collapsible };
+import ImagesSlider  from "./ImagesSlider";
+import  HeroParallax  from "./HeroParallax";
+export { Nav, Button, Collapsible, ImagesSlider, HeroParallax };

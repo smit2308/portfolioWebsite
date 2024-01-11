@@ -32,6 +32,8 @@ import {  AtmThumbnail,
 import { 
     Skateboard_1,
     Skateboard_2,
+    Game_1,
+    Game_2
 }
 from '../assets/images';
 
@@ -113,7 +115,7 @@ export const ProjectsData = {
     {
         id: 2,
         thumbnail: GameThumbnail,
-        images: [],
+        images: [Game_1, Game_2],
         title: "Little Timmy’s Spooky Mansion Game",
         demoLink: "https://agormley3424.github.io/stealth_game/",
         repoLink: "https://github.com/akashram98/littleTimmy",
@@ -279,16 +281,62 @@ export const ProjectsData = {
 
     {
         id: 2,
-        thumbnail: GameThumbnail,
+        thumbnail: SocialThumbnail,
         images: [],
-        title: "Little Timmy’s Spooky Mansion Game",
-        demoLink: "https://agormley3424.github.io/stealth_game/",
-        repoLink: "https://github.com/akashram98/littleTimmy",
+        title: "All in one Social Media App",
+        demoLink: "https://www.behance.net/gallery/166093555/Social-Media-App",
+        repoLink: "https://github.com/AtharvTam/RCTNE",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
-        description: "A stealth adventure game, where you play as Timmy, a clever kid. His home has been invaded by monsters, and each level requires you to use stealth to navigate through, utilize traps cleverly placed around the house to kill these monstrous intruders",
+        description: "RAY is an Events Management App, tailored for the Rotaract Club of Thane North End. It streamlines event organization and participation, offers an event calendar, easy registration, and volunteer management, fostering active member engagement and connectivity in club activities",
         skills: [
-            { name: "C#", logo: cSharpLogo },
-            { name: "Unity", logo: unityLogo },
+            { name: "Flutter", logo: flutterLogo },
+            { name: "Firebase", logo: firebaseLogo },
+        ]
+    },
+
+
+    {
+        id: 3,
+        thumbnail: RayThumbnail,
+        images: [],
+        title: "RAY Events management app",
+        demoLink: "Unavailable",
+        repoLink: "https://github.com/AtharvTam/RCTNE",
+        shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
+        description: "RAY is an Events Management App, tailored for the Rotaract Club of Thane North End. It streamlines event organization and participation, offers an event calendar, easy registration, and volunteer management, fostering active member engagement and connectivity in club activities",
+        skills: [
+            { name: "Flutter", logo: flutterLogo },
+            { name: "Firebase", logo: firebaseLogo },
+        ]
+    },
+
+    {
+        id: 4,
+        thumbnail: EyelabsThumbnail,
+        images: [],
+        title: "Eyelabs Website Front Page",
+        demoLink: "Unavailable",
+        repoLink: "https://github.com/AtharvTam/RCTNE",
+        shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
+        description: "RAY is an Events Management App, tailored for the Rotaract Club of Thane North End. It streamlines event organization and participation, offers an event calendar, easy registration, and volunteer management, fostering active member engagement and connectivity in club activities",
+        skills: [
+            { name: "Flutter", logo: flutterLogo },
+            { name: "Firebase", logo: firebaseLogo },
+        ]
+    },
+
+    {
+        id: 5,
+        thumbnail: RctneThumbnail,
+        images: [],
+        title: "Rotaract Club of Thane North End Website",
+        demoLink: "Unavailable",
+        repoLink: "https://github.com/AtharvTam/RCTNE",
+        shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
+        description: "RAY is an Events Management App, tailored for the Rotaract Club of Thane North End. It streamlines event organization and participation, offers an event calendar, easy registration, and volunteer management, fostering active member engagement and connectivity in club activities",
+        skills: [
+            { name: "Flutter", logo: flutterLogo },
+            { name: "Firebase", logo: firebaseLogo },
         ]
     },
 

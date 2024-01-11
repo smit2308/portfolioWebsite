@@ -6,7 +6,8 @@ import { workFeatured } from "../constants";
 import { Button } from "../components";
 import { PinContainer } from "../components/ThreedPin";
 import { HiArrowSmallDown } from "react-icons/hi2";
-
+import {HeroParallax} from "../components";
+import { ProjectsData } from "../constants";
 const StickyScroll = () => {
 
   const content = [
@@ -66,8 +67,8 @@ const StickyScroll = () => {
       // animate={{
       //   backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       // }}
-      className='w-full  flex flex-col max-sm:gap-10  lg:px-16 md:px-10 px-6 max-container h-max '>
-      <div className='w-full flex sm:flex-row flex-col sm:gap-10 md:gap-20 lg:gap-40 sm:justify-between  items-center   '>
+      className='w-full  flex flex-col max-sm:gap-10  lg:px-16 md:px-10 px-6  h-max '>
+      <div className='w-full flex sm:flex-row flex-col sm:gap-10 md:gap-20 lg:gap-40 sm:justify-between  items-center max-container  '>
 
         <h1 className='font-display italic text-[80px] lg:text-[120px]   text-secondary'>
           Work
@@ -81,6 +82,8 @@ const StickyScroll = () => {
 
       </div>
 
+      
+   
 
       <motion.div
         animate={{
@@ -89,44 +92,6 @@ const StickyScroll = () => {
         className="h-[640px]  w-full  overflow-y-scroll hide-scrollbar flex flex-row-reverse justify-center gap-20     xl:px-16  rounded-2xl"
         ref={ref}
       >
-
-        {/* <div className=' sticky top-20  sm:w-max  h-max sm:mt-20 max-sm:items-center text-secondary  flex sm:flex-col flex-wrap font-montserrat text-sm sm:text-lg lg:text-xl  italic gap-8 border-l-2 sm:border-secondary xl:px-10 sm:px-8 mb-6 '>
-          
-      <h2 id='coding' className={activeCard===0? "text-accent": "text-secondary"}>Coding</h2>
-      <h2 id="ui" className={activeCard===1? "text-accent": "text-secondary"}>UI/UX</h2>
-      <h2 id='video' className={activeCard===2? "text-accent": "text-secondary"}>Video Editing</h2>
-
-      <div className='max-sm:hidden'>
-      <Button 
-        label='More'
-        bgColor={'bg-primary'}
-        textColor={'text-secondary'}
-        logoTilt={' -rotate-90'}
-
-      />
-      </div>
-
-    </div> */}
-
-
-
-
-        {/* <motion.div
-        //   animate={{
-        //     background: linearGradients[activeCard % linearGradients.length],
-        //   }}
-          className="flex  w-max h-max sticky top-16 rounded-3xl">
-                 <motion.img 
-                    initial={{
-                        opacity: 0,
-                    }}
-                    animate={{
-                        opacity: 1,
-                    }}
-                 className='h-[320px] md:h-[400px] xl:h-[500px] xl:w-[500px] rounded-xl md:shadow-image1 shadow-image2 object-cover'
-                src={workFeatured[activeCard].thumbnail} 
-                 />
-        </motion.div> */}
 
 
         <a href={activeCard <= 3 ? workFeatured[activeCard].demoLink : "/home"} target="_blank" className=" flex   sticky top-0 items-center justify-center mr-10">
@@ -214,6 +179,8 @@ const StickyScroll = () => {
         </div>
 
       </motion.div>
+
+      
 
     </motion.div>
   );

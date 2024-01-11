@@ -3,6 +3,9 @@ import { workFeatured } from '../constants'
 import Button from '../components/Button'
 import { useEffect } from 'react'
 import { HiArrowSmallDown } from "react-icons/hi2";
+import { HeroParallax } from '../components';
+import { ProjectsData } from '../constants';
+
 const Work = () => {
 
 
@@ -49,46 +52,46 @@ const Work = () => {
         }
       });
     };
-  }, []); 
+  }, []);
 
 
 
   return (
 
-    <section className='w-full h-max flex flex-col max-sm:gap-10  lg:px-16 md:px-10 px-6 max-container  '>
+    <section className='w-full  flex flex-col max-sm:gap-10  lg:px-16 md:px-10 px-6 max-container  '>
       <div className='w-full flex sm:flex-row flex-col sm:gap-10 md:gap-20 lg:gap-40 sm:justify-between  items-center   '>
 
-        <h1 className='font-display italic text-[64px] lg:text-[120px]   text-secondary'>   
+        <h1 className='font-display italic text-[64px] lg:text-[120px]   text-secondary'>
           Work
         </h1>
 
         <h1 className='  h-fit font-montserrat font-light leadinng-normal sm:text-sm lg:text-lg sm:text-right text-center lg:pr-20 pr-6 text-secondary  sm:border-r-2  sm:border-secondary'>
-          Crafting unique digital experiences as a Web Designer and Developer, 
-          I also excel in videography and video editing. 
+          Crafting unique digital experiences as a Web Designer and Developer,
+          I also excel in videography and video editing.
           Let's create something extraordinary together
         </h1>
 
       </div>
 
-      
+
 
       <div className='flex sm:flex-row flex-col sm:justify-end max-sm:items-center '>
-           {/* relative */}
+        {/* relative */}
         <div className='max-sm:hidden sm:w-max  h-max sm:mt-20 max-sm:items-center  flex sm:flex-col flex-wrap font-montserrat text-sm sm:text-lg lg:text-xl  italic gap-8 border-l-2 sm:border-secondary xl:px-16 sm:px-8 mb-6 '>
-          
+
           <h2 id='coding'>Coding</h2>
           <h2 id="ui">UI/UX</h2>
           <h2 id='video' className=' w-max'>Video Editing</h2>
 
           <div className='max-sm:hidden'>
-          <Button 
-            label='More'
-            bgColor={'bg-none'}
-            textColor={'text-secondary'}
-            logoTilt={' -rotate-90'}
-            iconReact={<HiArrowSmallDown size={24} />}
+            <Button
+              label='More'
+              bgColor={'bg-none'}
+              textColor={'text-secondary'}
+              logoTilt={' -rotate-90'}
+              iconReact={<HiArrowSmallDown size={24} />}
 
-          />
+            />
           </div>
 
         </div>
@@ -97,48 +100,50 @@ const Work = () => {
 
           <div className=' flex flex-col mt-10  lg:justify-start items-center '>
 
-          {workFeatured.map((project, index) => (
+            {workFeatured.map((project, index) => (
               <div id={project.id} className='flex lg:flex-row flex-col 2xl:gap-20 gap-10  lg:justify-between items-center mb-10 sm:mb-20  xl:pl-24 sm:pl-6 '>
-                
-              {/* <h2 className='font-montserrat text-7xl text-secondary'>{index+1}</h2> */}
-              <img className='h-[320px] md:h-[400px] xl:h-[500px] xl:w-[500px] rounded-xl md:shadow-image1 shadow-image2 object-cover'
-                src={project.thumbnail} 
-                alt={project.title} />
 
-              <div className='flex flex-col gap-4 justify-center max-w-96  ' >
+                {/* <h2 className='font-montserrat text-7xl text-secondary'>{index+1}</h2> */}
+                <img className='h-[320px] md:h-[400px] xl:h-[500px] xl:w-[500px] rounded-xl md:shadow-image1 shadow-image2 object-cover'
+                  src={project.thumbnail}
+                  alt={project.title} />
 
-                <p className='font-montserrat text-xs sm:text-sm lg:text-lg font-light leading-normal  '> 
-                {project.shortDescription}
-                </p>
+                <div className='flex flex-col gap-4 justify-center max-w-96  ' >
 
-                <div className='flex flex-wrap gap-2'>
+                  <p className='font-montserrat text-xs sm:text-sm lg:text-lg font-light leading-normal  '>
+                    {project.shortDescription}
+                  </p>
 
-                  {project.skills.map(skill => (
-                    <img className='sm:w-[48px] w-[24px]'
-                      src={skill.logo} 
-                      alt={skill.name} />
+                  <div className='flex flex-wrap gap-2'>
+
+                    {project.skills.map(skill => (
+                      <img className='sm:w-[48px] w-[24px]'
+                        src={skill.logo}
+                        alt={skill.name} />
                     ))}
 
+                  </div>
                 </div>
               </div>
-            </div>
 
-          ))}
-          
-                      
-        <div className='sm:hidden'>
-          <Button 
-            label='More'
-            textColor={'text-secondary'}
-            logoTilt={' -rotate-90'}
-            iconReact={<HiArrowSmallDown size={24} />}    
-          />
-          </div>
+            ))}
+
+
+            <div className='sm:hidden'>
+              <Button
+                label='More'
+                textColor={'text-secondary'}
+                logoTilt={' -rotate-90'}
+                iconReact={<HiArrowSmallDown size={24} />}
+              />
+            </div>
           </div>
 
 
         </div>
 
+        
+        
 
       </div>
     </section>

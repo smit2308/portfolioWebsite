@@ -1,7 +1,8 @@
 import React from "react"
 import {Routes, Route} from "react-router-dom"
-import {Hero, Work, Connect, About, StickyScroll} from "../../sections"
+import {Hero, Work, Connect, About, StickyScroll, ParallaxWork} from "../../sections"
 import Nav from "../../components/Nav"
+
 
 export default function Home() {
   return (
@@ -13,19 +14,21 @@ export default function Home() {
         <Hero />
         </div>
         
-        <div className="max-lg:hidden">
-         <StickyScroll />
+        <div className="w-full">
+         <ParallaxWork  />
         </div>
         
-        <div className="lg:hidden">
-          <Work />
-          </div>
+        {/* <div className="lg:hidden">
+          <ParallaxWork />
+          </div> */}
   
         <About />
 
         <div id="connect">
         <Connect />
         </div>
+
+ 
        
     </main>
   )
