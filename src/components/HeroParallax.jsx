@@ -27,16 +27,16 @@ const HeroParallax = ({
   const windowSize = useRef([window.innerWidth, window.innerHeight]);
 
   const translateXFirstrow = useSpring(
-    useTransform(scrollYProgress, [0, 1], [0, windowSize.current[0]*0.6]),
+    useTransform(scrollYProgress, [0, 1], [0, windowSize.current[0]*1.8]),
     springConfig
   );
   const translateXReverse = useSpring(
-    useTransform(scrollYProgress, [0, 1], [0, -windowSize.current[0]*0.3]),
+    useTransform(scrollYProgress, [0, 1], [0, -windowSize.current[0]*1.1]),
     springConfig
   );
 
   const translateXThirdrow = useSpring(
-    useTransform(scrollYProgress, [0, 1], [0, windowSize.current[0]*0.3]),
+    useTransform(scrollYProgress, [0, 1], [0, windowSize.current[0]*0.6]),
     springConfig
   );
 
@@ -45,7 +45,7 @@ const HeroParallax = ({
     springConfig
   );
   const opacity = useSpring(
-    useTransform(scrollYProgress, [0, 0.2], [0.3, 1]),
+    useTransform(scrollYProgress, [0, 0.2], [0.08, 1]),
     springConfig
   );
   const rotateZ = useSpring(
@@ -59,7 +59,7 @@ const HeroParallax = ({
   return (
     <div
       ref={ref}
-      className="h-[280vh]  pt-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
+      className="h-[1940px]  pt-40 overflow-hidden antialiased relative flex flex-col self-auto [perspective:1000px] [transform-style:preserve-3d]"
     >
      
       <motion.div
@@ -136,7 +136,7 @@ export const ProductCard = ({
       //   y: -20,
       // }}
       key={product.description}
-      className="group/product h-96 w-[24rem] relative flex-shrink-0"
+      className="group/product h-96 w-96 relative flex-shrink-0"
     >
       <Link
         to={product.demoLink}
@@ -153,6 +153,7 @@ export const ProductCard = ({
           <PinContainer
             title={product.demoLink}
             href={product.demoLink}
+            
           >
 
             <motion.div
@@ -192,9 +193,9 @@ export const Category = ({
       }}
 
       key={text}
-      className="flex justify-center items-center w-max "
+      className="flex justify-center items-center h-96 w-60 "
     >
-      <h1 className="text-secondary font-normal font-montserrat text-4xl ">
+      <h1 className="text-primary font-light font-montserrat  text-4xl w-max">
         {text}
       </h1>
     </motion.div>

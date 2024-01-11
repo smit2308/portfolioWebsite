@@ -6,7 +6,8 @@ import Nav from "../../components/Nav"
 
 export default function Home() {
   return (
-    <main className="  flex flex-col gap-10 sm:gap-20 lg:gap-40 items-center bg-primary pb-32">
+    // gap-10 sm:gap-20 lg:gap-40
+    <main className="  flex flex-col  items-center bg-primary pb-32">
       
         
         {/*  bg-[linear-gradient(to_right,_#F1F1F1_60%,_#b03e49_40%)] */}
