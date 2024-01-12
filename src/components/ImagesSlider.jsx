@@ -10,6 +10,7 @@ const ImagesSlider = ({
   className,
   autoplay = true,
   direction = "up",
+  para,
 }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
   const [loading, setLoading] = useState(false);
@@ -112,7 +113,7 @@ const ImagesSlider = ({
   return (
     <div
       className={cn(
-        "overflow-hidden lg:h-[700px] sm:h-[400px] h-[300px] w-full relative flex items-center justify-center rounded-2xl shadow-xl",
+        `overflow-hidden ${para === true ? 'h-[400px] bg-red-500' : 'lg:h-[700px] sm:h-[400px] h-[300px]'} w-full relative flex items-center justify-center rounded-2xl shadow-xl`,
         className
       )}
       style={{

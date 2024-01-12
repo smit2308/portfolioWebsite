@@ -4,6 +4,7 @@ export default {
     "./index.html",
     "./src/**/*.{js,jsx,ts,tsx}"
   ],
+  mode: 'jit',
   theme: {
 
     fontSize: {
@@ -63,6 +64,8 @@ export default {
     },
   },
 },
-  plugins: [],
+  plugins: [
+    require('@kamona/tailwindcss-perspective'),
+  ],
 }
 

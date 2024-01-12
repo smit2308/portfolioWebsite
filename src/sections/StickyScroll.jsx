@@ -8,6 +8,7 @@ import { PinContainer } from "../components/ThreedPin";
 import { HiArrowSmallDown } from "react-icons/hi2";
 import {HeroParallax} from "../components";
 import { ProjectsData } from "../constants";
+import { Link } from "react-router-dom";
 const StickyScroll = () => {
 
   const content = [
@@ -67,7 +68,7 @@ const StickyScroll = () => {
       // animate={{
       //   backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       // }}
-      className='w-full  flex flex-col max-sm:gap-10  lg:px-16 md:px-10 px-6  h-max '>
+      className='w-full max-container  flex flex-col max-sm:gap-10  lg:px-16 md:px-10 px-6  h-max '>
       <div className='w-full flex sm:flex-row flex-col sm:gap-10 md:gap-20 lg:gap-40 sm:justify-between  items-center max-container  '>
 
         <h1 className='font-display italic text-[80px] lg:text-[120px]   text-secondary'>
@@ -166,14 +167,21 @@ const StickyScroll = () => {
               </div>
             ))}
             <div className="h-40" >
+              <Link
+                to='/projects'>
+              
               <Button
                 label='More'
                 bgColor={'bg-primary'}
                 textColor={'text-secondary'}
                 logoTilt={' -rotate-90'}
                 iconReact={<HiArrowSmallDown size={24} />}
+                />
+                
+                </Link>
 
-              />
+
+              
             </div>
           </div>
         </div>

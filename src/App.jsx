@@ -2,7 +2,7 @@ import React from "react"
 import {Routes, Route} from "react-router-dom"
 import {Hero, Work, Connect} from "./sections"
 import Nav from "./components/Nav"
-import {Home,Projects, ProjectDetails} from "./root/pages"
+import {Home,Projects, ProjectDetails, ProjectsParallax, ProjectDetailsScroll} from "./root/pages"
 import RootLayout from "./root/RootLayout"
 
 export default function App() {
@@ -19,7 +19,9 @@ export default function App() {
             <Route element={<RootLayout />}>
               <Route index element={<Home />} />
               <Route path="/projects" element={<Projects />} />
-              <Route path="/projects/:id" element={<ProjectDetails />} />
+              {/* <Route path="/projects/:id" element={<ProjectDetails />} /> */}
+              <Route path="/projects/:id" element={<ProjectDetailsScroll />} />
+              <Route path="/connect" element= {<ProjectsParallax />}/>
             </Route>
           </Routes>
 

@@ -16,6 +16,8 @@ import Skateboard_1 from './Skateboard_1.png';
 import Skateboard_2 from './Skateboard_2.png';
 import Game_1 from './Game_1.png'
 import Game_2 from './Game_2.png'
+import Ray_1 from './Ray_1.png'
+import Ray1_1 from './Ray1_1.png'
 
 
 export {
@@ -39,5 +41,7 @@ export {
     Skateboard_2,
     Game_1,
     Game_2,
+    Ray_1,
+    Ray1_1,
    
 };

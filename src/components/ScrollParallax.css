@@ -1,0 +1,15 @@
+/* ::-webkit-scrollbar {
+    @apply h-[5px] w-[5px];
+    background: var(--background);
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--accent);
+    -webkit-border-radius: 1ex;
+  }
+  ::-webkit-scrollbar-corner {
+    background: var(--background);
+  }
+
+  html {
+  scroll-snap-type: y mandatory;
+} */

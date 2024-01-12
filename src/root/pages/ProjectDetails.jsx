@@ -16,40 +16,39 @@ const ProjectDetails = (props) => {
       const projectFound = (ProjectsData['codingProjects'].find(p => p.title === projectTitle))||
        (ProjectsData['uiProjects'].find(p => p.title === projectTitle)) ||
        (ProjectsData['videoProjects'].find(p => p.title === projectTitle)) ;
-      if (projectFound) {
+    
         return projectFound;
-      } else {
-        return ProjectsData['codingProjects'][0];
+      
       }
       
 
       
-    };
+    
 
-    const [proj, setproj] = useState(Setter);
+    const [pro, setpro] = useState(Setter);
     // const [scrollPosition, setScrollPosition] = useState(0);
 
 
   
 
 
-    console.log(proj);
+    console.log(pro);
     
   return (
-    <section className='h-screen w-full small-container flex lg:flex-row flex-col  lg:gap-20 gap-10  md:px-10 px-6 lg:my-32 my-20'>
+    <section className='h-screen w-full small-container flex  lg:gap-20 gap-10  md:px-10 px-6 lg:my-32 my-20'>
       <div className='flex lg:w-1/2 '>
         {/* <img src={proj.images[0]} alt={proj.title} className='w-full lg:h-[700px] sm:h-[400px] h-[300px] object-cover object-top rounded-2xl shadow-xl' /> */}
-        {<ImagesSlider images={proj.images} /> ? <ImagesSlider images={proj.images} /> : ''}
+        {<ImagesSlider images={pro.images} /> ? <ImagesSlider images={pro.images} /> : ''}
       </div>
 
       <div className='flex flex-col lg:w-1/2 gap-8 max-sm:items-center max-sm:text-center'>
-        <h1 className='sm:text-4xl text-2xl  font-bold text-secondary '>{proj.title}</h1>
+        <h1 className='sm:text-4xl text-2xl  font-bold text-secondary '>{pro.title}</h1>
      
           
         <div className='flex flex-row gap-4'>
           
-          {proj.demoLink !== 'Unavailable' ? (
-            <a href={proj.demoLink} target='_blank'>
+          {pro.demoLink !== 'Unavailable' ? (
+            <a href={pro.demoLink} target='_blank'>
             <Button label='Demo' 
               bgColor={'bg-none'} 
               iconReact={<HiArrowTopRightOnSquare />}/>
@@ -57,8 +56,8 @@ const ProjectDetails = (props) => {
           )
           : ('')}
 
-        {proj.repoLink !== 'Unavailable' ? (
-           <a href={proj.repoLink} target='_blank'>
+        {pro.repoLink !== 'Unavailable' ? (
+           <a href={pro.repoLink} target='_blank'>
                       <Button label='Github' 
                       bgColor={'bg-secondary'}
                       textColor={'text-primary'}
@@ -76,14 +75,14 @@ const ProjectDetails = (props) => {
 
         <div className='flex flex-col gap-2'>
           <h2 className='sm:text-xl max-sm:text-lg font-medium text-secondary'>Description</h2>
-          <p className='text-secondary sm:text-lg max-sm:text-sm font-light'>{proj.description}</p>
+          <p className='text-secondary sm:text-lg max-sm:text-sm font-light'>{pro.description}</p>
         </div>
 
         <div className='flex flex-col gap-4'>
           <h2 className='sm:text-xl max-sm:text-lg font-medium text-secondary'>Skills</h2>
           <div className='flex flex-row gap-4'>
             {
-              proj.skills.map((skill) => (
+              pro.skills.map((skill) => (
                 <img src={skill.logo} alt={skill.name} className='w-[48px] max-sm:w-[24px]' />
               ))
             } 

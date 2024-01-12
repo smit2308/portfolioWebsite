@@ -33,7 +33,9 @@ import {
     Skateboard_1,
     Skateboard_2,
     Game_1,
-    Game_2
+    Game_2,
+    Ray1_1,
+    Ray_1
 }
 from '../assets/images';
 
@@ -42,7 +44,7 @@ export const navLinks = [
 
     { href: "#home", label: "Home", path: "/" },
     { href: "#about-us", label: "Projects & Skills", path: "/projects" },
-    { href: "#products", label: "Connect", path: "/#connect" },
+    { href: "#products", label: "Connect", path: "/connect" },
 
 ]
 
@@ -95,7 +97,7 @@ export const ProjectsData = {
     {
         id: 1,
         thumbnail: SkateboardThumbnail,
-        images: [Skateboard_1, Skateboard_2],
+        images: [],
         title: "Skateboard Retail Website",
         demoLink: "https://skateboard-tailwind.vercel.app/",
         repoLink: "https://github.com/smit2308/skateboard-tailwind",
@@ -112,10 +114,11 @@ export const ProjectsData = {
         
     },
 
+
     {
         id: 2,
         thumbnail: GameThumbnail,
-        images: [Game_1, Game_2],
+        images: [],
         title: "Little Timmy’s Spooky Mansion Game",
         demoLink: "https://agormley3424.github.io/stealth_game/",
         repoLink: "https://github.com/akashram98/littleTimmy",
@@ -130,9 +133,9 @@ export const ProjectsData = {
     {
         id: 3,
         thumbnail: Ray1Thumbnail,
-        images: [],
-        title: "RAY Events management app",
-        demoLink: "Unavailable",
+        images: [Ray1_1],
+        title: "RAY Events Management App",
+        demoLink: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEz6Hwr0dsV7UFxpaUXMumk%2FRAY%3Fembed_host%3Dshare%26kind%3Dproto%26node-id%3D116-659%26page-id%3D116%253A372%26scaling%3Dscale-down%26starting-point-node-id%3D116%253A659%26t%3D4PVxERlo1GIXQILC-1%26type%3Ddesign%26mode%3Ddesign",
         repoLink: "https://github.com/AtharvTam/RCTNE",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
         description: "RAY is an Events Management App, tailored for the Rotaract Club of Thane North End. It streamlines event organization and participation, offers an event calendar, easy registration, and volunteer management, fostering active member engagement and connectivity in club activities",
@@ -146,7 +149,7 @@ export const ProjectsData = {
         id: 4,
         thumbnail: AtmThumbnail,
         images: [],
-        title: "RAY Events management app",
+        title: "ATM System",
         demoLink: "Unavailable",
         repoLink: "https://github.com/AtharvTam/RCTNE",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
@@ -161,7 +164,7 @@ export const ProjectsData = {
         id: 3,
         thumbnail: CafeThumbnail,
         images: [],
-        title: "RAY Events management app",
+        title: "Cyber Cafe Management System",
         demoLink: "Unavailable",
         repoLink: "https://github.com/AtharvTam/RCTNE",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
@@ -184,7 +187,7 @@ export const ProjectsData = {
         thumbnail: EyespaceThumbnail,
         images: [],
         title: "Eyespace Opthalmology Website",
-        demoLink: "Unavailable",
+        demoLink: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FWccFv0n0b0fEoml0JR3UMe%2FEyespace%3Fpage-id%3D33%253A2%26node-id%3D33-186%26starting-point-node-id%3D33%253A186%26scaling%3Dscale-down-width%26mode%3Ddesign%26t%3DjBpmLrPPa034SlUx-1",
         repoLink: "https://github.com/AtharvTam/RCTNE",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
         description: "RAY is an Events Management App, tailored for the Rotaract Club of Thane North End. It streamlines event organization and participation, offers an event calendar, easy registration, and volunteer management, fostering active member engagement and connectivity in club activities",
@@ -213,9 +216,9 @@ export const ProjectsData = {
     {
         id: 3,
         thumbnail: RayThumbnail,
-        images: [],
-        title: "RAY Events management app",
-        demoLink: "Unavailable",
+        images: [Ray1_1],
+        title: "Event Prototype App",
+        demoLink: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEz6Hwr0dsV7UFxpaUXMumk%2FRAY%3Fembed_host%3Dshare%26kind%3Dproto%26node-id%3D116-659%26page-id%3D116%253A372%26scaling%3Dscale-down%26starting-point-node-id%3D116%253A659%26t%3D4PVxERlo1GIXQILC-1%26type%3Ddesign%26mode%3Ddesign",
         repoLink: "https://github.com/AtharvTam/RCTNE",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
         description: "RAY is an Events Management App, tailored for the Rotaract Club of Thane North End. It streamlines event organization and participation, offers an event calendar, easy registration, and volunteer management, fostering active member engagement and connectivity in club activities",
@@ -245,7 +248,7 @@ export const ProjectsData = {
         thumbnail: RctneThumbnail,
         images: [],
         title: "Rotaract Club of Thane North End Website",
-        demoLink: "Unavailable",
+        demoLink: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEz6Hwr0dsV7UFxpaUXMumk%2FRAY%3Fpage-id%3D0%253A1%26node-id%3D2080-230%26scaling%3Dscale-down-width%26starting-point-node-id%3D2080%253A230%26mode%3Ddesign%26t%3DpfHoc8Z83sqaxlRK-1",
         repoLink: "https://github.com/AtharvTam/RCTNE",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
         description: "RAY is an Events Management App, tailored for the Rotaract Club of Thane North End. It streamlines event organization and participation, offers an event calendar, easy registration, and volunteer management, fostering active member engagement and connectivity in club activities",

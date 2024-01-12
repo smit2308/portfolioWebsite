@@ -11,23 +11,39 @@ const Projects = () => {
 
   const changeSection = (section) => {
     if (section === 'coding') {
-      setProjects(ProjectsData['codingProjects']);
+      setUsers(ProjectsData['codingProjects']);
     } else if (section === 'ui') {
-      setProjects(ProjectsData['uiProjects']);
+      setUsers(ProjectsData['uiProjects']);
     } else if (section === 'video') {
-      setProjects(ProjectsData['videoProjects']);
+      setUsers(ProjectsData['videoProjects']);
     }
 
     setActiveButton(section);
   }
 
   const [users, setUsers] = useState(projects);
+  const [searchTerm, setSearchTerm] = useState('');
+ 
+  const Searchproducts = (event) => {
+    setSearchTerm(event.target.value);
+    let searched = '';
+
+    const filteredProducts = projects.filter((proj) =>(
+      searched = proj.title,
+      proj.skills.map((skill) => (
+
+        searched += ' ' + skill.name)),
+      searched.toLowerCase().includes(event.target.value.toLowerCase()) 
+
+    ));
+    setUsers(filteredProducts);
+  };
 
 
   return (
     <section className='w-full  max-container flex flex-col items-center  gap-20 lg:px-16 md:px-10 px-6 my-32 '>
 
-      <div className='w-full flex sm:flex-row flex-col   items-center   '>
+      <div className='w-full flex sm:flex-row justify-between items-center   '>
 
 
 
@@ -51,6 +67,21 @@ const Projects = () => {
 
         </div>
 
+        <div className=  ' w-full  max-w-xl  flex flex-1 items-center max-sm:flex-col gap-8 p-2 border bg-white border-slate-400 rounded-full '>
+        <input 
+        type='text'
+        placeholder='Search by projects, skills, etc'
+        className='px-4 text-lg h-10 focus-visible:outline-none w-full bg-transparent' 
+        value={searchTerm}
+        
+        onChange={Searchproducts}
+      
+        />
+
+      
+
+      </div>
+
 
       </div>
 
@@ -60,16 +91,17 @@ const Projects = () => {
 
       <div className='w-full  grid lg:grid-cols-3 grid-cols-2 sm:gap-y-16 gap-y-8 '>
         {
-          projects.map((project) => (
-
+          users.map((project) => (
+            <div className='w-max'>
             <Link target='_blank' to={`/projects/${project.title}`} state={{ id: project.title }} >
 
               <img src={project.thumbnail} alt={project.title} className=' xl:w-[340px] sm:w-[270px] xs:w-[200px] w-[140px]  rounded-xl 
                       shadow-image2 place-self-center hover:scale-105 hover:shadow-2xl transition-all ease-in-out mx-auto '
 
-                onClick={() => localStorage.setItem('projectData', JSON.stringify(project))}
+              
               />
             </Link>
+            </div>
 
           ))
         }
