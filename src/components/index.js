@@ -5,5 +5,6 @@ import ImagesSlider  from "./ImagesSlider";
 import  HeroParallax  from "./HeroParallax";
 import ScrollParallax from "./ScrollParallax";
 import  DetailsScroll  from "./DetailsScroll";
-
-export { Nav, Button, Collapsible, ImagesSlider, HeroParallax, ScrollParallax, DetailsScroll };
+import Loader from "./Loader";
+import TextGenerateEffect from "./TextGenerateEffect";
+export { Nav, Button, Collapsible, ImagesSlider, HeroParallax, ScrollParallax, DetailsScroll, Loader, TextGenerateEffect };

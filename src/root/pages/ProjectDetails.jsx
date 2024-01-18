@@ -32,7 +32,7 @@ const ProjectDetails = (props) => {
   
 
 
-    console.log(pro);
+
     
   return (
     <section className='h-screen w-full small-container flex  lg:gap-20 gap-10  md:px-10 px-6 lg:my-32 my-20'>

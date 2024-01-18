@@ -138,11 +138,7 @@ export const ProductCard = ({
       key={product.description}
       className="group/product h-96 w-96 relative flex-shrink-0"
     >
-      <Link
-        to={product.demoLink}
-        target="_blank"
-        // className=" group-hover/product:shadow-2xl "
-      >
+       <Link target='_blank' to={`/projects/${product.title}`} state={{ id: product.title }} >
         {/* <img
           src={product.thumbnail}
           height="600"
@@ -151,7 +147,7 @@ export const ProductCard = ({
           alt={product.title}
         /> */}
           <PinContainer
-            title={product.demoLink}
+            title={product.title}
             href={product.demoLink}
             
           >

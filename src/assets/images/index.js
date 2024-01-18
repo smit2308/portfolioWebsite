@@ -18,7 +18,16 @@ import Game_1 from './Game_1.png'
 import Game_2 from './Game_2.png'
 import Ray_1 from './Ray_1.png'
 import Ray1_1 from './Ray1_1.png'
-
+import Social_1 from './Social_1.png'
+import Eyespace_1 from './Eyespace_1.png'
+import Eyelabs_1 from './Eyelabs_1.png'
+import TvishAd_thumbnail from './TvishAd_thumbnail.png'
+import MuskhaveWeb_thumbnail from './MuskhaveWeb_thumbnail.png'
+import EventCoverage_thumbnail from './EventCoverage_thumbnail.png'
+import MuskhaveProduct_thumbnail from './MuskhaveProduct_thumbnail.png'
+import VNN1_thumbnail from './VNN1_thumbnail.png'
+import VNN2_thumbnail from './VNN2_thumbnail.png'
+import VNN3_thumbnail from './VNN3_thumbnail.png'
 
 export {
   AtmThumbnail,
@@ -43,5 +52,14 @@ export {
     Game_2,
     Ray_1,
     Ray1_1,
-   
+    Social_1,
+    Eyespace_1,
+    Eyelabs_1,
+    TvishAd_thumbnail,
+    MuskhaveWeb_thumbnail,
+    EventCoverage_thumbnail,
+    MuskhaveProduct_thumbnail,
+    VNN1_thumbnail,
+    VNN2_thumbnail,
+    VNN3_thumbnail,
 };

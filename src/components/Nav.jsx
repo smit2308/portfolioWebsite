@@ -39,22 +39,24 @@ useEffect(() => {
     {isMenuOpen && (
       <div className="fixed inset-0 bg-black bg-opacity-50 z-10" onClick={toggleMenu}></div>
     )}
-      <div className='absolute  flex justify-between  items-center  z-30  w-full max-container pb-4 pt-4 lg:px-16 md:px-10 px-6 '>
-        <a href='./' className='font-display text-xl max-sm:text-lg sm:text-secondary max-sm:text-primary'>
-          Smit Shewale
-        </a>
+      <div className='absolute     flex justify-between  items-center  z-30  w-full max-container pb-4 pt-4 lg:px-16 md:px-10 px-6 '>
+
         
      
-       <ul className='max-lg:hidden flex flex-row   gap-10 text-primary text-lg font-montserrat font-medium '>
+       <ul className='max-lg:hidden flex flex-row   gap-10 text-secondary text-lg font-montserrat font-medium '>
           {navLinks.map((item)=>(
             <li key={item.label}>
-              <Link to={item.path} className=' '     >
+              <Link to={`/`} className='hover:text-accent transition-all ease-in-out '  scroll={false}   >
                   {item.label}
                 </Link>
             </li>
           )
           )}
         </ul>
+
+        <Link to='./' scroll={false} className='font-display text-xl max-sm:text-lg sm:text-primary hover:text-secondary max-sm:text-primary transition-all ease-in-out  '>
+          Smit Shewale
+        </Link>
 
         <div className='lg:hidden '>
           <button className='hover:scale-110'
@@ -79,7 +81,7 @@ useEffect(() => {
               {navLinks.map((item) => (
                 <li key={item.label} className='w-full text-center '>
                   <Link
-                    to={item.path}
+                    to={`/${item.path}`}
                     // className=' font-monsterrat leading-normal text-lg  text-secondary '
                     onClick={toggleMenu}
                   >

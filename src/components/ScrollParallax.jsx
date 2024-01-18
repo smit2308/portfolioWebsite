@@ -48,7 +48,7 @@ export default function ScrollParallax({ projects}) {
   return (
     <div className="w-full bg-black  text-white ">
       {
-       
+            
             <Image projects={projects} />
             
       }

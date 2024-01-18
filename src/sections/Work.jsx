@@ -5,7 +5,7 @@ import { useEffect } from 'react'
 import { HiArrowSmallDown } from "react-icons/hi2";
 import { HeroParallax } from '../components';
 import { ProjectsData } from '../constants';
-
+import  Projects  from '../root/pages/Projects';
 const Work = () => {
 
 
@@ -58,14 +58,14 @@ const Work = () => {
 
   return (
 
-    <section className='w-full  flex flex-col max-sm:gap-10  lg:px-16 md:px-10 px-6 max-container  '>
-      <div className='w-full flex sm:flex-row flex-col sm:gap-10 md:gap-20 lg:gap-40 sm:justify-between  items-center   '>
+    <section className='w-full min-h-screen  flex flex-col  lg:px-16 md:px-10 px-6 max-container  '>
+      <div className='w-full flex sm:flex-row flex-col sm:gap-10 md:gap-20 lg:gap-40 sm:justify-between  sm:items-end items-center   '>
 
-        <h1 className='font-display italic text-[64px] lg:text-[120px]   text-secondary'>
+        <h1 className=' font-display   text-[64px] sm:text-[100px] lg:text-[140px] leading-none  text-secondary'>
           Work
         </h1>
 
-        <h1 className='  h-fit font-montserrat font-light leadinng-normal sm:text-sm lg:text-lg sm:text-right text-center lg:pr-20 pr-6 text-secondary  sm:border-r-2  sm:border-secondary'>
+        <h1 className='pb-2  font-montserrat font-light leadinng-normal sm:text-sm lg:text-lg sm:text-right text-center lg:pr-20 pr-6 text-secondary  sm:border-r-2  sm:border-secondary'>
           Crafting unique digital experiences as a Web Designer and Developer,
           I also excel in videography and video editing.
           Let's create something extraordinary together
@@ -73,10 +73,10 @@ const Work = () => {
 
       </div>
 
+      <Projects />
 
-
-      <div className='flex sm:flex-row flex-col sm:justify-end max-sm:items-center '>
-        {/* relative */}
+      {/* <div className='flex sm:flex-row flex-col sm:justify-end max-sm:items-center '>
+        relative
         <div className='max-sm:hidden sm:w-max  h-max sm:mt-20 max-sm:items-center  flex sm:flex-col flex-wrap font-montserrat text-sm sm:text-lg lg:text-xl  italic gap-8 border-l-2 sm:border-secondary xl:px-16 sm:px-8 mb-6 '>
 
           <h2 id='coding'>Coding</h2>
@@ -103,7 +103,7 @@ const Work = () => {
             {workFeatured.map((project, index) => (
               <div id={project.id} className='flex lg:flex-row flex-col 2xl:gap-20 gap-10  lg:justify-between items-center mb-10 sm:mb-20  xl:pl-24 sm:pl-6 '>
 
-                {/* <h2 className='font-montserrat text-7xl text-secondary'>{index+1}</h2> */}
+                <h2 className='font-montserrat text-7xl text-secondary'>{index+1}</h2>
                 <img className='h-[320px] md:h-[400px] xl:h-[500px] xl:w-[500px] rounded-xl md:shadow-image1 shadow-image2 object-cover'
                   src={project.thumbnail}
                   alt={project.title} />
@@ -145,7 +145,7 @@ const Work = () => {
         
         
 
-      </div>
+      </div> */}
     </section>
   )
 }

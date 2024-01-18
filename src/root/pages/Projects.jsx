@@ -2,7 +2,8 @@ import React, { useEffect } from 'react'
 import { ProjectsData } from '../../constants'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-
+import { motion, AnimatePresence } from 'framer-motion'
+import { HiArrowRight } from 'react-icons/hi'
 const Projects = () => {
 
   const [activeButton, setActiveButton] = useState('coding');
@@ -20,6 +21,8 @@ const Projects = () => {
 
     setActiveButton(section);
   }
+
+
 
   const [users, setUsers] = useState(projects);
   const [searchTerm, setSearchTerm] = useState('');
@@ -40,10 +43,12 @@ const Projects = () => {
   };
 
 
+  
   return (
-    <section className='w-full  max-container flex flex-col items-center  gap-20 lg:px-16 md:px-10 px-6 my-32 '>
+    // lg:px-16 md:px-10 px-6 my-32 
+    <section className='w-full  max-container flex flex-col max-sm:items-center   lg:gap-20 gap-10 mt-10 '>
 
-      <div className='w-full flex sm:flex-row justify-between items-center   '>
+     
 
 
 
@@ -67,11 +72,11 @@ const Projects = () => {
 
         </div>
 
-        <div className=  ' w-full  max-w-xl  flex flex-1 items-center max-sm:flex-col gap-8 p-2 border bg-white border-slate-400 rounded-full '>
+        {/* <div className=  ' w-full  max-w-sm  flex flex-1 items-center max-sm:flex-col gap-8 p-2  border-b-2  border-slate-400 '>
         <input 
         type='text'
         placeholder='Search by projects, skills, etc'
-        className='px-4 text-lg h-10 focus-visible:outline-none w-full bg-transparent' 
+        className='text-lg h-10 focus-visible:outline-none w-full bg-transparent' 
         value={searchTerm}
         
         onChange={Searchproducts}
@@ -80,7 +85,7 @@ const Projects = () => {
 
       
 
-      </div>
+   
 
 
       </div>
@@ -88,23 +93,48 @@ const Projects = () => {
 
 
       {/* <a href={project.demoLink!= "blank" ? project.demoLink : "/home"} target='_blank' className='w-max h-max self-center mx-auto' > */}
+    {/* grid lg:grid-cols-3 grid-cols-2 sm:gap-y-16 gap-y-8  */}
+      <div className='w-full lg:flex lg:flex-wrap lg:gap-10 lg:justify-between  max-lg:grid  max-lg:grid-cols-2 sm:gap-y-16 gap-y-8   '>
+      <AnimatePresence   mode="wait">
+        {users.map((project, index ) => (
+          <motion.div
+            key={project.title} // Don't forget to add a unique key for each item
+            className='w-max max-lg:mx-auto relative group rounded-lg  bg-black justify-center items-center overflow-hidden shadow-image2'
+            initial={{ opacity: 0}}
+            animate={{ opacity: 1}}
+            exit={{ opacity: 0}}
+            transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: ( index)*0.15  }}
+          >
+            <Link  to={`/projects/${project.title}`} state={{ id: project.title }} scroll={false} >
 
-      <div className='w-full  grid lg:grid-cols-3 grid-cols-2 sm:gap-y-16 gap-y-8 '>
-        {
-          users.map((project) => (
-            <div className='w-max'>
-            <Link target='_blank' to={`/projects/${project.title}`} state={{ id: project.title }} >
-
-              <img src={project.thumbnail} alt={project.title} className=' xl:w-[340px] sm:w-[270px] xs:w-[200px] w-[140px]  rounded-xl 
-                      shadow-image2 place-self-center hover:scale-105 hover:shadow-2xl transition-all ease-in-out mx-auto '
+              <img src={project.thumbnail} alt={project.title} className=' xl:w-[340px] sm:w-[270px] xs:w-[200px] w-[160px]  
+                       place-self-center  transition-all ease-in-out group-hover:opacity-20  duration-500 group-hover:rotate-6 group-hover:scale-125 '
 
               
               />
+              <div className='hidden text-semibold font-montserrat  absolute top-0 left-0 w-full h-full group-hover:flex flex-col text-primary text-xl justify-center items-center gap-4 p-4  transition-all ease-in-out duration-500'>
+                Open
+    
+                <HiArrowRight size={32} color='white' />
+       
+              </div>
+
             </Link>
-            </div>
+            </motion.div>
 
           ))
         }
+
+</AnimatePresence>
+        <div className='w-max max-lg:hidden '>
+           
+              <div  className=' xl:w-[340px] sm:w-[270px] xs:w-[200px] w-[140px]  rounded-xl 
+                      place-self-center  transition-all ease-in-out  '
+
+              
+              />
+      
+            </div>
       </div>
     </section>
   )

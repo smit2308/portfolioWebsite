@@ -25,7 +25,8 @@ export default {
 
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
-        display: ['DM Serif Display', 'serif']
+        display: ['DM Serif Display', 'serif'],
+        grotesk: ['Grotesk', 'sans-serif'],
       },
 
       colors: {

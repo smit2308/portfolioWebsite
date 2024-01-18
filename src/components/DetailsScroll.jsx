@@ -7,6 +7,7 @@ import Card from "./Card";
 import { useEffect, useState } from "react";
 
 const DetailsScroll = ({
+  message,
   users,
   titleComponent,
   section,
@@ -32,23 +33,28 @@ const DetailsScroll = ({
     return isMobile ? [0.7, 0.9] : [1.05, 1];
   };
 
+  const originalPosition = 40;
   const rotate = useTransform(scrollYProgress, [0, 1], [40, 0]);
   const scale = useTransform(scrollYProgress, [0, 1], scaleDimensions());
-  const translate = useTransform(scrollYProgress, [0, 1], [40, -200]);
+  const translate = useTransform(scrollYProgress, [0, 1], [originalPosition, -200]);
+
+  
 
   return (
     <div
-      className=" h-[130vh] flex items-center justify-center relative p-20"
+      className="pt-60 lg:h-[1100px] flex items-center justify-center relative p-20"
       ref={containerRef}
     >
       <div
         className=" w-full relative"
         style={{
-          perspective: "1000px",
+          perspective: "800px",
         }}
       >
         <Header translate={translate} titleComponent={titleComponent} />
+        
         <Card
+        message={message}
           rotate={rotate}
           translate={translate}
           scale={scale}
@@ -62,9 +68,15 @@ const DetailsScroll = ({
 export const Header = ({ translate, titleComponent }) => {
   return (
     <motion.div
+
       style={{
         translateY: translate,
       }}
+      initial={{  translateY:800}}
+      animate={{  translateY: 40}}
+     
+      
+       transition={{duration:2, ease: [0.22, 1, 0.36, 1], delay:1}}
       className="div max-w-5xl mx-auto text-center"
     >
       {titleComponent}
