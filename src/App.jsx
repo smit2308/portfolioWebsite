@@ -7,6 +7,7 @@ import  ProjectDetailsScroll  from "./root/pages/ProjectDetailsScroll"
 import { AnimatePresence } from "framer-motion"
 import { motion } from "framer-motion"
 import { useIsPresent } from "framer-motion"
+import { useEffect } from "react"
 
 export default function App() {
 
@@ -14,31 +15,41 @@ export default function App() {
 
 const isPresent = useIsPresent();
 
+
+useEffect(() => {
+  // Set scroll position to the top without animation
+  document.documentElement.scrollTop = 0;
+  document.body.scrollTop = 0;
+
+  // Disable automatic scroll restoration using history.replaceState
+  history.replaceState(null, null, location.pathname);
+}, [location.pathname, history]);
+
+
+const scrollToSection = (sectionId) => {
+  const section = document.getElementById(sectionId);
+
+  if (section) {
+    section.scrollIntoView({
+      behavior: 'smooth',
+    });
+  }
+};
+
+
   return (
 
-    <main className="flex flex-col items-center w-full h-full ">
+    <main className="flex flex-col items-center w-full h-full bg-primary ">
 
-<motion.div
-        initial={{ scaleX: 1 }}
-        animate={{ scaleX: 0, transition: { duration: 0.5, ease: "circOut"} }}
-        exit={{ scaleX: 0, transition: { duration: 0.5, ease: "circIn" } }}
-        style={{ originX: isPresent ? 0 : 1 }}
-        className=" top-0 left-0 right-0 bottom-0 bg-black z-50 text-center text-5xl"
-      >
 
-        </motion.div>
-      
-      <Nav />
+   
+      <Nav scrollToSection={scrollToSection}/>
      
-        
+       
         {/*  bg-[linear-gradient(to_right,_#F1F1F1_60%,_#b03e49_40%)] */}
        
         <div className="w-full h-full">
-        <AnimatePresence  mode="wait"        onExitComplete={() => {
-            if (typeof window !== "undefined") {
-                window.scrollTo({ top: 0, behavior: "instant" });
-            }
-        }}>
+        <AnimatePresence  mode="wait"       >
           <Routes location={location} key={location.pathname}  >
            
           
@@ -47,14 +58,21 @@ const isPresent = useIsPresent();
               
               {/* <Route path="/projects" element={<Projects />} /> */}
               {/* <Route path="/projects/:id" element={<ProjectDetails />} /> */}
-              <Route path="/" element={<Home />} />
+              <Route path="/" element={<Home scrollToSection={scrollToSection}/>} />
               <Route path="/projects/:id" element={<ProjectDetailsScroll />} />
               {/* <Route path="/connect" element= {<ProjectsParallax />}/> */}
             
           </Routes>
        
           </AnimatePresence>
+
+
        
+        </div>
+
+        <div id="connect" className="w-full  bg-[#1f1f1f] lg:mt-40 mt-20">
+          <Connect />
+
         </div>
        
    

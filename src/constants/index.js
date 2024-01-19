@@ -36,6 +36,14 @@ import {  AtmThumbnail,
 
     } from '../assets/images';
 
+    import {
+        Instagram,
+        Linkedin,
+        Github,
+        Behance,
+        Vimeo,
+    } from '../assets/icons';
+
 import { 
     Skateboard_1,
     Skateboard_2,
@@ -52,12 +60,21 @@ from '../assets/images';
 
 export const navLinks = [
 
-    { href: "#hero", label: "Home", path: "" },
-    { href: "#projects", label: "Work", path: "" },
-    { href: "#about", label: "About", path: "" },
-    { href: "#connect", label: "Connect", path: "" },
+    { href: "#hero", label: "Home" },
+    { href: "#projects", label: "Work"},
+    { href: "#about", label: "About" },
+    { href: "#connect", label: "Connect"},
 
 ]
+
+export const socialLinks = [
+    { href: "https://www.instagram.com/smitzlean/", label: "Instagram", icon: Instagram },
+    { href: "https://www.linkedin.com/in/smit-shewale/", label: "Linkedin", icon: Linkedin },
+    { href: "https://github.com/smit2308/", label: "Github", icon: Github },
+    { href: "https://www.behance.net/smitzzzy2308/", label: "Behance", icon: Behance },
+    { href: "https://vimeo.com/user139028362/", label: "Vimeo", icon: Vimeo },
+]
+
 
 export const workFeatured = [
 
@@ -428,18 +445,15 @@ export const LoadingMessages = [
     "Bending the spoon...",
     "Filtering morale...",
     "Don't think of purple hippos...",
-    "We need a new fuse...",
     "Have a good day.",
     "Upgrading Windows, your PC will restart several times. Sit back and relax.",
     "640K ought to be enough for anybody",
     "The architects are still drafting",
     "The bits are breeding",
-    "We're building the buildings as fast as we can",
     "Would you prefer chicken, steak, or tofu?",
     "(Pay no attention to the man behind the curtain)",
     "...and enjoy the elevator music...",
     "Please wait while the little elves draw your map",
-    "Don't worry - a few bits tried to escape, but we caught them",
     "Would you like fries with that?",
     "Checking the gravitational constant in your locale...",
     "Go ahead -- hold your breath!",
@@ -471,7 +485,7 @@ export const LoadingMessages = [
     "Counting backwards from Infinity",
     "Don't panic...",
     "Embiggening Prototypes",
-    "Do not run! We are your friends!",
+    "Do not run! We are friends!",
     "Do you come here often?",
     "Warning: Don't set yourself on fire.",
     "We're making you a cookie.",
@@ -498,7 +512,6 @@ export const LoadingMessages = [
     "Putting the icing on the cake. The cake is not a lie...",
     "Cleaning off the cobwebs...",
     "Making sure all the i's have dots...",
-    "We need more dilithium crystals",
     "Where did all the internets go",
     "Connecting Neurotoxin Storage Tank...",
     "Granting wishes...",
@@ -511,7 +524,7 @@ export const LoadingMessages = [
     "You edhall not pass! yet..",
     "Load it and they will come",
     "Convincing AI not to turn evil..",
-    "There is no spoon. Because we are not done loading it",
+    "There is no spoon. Because I am not done loading it",
     "Your left thumb points to the right and your right thumb points to the left.",
     "How did you get here?",
     "Wait, do you smell something burning?",
@@ -542,7 +555,7 @@ export const LoadingMessages = [
     "Constructing additional pylons...",
     "Roping some seaturtles...",
     "Locating Jebediah Kerman...",
-    "We are not liable for any broken screens as a result of waiting.",
+    "I am not liable for any broken screens as a result of waiting.",
     "Hello IT, have you tried turning it off and on again?",
     "If you type Google into Google you can break the internet",
     "Well, this is embarrassing.",
@@ -573,14 +586,11 @@ export const LoadingMessages = [
     "Searching for plot device...",
     "Trying to sort in O(n)...",
     "Laughing at your pictures-i mean, loading...",
-    "Sending data to NS-i mean, our servers.",
     "Looking for sense of humour, please hold on.",
     "Please wait while the intern refills his coffee.",
     "A different error message? Finally, some progress!",
-    "Hold on while we wrap up our git together...sorry",
-    "Please hold on as we reheat our coffee",
-    "Kindly hold on as we convert this bug to a feature...",
-    "Kindly hold on as our intern quits vim...",
+    "Please hold on as I reheat my coffee",
+    "Kindly hold on as I convert this bug to a feature...",
     "Winter is coming...",
     "Installing dependencies",
     "Switching to the latest JS framework...",
@@ -608,7 +618,6 @@ export const LoadingMessages = [
     "Bored of slow loading spinner, buy more RAM!",
     "Help, I'm trapped in a loader!",
     "What is the difference btwn a hippo and a zippo? One is really heavy, the other is a little lighter",
-    "Please wait, while we purge the Decepticons for you. Yes, You can thanks us later!",
     "Chuck Norris once urinated in a semi truck's gas tank as a joke....that truck is now known as Optimus Prime.",
     "Chuck Norris doesn’t wear a watch. HE decides what time it is.",
     "Mining some bitcoins...",
@@ -648,11 +657,10 @@ export const LoadingMessages = [
     "Work, work...",
     "Patience! This is difficult, you know...",
     "Discovering new ways of making you wait...",
-    "Your time is very important to us. Please wait while we ignore you...",
     "Time flies like an arrow; fruit flies like a banana",
     "Two men walked into a bar; the third ducked...",
     "Sooooo... Have you seen my vacation photos yet?",
-    "Sorry we are busy catching em' all, we're done soon",
+    "Sorry I am busy catching em' all, we're done soon",
     "TODO: Insert elevator music",
     "Still faster than Windows update",
     "Composer hack: Waiting for reqs to be fetched is less frustrating if you add -vvv to your command.",
@@ -662,7 +670,6 @@ export const LoadingMessages = [
     "We're working very Hard .... Really",
     "Waking up the minions",
     "You are number 2843684714 in the queue",
-    "Please wait while we serve other customers...",
     "Our premium plan is faster",
     "Feeding unicorns...",
     "Rupturing the subspace barrier",

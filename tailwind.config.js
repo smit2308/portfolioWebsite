@@ -8,7 +8,7 @@ export default {
   theme: {
 
     fontSize: {
-      xs: '12px',
+      xs: '16px',
       sm: '16px',
       lg: '20px',
       xl: '24px', 
@@ -32,7 +32,7 @@ export default {
       colors: {
         'primary': "#F1F1F1",
         "secondary": "#333333",
-        "accent": "#C1434C",
+        "accent": "#b7404b",
       },
 
       boxShadow: {

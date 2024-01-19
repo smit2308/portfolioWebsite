@@ -31,12 +31,12 @@ const About = () => {
 
 
   return (
-    <section className='h-full min-h-screen max-container w-full flex flex-col items-center max-container lg:px-16 md:px-10 px-6 max-md:gap-6 gap-16 '>
-        <div className='w-full flex sm:flex-row flex-col-reverse sm:gap-10 md:gap-20 lg:gap-40 sm:justify-between  sm:items-end items-center  '>
+    <section className='h-full lg:min-h-screen max-container w-full flex flex-col items-center max-container lg:px-16 md:px-10 px-6 gap-10  sm:gap-20'>
+        <div className='w-full flex md:flex-row flex-col-reverse gap-6 sm:gap-10  xl:gap-40  sm:justify-between  md:items-end items-center  '>
 
 
 
-<h1 className=' pb-2 h-fit font-montserrat font-light leadinng-normal sm:text-sm lg:text-lg sm:text-left text-center lg:pl-20 pl-6 text-secondary  sm:border-l-2  sm:border-secondary'>
+<h1 className=' h-fit font-montserrat font-light leadinng-normal sm:text-sm lg:text-lg md:text-left text-center xl:pl-20 md:pl-6 text-secondary  md:border-l-2  md:border-secondary'>
 Whether you're looking for information about me, what I can do, or general inquiries, 
 this section is designed to provide clear and helpful responses. 
 Save time and find the information you need
@@ -48,8 +48,8 @@ Save time and find the information you need
 </div>
 
  
-        <div className=' w-full flex lg:flex-row flex-col-reverse md:justify-center lg:gap-12 xl:gap-20 gap-10 items-center'>
-            <div className=' max-w-xl lg:max-w-3xl  w-full  flex h-full overflow-hidden  justify-center  rounded-lg lg:bg-black border-[12px] lg:border-[20px] border-black'> 
+        <div className=' w-full flex lg:flex-row flex-col-reverse md:justify-center  gap-20 items-center'>
+            <div className=' max-w-2xl lg:max-w-3xl  w-full  flex h-full overflow-hidden  justify-center  rounded-lg lg:bg-black border-[12px] lg:border-[20px] border-black'> 
                 {/* <img src={About_image} alt='about' className='w-full md:h-[600px] h-[300px] object-cover rounded-xl' /> */}
                 <div className="elfsight-app-ca5e72b0-9f8a-4038-b264-2d16ced03ce4 z-0  object-cover bg-black" data-elfsight-app-lazy></div>
                 <div className='absolute self-end  sel w-60 h-2 pb-10 bg-black z-10'></div>

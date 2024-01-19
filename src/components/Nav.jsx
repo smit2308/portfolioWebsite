@@ -4,14 +4,41 @@ import React from 'react'
 import { navLinks } from '../constants'
 import Button from './Button';
 import { Link } from 'react-router-dom'
-
+import { cn } from "../../utils/cn";
 import {Routes, Route} from 'react-router-dom';
 import {useRef, useEffect, useState } from 'react'
-
+import { HiOutlineX } from "react-icons/hi";
 import { HiBars3 } from "react-icons/hi2";
+import {
+  motion,
+  AnimatePresence,
+  useScroll,
+  useMotionValueEvent,
+  useIsPresent,
+  useAnimation
+} from "framer-motion";
 
 
-const Nav = () => {
+const Nav = ({ scrollToSection }) => {
+
+  const { scrollYProgress } = useScroll();
+ 
+  const [visible, setVisible] = useState(false);
+ 
+  useMotionValueEvent(scrollYProgress, "change", (current) => {
+    let direction = current - scrollYProgress.getPrevious();
+ 
+    if (scrollYProgress.get() < 0.05) {
+      setVisible(false);
+    } else {
+      if (direction < 0) {
+        setVisible(true);
+      } else {
+        setVisible(false);
+      }
+    }
+  });
+
 
 const [isMenuOpen, setIsMenuOpen] = useState(false);
 const menuRef = useRef();
@@ -19,6 +46,29 @@ const menuRef = useRef();
 const toggleMenu = () => {
   setIsMenuOpen(!isMenuOpen);
 };
+
+const menuAnimation = useAnimation();
+
+// Trigger animations based on isMenuOpen
+const animateMenu = async () => {
+  if (isMenuOpen) {
+    await menuAnimation.start({
+      scaleX: '100%',
+      transition: { duration: 0.4, ease: 'circOut', delay: 0 },
+    });
+  } else {
+    await menuAnimation.start({
+      scaleX: '0%',
+      transition: { duration: 0.4, ease: 'circIn', delay: 0 },
+    });
+  }
+};
+
+  // Call animateMenu whenever isMenuOpen changes
+  useEffect(() => {
+    animateMenu();
+  }, [isMenuOpen]);
+
 
 const handleClickOutside = (event) => {
   if (menuRef.current && !menuRef.current.contains(event.target)) {
@@ -34,19 +84,39 @@ useEffect(() => {
 }, []);
 
 
+const isPresent = useIsPresent();
+
   return (
     <>
+      <AnimatePresence mode="wait">
     {isMenuOpen && (
-      <div className="fixed inset-0 bg-black bg-opacity-50 z-10" onClick={toggleMenu}></div>
+         <motion.div
+         className="fixed inset-0 backdrop-blur-md z-20"
+         onClick={toggleMenu}
+         exit={{ opacity: 0, transition: { duration: 0.2 } }}
+       />
     )}
-      <div className='absolute     flex justify-between  items-center  z-30  w-full max-container pb-4 pt-4 lg:px-16 md:px-10 px-6 '>
+          <motion.div
+        initial={{
+          opacity: 1,
+          y: -100,
+        }}
+        animate={{
+          y: visible ? 0 : -100,
+          opacity: visible ? 1 : 0,
+        }}
+        transition={{
+          duration: 0.2,
+        }} className='max-md:hidden fixed backdrop-blur-xl py-4 rounded-xl shadow-lg flex    max-md:w-full max-md:max-container  lg:px-16 md:px-10 px-6 z-30'>
 
         
-     
-       <ul className='max-lg:hidden flex flex-row   gap-10 text-secondary text-lg font-montserrat font-medium '>
+      {/* <Link to='/'  className='font-display text-xl max-sm:text-lg  hover:text-secondary  transition-all ease-in-out  '>
+          Smit Shewale
+        </Link> */}
+       <ul className='max-md:hidden flex flex-row   gap-10 text-gray-400 text-lg font-montserrat font-medium  '>
           {navLinks.map((item)=>(
             <li key={item.label}>
-              <Link to={`/`} className='hover:text-accent transition-all ease-in-out '  scroll={false}   >
+              <Link to={`/`}  className='hover:text-black transition-all ease-in-out '  onClick={() => scrollToSection(item.href.slice(1))}  >
                   {item.label}
                 </Link>
             </li>
@@ -54,56 +124,58 @@ useEffect(() => {
           )}
         </ul>
 
-        <Link to='./' scroll={false} className='font-display text-xl max-sm:text-lg sm:text-primary hover:text-secondary max-sm:text-primary transition-all ease-in-out  '>
-          Smit Shewale
-        </Link>
+            {/* Collapsible Mobile Links */}
 
-        <div className='lg:hidden '>
-          <button className='hover:scale-110'
+
+     </motion.div>
+
+     <button className='hover:scale-110 md:hidden fixed  right-6 top-6  p-2 rounded-lg z-30  bg-primary border shadow-lg'
             onClick={toggleMenu}
             >          
-            <HiBars3 size={28} color='whitesmoke'/>
+            <HiBars3 size={28} color='#1f1f1f'/>
           </button>
 
-
-
-        </div>
+      
        
 
-       {isMenuOpen && (
-          <div ref={menuRef} 
-              className='absolute left-0 top-0 w-full rounded-b-lg shadow-xl bg-primary lg:hidden  shadow-nav -mt-1 pb-10 '>
-                 <a href='./' 
-                  className='p-10 font-display text-xl text-center max-sm:text-lg sm:text-secondary '>
-          Smit Shewale
-        </a>
-            <ul className='flex flex-col gap-4'>
-              {navLinks.map((item) => (
-                <li key={item.label} className='w-full text-center '>
-                  <Link
-                    to={`/${item.path}`}
-                    // className=' font-monsterrat leading-normal text-lg  text-secondary '
-                    onClick={toggleMenu}
-                  >
-                    {item.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </div>
-        )}
+          
+          <motion.div
+      ref={menuRef}
+      initial={{ scaleX: '0%' }}
+      animate={menuAnimation}
+      style={{ originX: isPresent ? 1 : 0 }}
+      className='fixed h-screen w-[240px] text-secondary bg-primary shadow-2xl right-0 top-0 pt-24 px-8 flex flex-col gap-10 rounded-b-lg backdrop-blur-xl lg:hidden shadow-nav -mt-1 z-30'
+    >
+      <button
+        className='hover:scale-110 md:hidden fixed right-6 top-6 p-2 z-30'
+        onClick={toggleMenu}
+      >
+        <HiOutlineX size={28} color='#b7404b' />
+      </button>
+      <ul className='flex flex-col gap-4'>
+        {navLinks.map((item, index) => (
+          <motion.li
+            key={item.label}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1, transition: { duration: 0.4, ease: 'circOut', delay: index * 0.2 } }}
+            exit={{ opacity: 0, transition: { duration: 0.2 } }}
+            className='w-full text-right font-montserrat text-xl'
+          >
+            <Link
+              to={`/`}
+              onClick={() => {
+                toggleMenu();
+                scrollToSection(item.href.slice(1));
+              }}
+            >
+              {item.label}
+            </Link>
+          </motion.li>
+        ))}
+      </ul>
+    </motion.div>
 
-        
-                
-      
-
-
-                  {/* Collapsible Mobile Links */}
-
-
-     </div>
-
-
+</AnimatePresence>
      </>
   )
 }

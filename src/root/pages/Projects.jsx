@@ -46,7 +46,7 @@ const Projects = () => {
   
   return (
     // lg:px-16 md:px-10 px-6 my-32 
-    <section className='w-full  max-container flex flex-col max-sm:items-center   lg:gap-20 gap-10 mt-10 '>
+    <section className='w-full lg:min-h-screen min-h-[540px] max-container flex flex-col max-sm:items-center   lg:gap-20 gap-10  '>
 
      
 
@@ -94,32 +94,42 @@ const Projects = () => {
 
       {/* <a href={project.demoLink!= "blank" ? project.demoLink : "/home"} target='_blank' className='w-max h-max self-center mx-auto' > */}
     {/* grid lg:grid-cols-3 grid-cols-2 sm:gap-y-16 gap-y-8  */}
-      <div className='w-full lg:flex lg:flex-wrap lg:gap-10 lg:justify-between  max-lg:grid  max-lg:grid-cols-2 sm:gap-y-16 gap-y-8   '>
+      <div className='w-full lg:flex lg:flex-wrap lg:gap-10 lg:justify-between  max-lg:grid  max-lg:grid-cols-2 sm:gap-y-16 gap-y-8 gap-x-6  '>
       <AnimatePresence   mode="wait">
         {users.map((project, index ) => (
           <motion.div
             key={project.title} // Don't forget to add a unique key for each item
-            className='w-max max-lg:mx-auto relative group rounded-lg  bg-black justify-center items-center overflow-hidden shadow-image2'
+            className='w-max max-lg:mx-auto relative group rounded-lg  bg-black justify-center items-center overflow-hidden shadow-image2 '
             initial={{ opacity: 0}}
             animate={{ opacity: 1}}
             exit={{ opacity: 0}}
             transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: ( index)*0.15  }}
           >
-            <Link  to={`/projects/${project.title}`} state={{ id: project.title }} scroll={false} >
+            <Link  to={`/projects/${project.title}`} state={{ id: project.title }} scroll={false} className='flex flex-col gap-10 justify-center items-center'>
 
-              <img src={project.thumbnail} alt={project.title} className=' xl:w-[340px] sm:w-[270px] xs:w-[200px] w-[160px]  
+              <img src={project.thumbnail} alt={project.title} className=' xl:w-[340px] sm:w-[270px] xs:w-[200px] w-[150px]  
                        place-self-center  transition-all ease-in-out group-hover:opacity-20  duration-500 group-hover:rotate-6 group-hover:scale-125 '
 
               
               />
-              <div className='hidden text-semibold font-montserrat  absolute top-0 left-0 w-full h-full group-hover:flex flex-col text-primary text-xl justify-center items-center gap-4 p-4  transition-all ease-in-out duration-500'>
+
+ 
+              <div className='hidden text-semibold font-montserrat  absolute top-0 left-0 w-full h-full group-hover:flex  text-primary text-xl justify-center items-center gap-4 p-4  transition-all ease-in-out duration-500'>
                 Open
     
                 <HiArrowRight size={32} color='white' />
        
               </div>
 
+              
+
+
+
             </Link>
+            
+       
+  
+           
             </motion.div>
 
           ))

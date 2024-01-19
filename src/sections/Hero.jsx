@@ -30,7 +30,7 @@ const Hero = () => {
   // }, []);
 
   return (
-    <motion.div className='max-container h-screen w-full flex flex-row max-sm:flex-col items-center justify-between max-sm:justify-center  lg:pl-16 md:pl-10 pl-6 max-sm:p-0  '>
+    <motion.div className='max-container h-screen w-full  flex flex-row max-sm:flex-col items-center justify-between max-sm:justify-center  lg:pl-16 md:pl-10 pl-6 max-sm:p-0  '>
       
             <motion.div 
       initial={{opacity: 0}}
@@ -78,7 +78,7 @@ const Hero = () => {
       initial={{translateX: 1000}}
       animate={{translateX: 0}}
       transition={{duration:2, ease: [0.22, 1, 0.36, 1]}}
-      className='bg-[#b03e49] h-screen flex  xl:w-[1100px] lg:w-[800px] sm:w-[600px]  max-sm:w-screen  max-sm:z-0 max-sm:absolute  max-sm:brightness-75 ' >
+      className='bg-[#b03e49] h-screen  flex  xl:w-[1100px] lg:w-[800px] sm:w-[600px]  max-sm:w-screen  max-sm:z-0 max-sm:absolute  max-sm:brightness-75 ' >
 
         <img className='sm:object-cover w-full   max-lg:hidden'
         src={Myimage}/>

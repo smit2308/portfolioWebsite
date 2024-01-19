@@ -7,4 +7,5 @@ import ScrollParallax from "./ScrollParallax";
 import  DetailsScroll  from "./DetailsScroll";
 import Loader from "./Loader";
 import TextGenerateEffect from "./TextGenerateEffect";
-export { Nav, Button, Collapsible, ImagesSlider, HeroParallax, ScrollParallax, DetailsScroll, Loader, TextGenerateEffect };
+import ScrollToTop from "./ScrollToTop";
+export { Nav, Button, Collapsible, ImagesSlider, HeroParallax, ScrollParallax, DetailsScroll, Loader, TextGenerateEffect, ScrollToTop };

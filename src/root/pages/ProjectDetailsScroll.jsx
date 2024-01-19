@@ -15,6 +15,7 @@ import {TextGenerateEffect} from "../../components";
 import { LoadingMessages } from "../../constants";
 
 
+
 const ProjectDetailsScroll = (props) => {
 
     const { id} = useParams();
@@ -32,6 +33,7 @@ const ProjectDetailsScroll = (props) => {
     }
     , [id])
    
+    
 
   
     // const [scrollPosition, setScrollPosition] = useState(0);
@@ -61,7 +63,7 @@ const ProjectDetailsScroll = (props) => {
               <>
                 <h1 className="text-3xl font-display font-semibold text-secondary ">
                   Project <br />
-                  <span className="text-4xl md:text-[6rem] font-bold  leading-none">
+                  <span className="text-4xl md:text-[6rem] sm:text-[4rem] font-bold  leading-none">
                   {proj.title}
                   </span>
                 </h1>
@@ -69,7 +71,7 @@ const ProjectDetailsScroll = (props) => {
             }
           />
 
-            <div className='flex flex-col small-container gap-8 items-center text-center my-32'>
+            <div className='flex flex-col small-container gap-8 items-center text-center mt-32'>
      
      
           

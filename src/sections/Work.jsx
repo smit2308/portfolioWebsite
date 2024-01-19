@@ -58,14 +58,14 @@ const Work = () => {
 
   return (
 
-    <section className='w-full min-h-screen  flex flex-col  lg:px-16 md:px-10 px-6 max-container  '>
-      <div className='w-full flex sm:flex-row flex-col sm:gap-10 md:gap-20 lg:gap-40 sm:justify-between  sm:items-end items-center   '>
+    <section className='w-full lg:min-h-screen  flex flex-col  lg:px-16 md:px-10 px-6 max-container gap-10 sm:gap-20 '>
+      <div className='w-full flex md:flex-row flex-col gap-6 sm:gap-10  xl:gap-40 md:justify-between  md:items-end items-center  '>
 
         <h1 className=' font-display   text-[64px] sm:text-[100px] lg:text-[140px] leading-none  text-secondary'>
           Work
         </h1>
 
-        <h1 className='pb-2  font-montserrat font-light leadinng-normal sm:text-sm lg:text-lg sm:text-right text-center lg:pr-20 pr-6 text-secondary  sm:border-r-2  sm:border-secondary'>
+        <h1 className=' font-montserrat font-light leadinng-normal sm:text-sm lg:text-lg md:text-right text-center xl:pr-20 md:pr-6 text-secondary  md:border-r-2  md:border-secondary'>
           Crafting unique digital experiences as a Web Designer and Developer,
           I also excel in videography and video editing.
           Let's create something extraordinary together

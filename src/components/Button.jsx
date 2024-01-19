@@ -11,7 +11,7 @@ const Button = ({ onClick, logoTilt, label, iconURL, iconReact, bgColor, textCol
   return (
 
     <button
-      className={`flex flex-row min-w-40  border border-slate-100  justify-center gap-2 items-center px-[24px] py-[14px]  text-lg max-sm:text-sm  rounded-[10px] font-medium shadow-lg transition duration-300 ease-in-out
+      className={`flex flex-row min-w-40  border border-slate-200  justify-center gap-2 items-center px-[24px] py-[14px]  text-lg max-sm:text-sm  rounded-[10px] font-medium shadow-xl transition duration-300 ease-in-out
                 ${customHover ? customHover : " hover:bg-secondary hover:text-primary"}
                 ${bgColor ? `${bgColor} $
                   ${textColor ? textColor : "text-secondary"}`
