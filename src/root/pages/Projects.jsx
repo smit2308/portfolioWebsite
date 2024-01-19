@@ -105,7 +105,7 @@ const Projects = () => {
             exit={{ opacity: 0}}
             transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: ( index)*0.15  }}
           >
-            <Link  to={`/projects/${project.title}`} state={{ id: project.title }} scroll={false} className='flex flex-col gap-10 justify-center items-center'>
+            <Link  to={`/projects/${project.title}`} state={{ id: project.title }}  className='flex flex-col gap-10 justify-center items-center'>
 
               <img src={project.thumbnail} alt={project.title} className=' xl:w-[340px] sm:w-[270px] xs:w-[200px] w-[150px]  
                        place-self-center  transition-all ease-in-out group-hover:opacity-20  duration-500 group-hover:rotate-6 group-hover:scale-125 '

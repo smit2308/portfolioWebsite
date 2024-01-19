@@ -57,10 +57,10 @@ const Card = ({
                      
             {users.demoLink != "Unavailable" ? 
             (
-              <div  className="flex flex-col items-center justify-center w-full h-fit   rounded-xl ">
+              <div  className="flex flex-col items-center justify-center w-full h-full   rounded-xl ">
                   
                   {users.section == 'ui' ?
-                    <iframe  className='w-full' height={640} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEz6Hwr0dsV7UFxpaUXMumk%2FRAY%3Ftype%3Ddesign%26node-id%3D116-659%26t%3DNbwQ1HfJ5xCTQszr-1%26scaling%3Dscale-down%26page-id%3D116%253A372%26starting-point-node-id%3D116%253A659%26mode%3Ddesign" allowfullscreen></iframe>
+                    <iframe  className='w-full' height={640} src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEz6Hwr0dsV7UFxpaUXMumk%2FRAY%3Ftype%3Ddesign%26node-id%3D116-659%26t%3DrxumD7Fmj0atrB59-1%26scaling%3Dscale-down%26page-id%3D116%253A372%26starting-point-node-id%3D116%253A659%26show-proto-sidebar%3D1%26mode%3Ddesign" allowFullscreen></iframe>
                     :
                     <iframe  className='w-full h-full'  src={users.demoLink} async allowFullScreen></iframe> 
                   }

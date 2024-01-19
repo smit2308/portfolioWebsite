@@ -1,5 +1,5 @@
 import loader from './loader.svg';
-import Linkedin from './linkedin.svg';
+import Linkedin from './Linkedin.svg';
 import Instagram from './Instagram.svg';
 import Github from './Github.svg';
 import Vimeo from './Vimeo.svg';
