@@ -58,7 +58,7 @@ const Work = () => {
 
   return (
 
-    <section className='w-full lg:min-h-screen  flex flex-col  lg:px-16 md:px-10 px-6 max-container gap-10 sm:gap-20 '>
+    <section className='w-full flex flex-col  lg:px-16 md:px-10 px-6 max-container gap-10 sm:gap-20 '>
       <div className='w-full flex md:flex-row flex-col gap-6 sm:gap-10  xl:gap-40 md:justify-between  md:items-end items-center  '>
 
         <h1 className=' font-display   text-[64px] sm:text-[100px] lg:text-[140px] leading-none  text-secondary'>
@@ -72,9 +72,9 @@ const Work = () => {
         </h1>
 
       </div>
-
+      <div className='w-full h-max'>
       <Projects />
-
+      </div>
       {/* <div className='flex sm:flex-row flex-col sm:justify-end max-sm:items-center '>
         relative
         <div className='max-sm:hidden sm:w-max  h-max sm:mt-20 max-sm:items-center  flex sm:flex-col flex-wrap font-montserrat text-sm sm:text-lg lg:text-xl  italic gap-8 border-l-2 sm:border-secondary xl:px-16 sm:px-8 mb-6 '>

@@ -3,6 +3,9 @@ import React, { useRef } from "react";
 import { useScroll, useTransform, motion, AnimatePresence } from "framer-motion";
 import { cn } from "../../utils/cn";
 import Card from "./Card";
+import Button from "./Button";
+import { HiArrowTopRightOnSquare } from "react-icons/hi2";
+
 
 import { useEffect, useState } from "react";
 
@@ -30,28 +33,29 @@ const DetailsScroll = ({
   }, []);
 
   const scaleDimensions = () => {
-    return isMobile ? [1, 0.9] : [1.05, 1];
+    return isMobile ? [1.1, 1] : [1.05, 1];
   };
 
-  const originalPosition = isMobile? 40 :40;
-  const rotate = useTransform(scrollYProgress, [0, 1], [40, 0]);
+  const originalPosition = isMobile? 60 :40;
+  const rotate = useTransform(scrollYProgress, [0, 1], isMobile? [50,0] : [40, 0]);
   const scale = useTransform(scrollYProgress, [0, 1], scaleDimensions());
-  const translate = useTransform(scrollYProgress, [0, 1], [originalPosition, isMobile? -200:-400]);
+  const translate = useTransform(scrollYProgress, [0, 1], [originalPosition, isMobile? -400:-400]);
 
   
 
   return (
+    <>
     <div
-      className="pt-96 md:pt-60 h-[130vh] flex items-center justify-center relative py-20 lg:px-20 md:px-6  bg-red-200"
+      className="pt-[30vh] sm:pt-[40vh]  h-max bg-red-200 flex flex-col items-center justify-center relative sm:px-6 max-sm:px-3 lg:px-16    "
       ref={containerRef}
     >
       <div
         className=" w-full relative bg-green-200"
         style={{
-          perspective: "900px",
+          perspective: "1200px",
         }}
       >
-        <Header translate={translate} titleComponent={titleComponent} />
+        <Header translate={translate} titleComponent={titleComponent} isMobile={isMobile}/>
         
         <Card
         message={message}
@@ -60,12 +64,17 @@ const DetailsScroll = ({
           scale={scale}
           users={users}
         />
+
+        
       </div>
+   
     </div>
+    <Content  users={users} />
+    </>
   );
 };
 
-export const Header = ({ translate, titleComponent }) => {
+export const Header = ({ translate, titleComponent, isMobile }) => {
   return (
     <motion.div
 
@@ -73,7 +82,7 @@ export const Header = ({ translate, titleComponent }) => {
         translateY: translate,
       }}
       initial={{  translateY:800}}
-      animate={{  translateY: 40}}
+      animate={{  translateY: isMobile? 60 : 40}}
      
       
        transition={{duration:2, ease: [0.22, 1, 0.36, 1], delay:1}}
@@ -84,6 +93,67 @@ export const Header = ({ translate, titleComponent }) => {
   );
 };
 
+export const Content = ({ translate, users }) => {
+  return (
+    <motion.div
+      style={{
+        translateY: translate,
+      }}
+      className="div max-w-xs sm:max-w-5xl mx-auto text-center px-6 lg:px-20 mt-20  relative z-30 "
+    >
+     
+     <div className='flex flex-col small-container gap-8 items-center text-center '>
+     
+     
+          
+     <div className='flex flex-row gap-4'>
+       
+       {users.demoLink !== 'Unavailable' ? (
+         <a href={users.demoLink} target='_blank'>
+         <Button label='Visit' 
+           bgColor={'bg-none'} 
+           iconReact={<HiArrowTopRightOnSquare />}/>
+         </a>
+       )
+       : ('')}
+
+     {users.repoLink !== 'Unavailable' ? (
+        <a href={users.repoLink} target='_blank'>
+                   <Button label='Github' 
+                   bgColor={'bg-secondary'}
+                   textColor={'text-primary'}
+                   customHover={'hover:bg-green-800 '}
+                   iconReact={<HiArrowTopRightOnSquare />} />
+                   </a>
+       
+       )
+       : ('')}
+       
+
+
+
+     </div>
+
+     <div className='flex flex-col gap-2'>
+       <h2 className='sm:text-xl max-sm:text-lg font-medium text-secondary'>Description</h2>
+       <p className='text-secondary sm:text-lg max-sm:text-sm font-light'>{users.description}</p>
+     </div>
+
+     <div className='flex flex-col gap-4'>
+       <h2 className='sm:text-xl max-sm:text-lg font-medium text-secondary'>Skills</h2>
+       <div className='flex flex-row gap-4'>
+         {
+           users.skills.map((skill) => (
+             <img key={skill.name} src={skill.logo} alt={skill.name} className='w-[48px] max-sm:w-[24px]' />
+           ))
+         } 
+       </div>
+     </div>
+
+   </div>
+    </motion.div>
+  );
+};
 
 
 

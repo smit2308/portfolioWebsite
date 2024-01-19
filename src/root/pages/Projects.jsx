@@ -46,7 +46,7 @@ const Projects = () => {
   
   return (
     // lg:px-16 md:px-10 px-6 my-32 
-    <section className='w-full lg:min-h-screen min-h-[540px] max-container flex flex-col max-sm:items-center   lg:gap-20 gap-10  '>
+    <section className='w-full h-full  flex flex-col max-sm:items-center   lg:gap-20 gap-10  '>
 
      
 
@@ -99,7 +99,7 @@ const Projects = () => {
         {users.map((project, index ) => (
           <motion.div
             key={project.title} // Don't forget to add a unique key for each item
-            className='w-max max-lg:mx-auto relative group rounded-lg  bg-black justify-center items-center overflow-hidden shadow-image2 '
+            className='w-max  max-lg:mx-auto relative group rounded-lg  bg-black justify-center items-center overflow-hidden shadow-image2 '
             initial={{ opacity: 0}}
             animate={{ opacity: 1}}
             exit={{ opacity: 0}}

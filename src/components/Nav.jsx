@@ -28,10 +28,10 @@ const Nav = ({ scrollToSection }) => {
   useMotionValueEvent(scrollYProgress, "change", (current) => {
     let direction = current - scrollYProgress.getPrevious();
  
-    if (scrollYProgress.get() < 0.05) {
+    if (scrollYProgress.get() < 0) {
       setVisible(false);
     } else {
-      if (direction < 0) {
+      if (direction > 0) {
         setVisible(true);
       } else {
         setVisible(false);

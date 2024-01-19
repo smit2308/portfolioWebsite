@@ -31,7 +31,7 @@ const About = () => {
 
 
   return (
-    <section className='h-full lg:min-h-screen max-container w-full flex flex-col items-center max-container lg:px-16 md:px-10 px-6 gap-10  sm:gap-20'>
+    <section className='h-full  max-container w-full flex flex-col items-center max-container lg:px-16 md:px-10 px-6 gap-10  sm:gap-20'>
         <div className='w-full flex md:flex-row flex-col-reverse gap-6 sm:gap-10  xl:gap-40  sm:justify-between  md:items-end items-center  '>
 
 

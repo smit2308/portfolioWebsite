@@ -36,7 +36,7 @@ const Hero = () => {
       initial={{opacity: 0}}
       animate={{opacity: 1}}
       transition={{duration:4, ease: [0.22, 1, 0.36, 1]}}
-      className='h-screen w-full flex flex-col justify-between max-sm:items-center  pr-6   overflow-hidden transition-all ease-in-out delay-100 max-sm:z-10  max-sm:px-6 '>
+      className='h-full w-full flex flex-col justify-between max-sm:items-center  pr-6   overflow-hidden transition-all ease-in-out delay-100 max-sm:z-10  max-sm:px-6 '>
 
         <div className='my-auto flex flex-col gap-2 max-sm:items-center max-sm:gap-2'>
         <h2 className='font-montserrat  lg:text-xl sm:text-sm max-sm:text-xs max-sm:text-center text-secondary max-sm:text-primary font-light leading-normal '>
@@ -78,9 +78,9 @@ const Hero = () => {
       initial={{translateX: 1000}}
       animate={{translateX: 0}}
       transition={{duration:2, ease: [0.22, 1, 0.36, 1]}}
-      className='bg-[#b03e49] h-screen  flex  xl:w-[1100px] lg:w-[800px] sm:w-[600px]  max-sm:w-screen  max-sm:z-0 max-sm:absolute  max-sm:brightness-75 ' >
+      className='bg-[#b03e49] h-full overflow-hidden  flex  xl:w-[1100px] lg:w-[800px] sm:w-[600px]  max-sm:w-screen  max-sm:z-0 max-sm:absolute  max-sm:brightness-75 ' >
 
-        <img className='sm:object-cover w-full   max-lg:hidden'
+        <img className='sm:object-cover object-left  w-full   max-lg:hidden'
         src={Myimage}/>
 
         <img className='sm:object-cover w-full object-left  lg:hidden  max-sm:object-cover   '

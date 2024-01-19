@@ -51,7 +51,7 @@ const ProjectDetailsScroll = (props) => {
     animate={{translateY: "0%"}}
     transition={{duration: 2, ease: 'easeOut'}}
     exit={{opacity:1}}
-    className="flex flex-col  w-full overflow-hidden max-container">
+    className="flex flex-col  w-full overflow-hidden max-container ">
       
 
             
@@ -69,57 +69,10 @@ const ProjectDetailsScroll = (props) => {
                 </h1>
               </>
             }
+
+
           />
 
-            <div className='flex flex-col small-container gap-8 items-center text-center mt-32'>
-     
-     
-          
-        <div className='flex flex-row gap-4'>
-          
-          {proj.demoLink !== 'Unavailable' ? (
-            <a href={proj.demoLink} target='_blank'>
-            <Button label='Visit' 
-              bgColor={'bg-none'} 
-              iconReact={<HiArrowTopRightOnSquare />}/>
-            </a>
-          )
-          : ('')}
-
-        {proj.repoLink !== 'Unavailable' ? (
-           <a href={proj.repoLink} target='_blank'>
-                      <Button label='Github' 
-                      bgColor={'bg-secondary'}
-                      textColor={'text-primary'}
-                      customHover={'hover:bg-green-800 '}
-                      iconReact={<HiArrowTopRightOnSquare />} />
-                      </a>
-          
-          )
-          : ('')}
-          
-
-
-
-        </div>
-
-        <div className='flex flex-col gap-2'>
-          <h2 className='sm:text-xl max-sm:text-lg font-medium text-secondary'>Description</h2>
-          <p className='text-secondary sm:text-lg max-sm:text-sm font-light'>{proj.description}</p>
-        </div>
-
-        <div className='flex flex-col gap-4'>
-          <h2 className='sm:text-xl max-sm:text-lg font-medium text-secondary'>Skills</h2>
-          <div className='flex flex-row gap-4'>
-            {
-              proj.skills.map((skill) => (
-                <img key={skill.name} src={skill.logo} alt={skill.name} className='w-[48px] max-sm:w-[24px]' />
-              ))
-            } 
-          </div>
-        </div>
- 
-      </div>
 
 
 
