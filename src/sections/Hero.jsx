@@ -72,7 +72,7 @@ const Hero = () => {
       initial={{translateX: 1000}}
       animate={{translateX: 0}}
       transition={{duration:2, ease: [0.22, 1, 0.36, 1]}}
-      className='bg-[#b03e49] h-full overflow-hidden  flex  xl:w-[1100px] lg:w-[800px] sm:w-[600px]  max-sm:w-screen  max-sm:z-0 max-sm:absolute  max-sm:brightness-75 ' >
+      className='bg-[#b03e49] h-screen overflow-hidden  flex  xl:w-[1100px] lg:w-[800px] sm:w-[600px]  max-sm:w-screen  max-sm:z-0 max-sm:absolute  max-sm:brightness-75 ' >
 
         <img className='sm:object-cover object-left-top  w-full   max-lg:hidden '
         src={Myimage}/>
