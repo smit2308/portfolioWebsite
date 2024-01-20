@@ -68,11 +68,12 @@ const Card = ({
  
               </div>
 
-              ) : (
+              ) : (''
             
-                <div className='flex w-full h-full items-center justify-center text-white'>
-                  No Prototype
-                </div>)
+                // <div className='flex w-full h-full items-center justify-center text-white'>
+                //   {'prototype not available :('}
+                // </div>
+                )
             }
            
               {users.images[0] && <img className=' w-full object-cover' src={users.images[0]}/>}

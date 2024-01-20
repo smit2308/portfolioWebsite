@@ -1,6 +1,6 @@
 import React from 'react'
 import { Myimage, Myimage_small } from '../assets/images'
-import Button from '../components/Button'
+import {Button} from '../components'
 import { useTypewriter, Cursor } from 'react-simple-typewriter'
 import TextTransition, { presets } from 'react-text-transition';
 import { HiArrowSmallDown } from "react-icons/hi2";
@@ -21,13 +21,7 @@ const Hero = () => {
 
   const [index, setIndex] = React.useState(0);
 
-  // useEffect(() => {
-  //   const intervalId = setInterval(
-  //     () => setIndex((index) => index + 1),
-  //     3000, // every 3 seconds
-  //   );
-  //   return () => clearTimeout(intervalId);
-  // }, []);
+
 
   return (
     <motion.div className='max-container h-screen w-full  flex flex-row max-sm:flex-col items-center justify-between max-sm:justify-center  lg:pl-16 md:pl-10 pl-6 max-sm:p-0  '>
@@ -80,7 +74,7 @@ const Hero = () => {
       transition={{duration:2, ease: [0.22, 1, 0.36, 1]}}
       className='bg-[#b03e49] h-full overflow-hidden  flex  xl:w-[1100px] lg:w-[800px] sm:w-[600px]  max-sm:w-screen  max-sm:z-0 max-sm:absolute  max-sm:brightness-75 ' >
 
-        <img className='sm:object-cover object-left  w-full   max-lg:hidden'
+        <img className='sm:object-cover object-left  w-full   max-lg:hidden '
         src={Myimage}/>
 
         <img className='sm:object-cover w-full object-left  lg:hidden  max-sm:object-cover   '

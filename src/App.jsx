@@ -4,9 +4,7 @@ import {Hero, Work, Connect} from "./sections"
 import Nav from "./components/Nav"
 import Home from "./root/pages/Home"
 import  ProjectDetailsScroll  from "./root/pages/ProjectDetailsScroll"
-import { AnimatePresence } from "framer-motion"
-import { motion } from "framer-motion"
-import { useIsPresent } from "framer-motion"
+import {motion, useIsPresent, AnimatePresence } from "framer-motion"
 import { useEffect } from "react"
 
 export default function App() {

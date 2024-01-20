@@ -1,9 +1,8 @@
 import React from 'react'
 import { workFeatured } from '../constants'
-import Button from '../components/Button'
+import {Button} from '../components'
 import { useEffect } from 'react'
 import { HiArrowSmallDown } from "react-icons/hi2";
-import { HeroParallax } from '../components';
 import { ProjectsData } from '../constants';
 import  Projects  from '../root/pages/Projects';
 const Work = () => {

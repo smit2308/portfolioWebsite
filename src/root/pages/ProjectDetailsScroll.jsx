@@ -2,17 +2,11 @@
 import React from "react";
 import { ProjectsData } from "../../constants";
 import { useParams } from "react-router-dom";
-import { useState } from "react";
-import { DetailsScroll } from "../../components";
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
+import { DetailsScroll, Button, Loader, TextGenerateEffect, LoadingMessages } from "../../components";
 import { HiArrowTopRightOnSquare } from "react-icons/hi2";
-import { Button } from "../../components";
-import Transition from "../../Transition";
-import {motion} from 'framer-motion'
-import { AnimatePresence, useIsPresent } from "framer-motion";
-import { Loader } from "../../components";
-import {TextGenerateEffect} from "../../components";
-import { LoadingMessages } from "../../constants";
+import { motion,AnimatePresence, useIsPresent } from "framer-motion";
+
 
 
 
@@ -60,14 +54,15 @@ const ProjectDetailsScroll = (props) => {
             message={LoadingMessages[Math.floor(Math.random() * LoadingMessages.length)]}
             users={proj}
             titleComponent={
-              <>
-                <h1 className="text-3xl font-display font-semibold text-secondary ">
+              <div className="flex flex-col gap-10">
+                <h1 className="md:text-3xl text-xl font-display font-semibold text-secondary -mt-4  ">
                   Project <br />
-                  <span className="text-4xl md:text-[6rem] sm:text-[4rem] font-bold  leading-none">
+                  </h1>
+                  <h2 className="font-display  text-secondary text-[3rem] md:text-[6rem] sm:text-[4rem] font-bold  leading-none">
                   {proj.title}
-                  </span>
-                </h1>
-              </>
+                  </h2>
+                
+              </div>
             }
 
 
@@ -96,15 +91,7 @@ const ProjectDetailsScroll = (props) => {
         style={{ originX: isPresent ? 0 : 1 }}
         className="fixed top-0 left-0 right-0 bottom-0 bg-accent z-50 text-4xl font-display  text-center text-primary flex justify-center items-center"
       >
-                 {/* <motion.div
-          initial={{opacity: '0%'}}
-          animate={{opacity: '100%', transition: {duration: 0.5, ease: "circOut" }}}
-          exit={{ scaleX: 1, transition: { duration: 0.5, ease: "circIn" } }}>
-            I hope you enjoyed it
-          </motion.div>
 
-        
-        <TextGenerateEffect words='I Hope You Enjoyed It' className='font-montserrat font-semibold text-4xl text-primary p-8 '/> */}
       </motion.div>
 
         

@@ -6,7 +6,6 @@ import { workFeatured } from "../constants";
 import { Button } from "../components";
 import { PinContainer } from "../components/ThreedPin";
 import { HiArrowSmallDown } from "react-icons/hi2";
-import {HeroParallax} from "../components";
 import { ProjectsData } from "../constants";
 import { Link } from "react-router-dom";
 const StickyScroll = () => {

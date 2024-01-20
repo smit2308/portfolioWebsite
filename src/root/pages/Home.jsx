@@ -1,13 +1,10 @@
 import React from "react"
 import {Routes, Route} from "react-router-dom"
-import {Hero, Work, About, StickyScroll, ParallaxWork} from "../../sections"
-import Nav from "../../components/Nav"
-import Transition from "../../Transition"
-import {motion} from "framer-motion"
+import {Hero, Work, About} from "../../sections"
+import {motion, useIsPresent} from "framer-motion"
 import { useState, useEffect } from "react"
-import { useIsPresent } from "framer-motion"
-import { Loader } from "../../components"
-import {TextGenerateEffect} from "../../components"
+import {TextGenerateEffect, Loader} from "../../components"
+
 const  Home =({ scrollToSection }) => {
 
   const gradientAnimation = {

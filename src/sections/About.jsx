@@ -1,8 +1,8 @@
 import React from 'react'
-import { useState } from 'react';
-import { Collapsible     } from '../components';
+import { useState, useEffect } from 'react';
 import { About_image } from '../assets/images';
-import { useEffect } from 'react';
+import { Collapsible } from '../components';
+
 const About = () => {
 
     const [open, setOPen] = useState(false);

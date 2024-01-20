@@ -13,6 +13,8 @@ import {
     unityLogo,
     figmalogo,
     tailwindLogo,
+    premiereLogo,
+    capcutLogo,
   } from '../assets/logos';
 
 import {  AtmThumbnail,
@@ -169,7 +171,7 @@ export const ProjectsData = {
         demoLink: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEz6Hwr0dsV7UFxpaUXMumk%2FRAY%3Fembed_host%3Dshare%26kind%3Dproto%26node-id%3D116-659%26page-id%3D116%253A372%26scaling%3Dscale-down%26starting-point-node-id%3D116%253A659%26t%3D4PVxERlo1GIXQILC-1%26type%3Ddesign%26mode%3Ddesign",
         repoLink: "https://github.com/AtharvTam/RCTNE",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
-        description: "RAY is an Events Management App, tailored for the Rotaract Club of Thane North End. It streamlines event organization and participation, offers an event calendar, easy registration, and volunteer management, fostering active member engagement and connectivity in club activities",
+        description: " *Ray is not Live on Playstore and Appstore anymore*. RAY is an Events Management App, tailored for the Rotaract Club of Thane North End. It streamlines event organization and participation, offers an event calendar, easy registration, and volunteer management, fostering active member engagement and connectivity in club activities",
         skills: [
             { name: "Flutter", logo: flutterLogo },
             { name: "Firebase", logo: firebaseLogo },
@@ -185,10 +187,10 @@ export const ProjectsData = {
         demoLink: "Unavailable",
         repoLink: "https://github.com/AtharvTam/RCTNE",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
-        description: "RAY is an Events Management App, tailored for the Rotaract Club of Thane North End. It streamlines event organization and participation, offers an event calendar, easy registration, and volunteer management, fostering active member engagement and connectivity in club activities",
+        description: "The ATM Management System is a Python-based project designed to streamline banking operations through a user-friendly graphical interface. Leveraging the power of SQL as its database, the system allows users to perform essential banking transactions effortlessly. With features such as deposit and withdrawal functionalities, users can easily manage their funds securely. The graphical user interface, developed using Tkinter, enhances the overall user experience, making the ATM Management System a reliable and efficient tool for seamless financial transactions",
         skills: [
-            { name: "Flutter", logo: flutterLogo },
-            { name: "Firebase", logo: firebaseLogo },
+            { name: "Python", logo: pythonLogo },
+            { name: "SQL", logo: sqlLogo },
         ]
     },
 
@@ -201,10 +203,10 @@ export const ProjectsData = {
         demoLink: "Unavailable",
         repoLink: "https://github.com/AtharvTam/RCTNE",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
-        description: "RAY is an Events Management App, tailored for the Rotaract Club of Thane North End. It streamlines event organization and participation, offers an event calendar, easy registration, and volunteer management, fostering active member engagement and connectivity in club activities",
+        description: "The Cyber Cafe Management System, developed in C for an Operating Systems course, employs the FCFS scheduling algorithm to efficiently assign users to available desktops in a fair first-come-first-serve manner. This system optimizes the utilization of cyber cafe resources, providing a seamless experience for both users and administrators.",
         skills: [
-            { name: "Flutter", logo: flutterLogo },
-            { name: "Firebase", logo: firebaseLogo },
+            { name: "C", logo: cLogo },
+           
         ]
     }
 
@@ -222,12 +224,11 @@ export const ProjectsData = {
         images: [Eyespace_1],
         title: "Eyespace Opthalmology Website",
         demoLink: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FWccFv0n0b0fEoml0JR3UMe%2FEyespace%3Fpage-id%3D33%253A2%26node-id%3D33-186%26starting-point-node-id%3D33%253A186%26scaling%3Dscale-down-width%26mode%3Ddesign%26t%3DjBpmLrPPa034SlUx-1",
-        repoLink: "https://github.com/AtharvTam/RCTNE",
-        shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
-        description: "RAY is an Events Management App, tailored for the Rotaract Club of Thane North End. It streamlines event organization and participation, offers an event calendar, easy registration, and volunteer management, fostering active member engagement and connectivity in club activities",
+        repoLink: "https://www.behance.net/gallery/166388085/EYESPACE-Website-Revamp",
+        shortDescription: "revamped design for Eyespace.ai, the medical startup at the University of Southern California, which I personally crafted using Figma. In this redesign, I focused on infusing a modern aesthetic to elevate the overall user experience",
         skills: [
-            { name: "Flutter", logo: flutterLogo },
-            { name: "Firebase", logo: firebaseLogo },
+            { name: "Figma", logo: figmalogo },
+           
         ]
     },
 
@@ -238,12 +239,11 @@ export const ProjectsData = {
         images: [Social_1],
         title: "All In One Social Media App",
         demoLink: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F0ZO98SB1s19B2kp1VOQ2Uf%2FUntitled%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D4-1971%26viewport%3D-5552%252C2709%252C0.86%26t%3DXDTF03uSbtlogwiI-1%26scaling%3Dscale-down%26starting-point-node-id%3D51%253A8023%26mode%3Ddesign",
-        repoLink: "https://github.com/AtharvTam/RCTNE",
+        repoLink: "https://www.behance.net/gallery/166093555/Social-Media-App",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
-        description: "RAY is an Events Management App, tailored for the Rotaract Club of Thane North End. It streamlines event organization and participation, offers an event calendar, easy registration, and volunteer management, fostering active member engagement and connectivity in club activities",
+        description: "Presenting a new social media app that brings together the best features from various platforms. Designed to simplify your social experience, it includes broadcast messages (tweets), status updates (stories), and traditional posts all in one place. It's a user-friendly app that combines the best of social media for a seamless and enjoyable experience.",
         skills: [
-            { name: "Flutter", logo: flutterLogo },
-            { name: "Firebase", logo: firebaseLogo },
+            { name: "Figma", logo: figmalogo },
         ]
     },
 
@@ -255,12 +255,11 @@ export const ProjectsData = {
         images: [Ray1_1],
         title: "Event Prototype App",
         demoLink: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEz6Hwr0dsV7UFxpaUXMumk%2FRAY%3Fembed_host%3Dshare%26kind%3Dproto%26node-id%3D116-659%26page-id%3D116%253A372%26scaling%3Dscale-down%26starting-point-node-id%3D116%253A659%26t%3D4PVxERlo1GIXQILC-1%26type%3Ddesign%26mode%3Ddesign",
-        repoLink: "https://github.com/AtharvTam/RCTNE",
+        repoLink: "https://www.behance.net/gallery/187225649/Ray-Events-Management-App",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
         description: "RAY is an Events Management App, tailored for the Rotaract Club of Thane North End. It streamlines event organization and participation, offers an event calendar, easy registration, and volunteer management, fostering active member engagement and connectivity in club activities",
         skills: [
-            { name: "Flutter", logo: flutterLogo },
-            { name: "Firebase", logo: firebaseLogo },
+            { name: "Figma", logo: figmalogo },
         ]
     },
 
@@ -273,10 +272,9 @@ export const ProjectsData = {
         demoLink: "Unavailable",
         repoLink: "https://github.com/AtharvTam/RCTNE",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
-        description: "RAY is an Events Management App, tailored for the Rotaract Club of Thane North End. It streamlines event organization and participation, offers an event calendar, easy registration, and volunteer management, fostering active member engagement and connectivity in club activities",
+        description: "A captivating white and dark cinematic landing page designed for Eyespace.ai, the medical startup at the University of Southern California, which I personally crafted using Figma. In this redesign, I focused on infusing a modern aesthetic to elevate the overall user experience ",
         skills: [
-            { name: "Flutter", logo: flutterLogo },
-            { name: "Firebase", logo: firebaseLogo },
+            { name: "Figma", logo: figmalogo },
         ]
     },
 
@@ -287,12 +285,11 @@ export const ProjectsData = {
         images: [],
         title: "Rotaract Club of Thane North End Website",
         demoLink: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEz6Hwr0dsV7UFxpaUXMumk%2FRAY%3Fpage-id%3D0%253A1%26node-id%3D2080-230%26scaling%3Dscale-down-width%26starting-point-node-id%3D2080%253A230%26mode%3Ddesign%26t%3DpfHoc8Z83sqaxlRK-1",
-        repoLink: "https://github.com/AtharvTam/RCTNE",
+        repoLink: "https://rctne.wordpress.com/",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
-        description: "RAY is an Events Management App, tailored for the Rotaract Club of Thane North End. It streamlines event organization and participation, offers an event calendar, easy registration, and volunteer management, fostering active member engagement and connectivity in club activities",
+        description: "Check out the new static website design for the Rotaract Club of Thane North End! I've incorporated the club's theme colors for a visually appealing and engaging experience. It's a clean, simple, and vibrant platform that perfectly captures the spirit of the club. Explore and connect with the Rotaract Club in style!",
         skills: [
-            { name: "Flutter", logo: flutterLogo },
-            { name: "Firebase", logo: firebaseLogo },
+            { name: "Figma", logo: figmalogo },
         ]
     },
 
@@ -311,12 +308,12 @@ export const ProjectsData = {
         images: [],
         title: "Kenko Startup Garage Interview",
         demoLink: "https://player.vimeo.com/video/897082575?h=dc6ae2d29a",
-        repoLink: "https://github.com/AtharvTam/RCTNE",
+        repoLink: "https://www.kenkopt.com/",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
-        description: "RAY is an Events Management App, tailored for the Rotaract Club of Thane North End. It streamlines event organization and participation, offers an event calendar, easy registration, and volunteer management, fostering active member engagement and connectivity in club activities",
+        description: "Uncover the narrative of Kenko, a University of Southern California-based physical therapy startup, through an insightful interview I shot and edited using the Sony FS5 Mark II. Gain a firsthand look at their innovative approach to physical therapy and the individuals behind this transformative initiative.",
         skills: [
-            { name: "Flutter", logo: flutterLogo },
-            { name: "Firebase", logo: firebaseLogo },
+            { name: "PremierePro", logo: premiereLogo },
+       
         ]
     },
 
@@ -328,12 +325,11 @@ export const ProjectsData = {
         images: [],
         title: "Muskhave Brand Campaign",
         demoLink: "https://player.vimeo.com/video/897086895?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-        repoLink: "Unavailable",
+        repoLink: "https://muskhaveshop.com/",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
-        description: "RAY is an Events Management App, tailored for the Rotaract Club of Thane North End. It streamlines event organization and participation, offers an event calendar, easy registration, and volunteer management, fostering active member engagement and connectivity in club activities",
+        description: "Explore the latest video edit for muskhaveshop.com, edited in Premiere Pro with added color grading for a polished and professional aesthetic. Dive into the world of fashion and discover the brand's offerings in this visually enhanced video.",
         skills: [
-            { name: "Flutter", logo: flutterLogo },
-            { name: "Firebase", logo: firebaseLogo },
+            { name: "PremierePro", logo: premiereLogo },
         ]
     },
 
@@ -344,12 +340,11 @@ export const ProjectsData = {
         images: [],
         title: "Tvish AR App Advertisement",
         demoLink: "https://player.vimeo.com/video/817028335?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-        repoLink: "Unavailable",
+        repoLink: "https://tvish.co.in/",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
-        description: "RAY is an Events Management App, tailored for the Rotaract Club of Thane North End. It streamlines event organization and participation, offers an event calendar, easy registration, and volunteer management, fostering active member engagement and connectivity in club activities",
+        description: "Check out the ad I created for Tvish, the AR/VR clothing shopping app. I'm featured in the ad, demonstrating how the app works. It's not just a promo but also a pitch for funding. Experience a new way of clothes shopping with Tvish!",
         skills: [
-            { name: "Flutter", logo: flutterLogo },
-            { name: "Firebase", logo: firebaseLogo },
+            { name: "PremierePro", logo: premiereLogo },
         ]
     },
 
@@ -360,12 +355,11 @@ export const ProjectsData = {
         images: [],
         title: "USC Welcome Experience Coverage",
         demoLink: "https://player.vimeo.com/video/902471896?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-        repoLink: "Unavailable",
+        repoLink: "https://www.instagram.com/uscviterbi/",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
-        description: "RAY is an Events Management App, tailored for the Rotaract Club of Thane North End. It streamlines event organization and participation, offers an event calendar, easy registration, and volunteer management, fostering active member engagement and connectivity in club activities",
+        description: "Step into the lively USC New Student Welcome through my lens – the event coverage video shot on the Sony FS5. Immerse yourself in the vibrant atmosphere as new students kick off their USC journey. ",
         skills: [
-            { name: "Flutter", logo: flutterLogo },
-            { name: "Firebase", logo: firebaseLogo },
+            { name: "PremierePro", logo: premiereLogo },
         ]
     },
 
@@ -376,12 +370,11 @@ export const ProjectsData = {
         images: [],
         title: "Muskhave Product Showcase",
         demoLink: "https://player.vimeo.com/video/897086726?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-        repoLink: "Unavailable",
+        repoLink: "https://www.instagram.com/reel/CwNb3I5NheA/",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
-        description: "RAY is an Events Management App, tailored for the Rotaract Club of Thane North End. It streamlines event organization and participation, offers an event calendar, easy registration, and volunteer management, fostering active member engagement and connectivity in club activities",
+        description: "Take a peek at Muskhave's newest styles on Instagram! I put together a short video to show off their latest products. ",
         skills: [
-            { name: "Flutter", logo: flutterLogo },
-            { name: "Firebase", logo: firebaseLogo },
+            { name: "PremierePro", logo: premiereLogo },
         ]
     },
 
@@ -392,12 +385,12 @@ export const ProjectsData = {
         images: [],
         title: "Short Form Content Veterans Day",
         demoLink: "https://player.vimeo.com/video/897106789?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-        repoLink: "Unavailable",
+        repoLink: "https://www.instagram.com/uscviterbi/",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
-        description: "RAY is an Events Management App, tailored for the Rotaract Club of Thane North End. It streamlines event organization and participation, offers an event calendar, easy registration, and volunteer management, fostering active member engagement and connectivity in club activities",
+        description: "Crafting dynamic short-form content for USC Viterbi's News Network, my videos are a fusion of storytelling and creativity. Packed with trending motion graphics, backgrounds, sound effects, moving captions and more. These concise videos provide an engaging snapshot of groundbreaking stories within the engineering realm",
         skills: [
-            { name: "Flutter", logo: flutterLogo },
-            { name: "Firebase", logo: firebaseLogo },
+            { name: "Capcut", logo: capcutLogo },
+        
         ]
     },
 
@@ -408,12 +401,11 @@ export const ProjectsData = {
         images: [],
         title: "Short Form Content Neil Seigel",
         demoLink: "https://player.vimeo.com/video/897106858?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" ,
-        repoLink: "Unavailable",
+        repoLink: "https://www.instagram.com/uscviterbi/",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
-        description: "RAY is an Events Management App, tailored for the Rotaract Club of Thane North End. It streamlines event organization and participation, offers an event calendar, easy registration, and volunteer management, fostering active member engagement and connectivity in club activities",
+        description: "Crafting dynamic short-form content for USC Viterbi's News Network, my videos are a fusion of storytelling and creativity. Packed with trending motion graphics, backgrounds, sound effects, moving captions and more. These concise videos provide an engaging snapshot of groundbreaking stories within the engineering realm",
         skills: [
-            { name: "Flutter", logo: flutterLogo },
-            { name: "Firebase", logo: firebaseLogo },
+            { name: "Capcut", logo: capcutLogo },
         ]
     },
 
@@ -424,12 +416,11 @@ export const ProjectsData = {
         images: [],
         title: "Short Form Content With Captions",
         demoLink: "https://player.vimeo.com/video/897096199?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" ,
-        repoLink: "Unavailable",
+        repoLink: "https://www.instagram.com/uscviterbi/",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
-        description: "RAY is an Events Management App, tailored for the Rotaract Club of Thane North End. It streamlines event organization and participation, offers an event calendar, easy registration, and volunteer management, fostering active member engagement and connectivity in club activities",
+        description: "Crafting dynamic short-form content for USC Viterbi's News Network, my videos are a fusion of storytelling and creativity. Packed with trending motion graphics, backgrounds, sound effects, moving captions and more. These concise videos provide an engaging snapshot of groundbreaking stories within the engineering realm",
         skills: [
-            { name: "Flutter", logo: flutterLogo },
-            { name: "Firebase", logo: firebaseLogo },
+            { name: "Capcut", logo: capcutLogo },
         ]
     },
 

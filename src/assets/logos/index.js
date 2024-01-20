@@ -13,6 +13,8 @@ import sqlLogo from './icons8-sql.png';
 import unityLogo from './icons8-unity.svg';
 import figmalogo from './icons8-figma.svg';
 import tailwindLogo from './icons8-tailwind-css.svg';
+import premiereLogo from './icons8-adobe-premiere-pro.svg';
+import capcutLogo from './capcut_seeklogo.svg'
 // Export statements
 export {
   cSharpLogo,
@@ -29,4 +31,6 @@ export {
   unityLogo,
   figmalogo,
   tailwindLogo,
+  premiereLogo,
+  capcutLogo,
 };

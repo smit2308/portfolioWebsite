@@ -46,11 +46,11 @@ const DetailsScroll = ({
   return (
     <>
     <div
-      className="pt-[30vh] sm:pt-[40vh]  h-max bg-red-200 flex flex-col items-center justify-center relative sm:px-6 max-sm:px-3 lg:px-16    "
+      className="pt-[30vh] sm:pt-[30vh]  h-max flex flex-col items-center justify-center relative sm:px-6 max-sm:px-3 lg:px-16    "
       ref={containerRef}
     >
       <div
-        className=" w-full relative bg-green-200"
+        className=" w-full relative "
         style={{
           perspective: "1200px",
         }}
@@ -86,7 +86,7 @@ export const Header = ({ translate, titleComponent, isMobile }) => {
      
       
        transition={{duration:2, ease: [0.22, 1, 0.36, 1], delay:1}}
-      className="div max-w-xs sm:max-w-5xl mx-auto text-center"
+      className="div max-w-xs sm:max-w-5xl mx-auto text-center z-0"
     >
       {titleComponent}
     </motion.div>
@@ -99,40 +99,48 @@ export const Content = ({ translate, users }) => {
       style={{
         translateY: translate,
       }}
-      className="div max-w-xs sm:max-w-5xl mx-auto text-center px-6 lg:px-20 mt-20  relative z-30 "
+      className="div max-w-xs sm:max-w-5xl mx-auto text-center items-center justify-center flex flex-col gap-10  mt-20  relative z-30 "
     >
      
-     <div className='flex flex-col small-container gap-8 items-center text-center '>
      
      
-          
-     <div className='flex flex-row gap-4'>
-       
-       {users.demoLink !== 'Unavailable' ? (
-         <a href={users.demoLink} target='_blank'>
-         <Button label='Visit' 
-           bgColor={'bg-none'} 
-           iconReact={<HiArrowTopRightOnSquare />}/>
-         </a>
-       )
-       : ('')}
+     
+        
+     {users.repoLink == 'coding' ? (
+           <div className='flex flex-row gap-4'>
 
-     {users.repoLink !== 'Unavailable' ? (
+<a href={users.demoLink} target='_blank'>
+<Button label='Visit' 
+  bgColor={'bg-none'} 
+  iconReact={<HiArrowTopRightOnSquare />}/>
+</a>
+
+      
         <a href={users.repoLink} target='_blank'>
-                   <Button label='Github' 
+                   <Button label={'Github'} 
                    bgColor={'bg-secondary'}
                    textColor={'text-primary'}
                    customHover={'hover:bg-green-800 '}
                    iconReact={<HiArrowTopRightOnSquare />} />
                    </a>
+
+                   </div>
        
        )
-       : ('')}
+       : (
+        <a href={users.repoLink} target='_blank'>
+        <Button label={'Visit'} 
+        bgColor={'bg-none'}
+        iconReact={<HiArrowTopRightOnSquare />} />
+        </a>
+       )
+       
+       }
        
 
 
 
-     </div>
+     
 
      <div className='flex flex-col gap-2'>
        <h2 className='sm:text-xl max-sm:text-lg font-medium text-secondary'>Description</h2>
@@ -141,16 +149,16 @@ export const Content = ({ translate, users }) => {
 
      <div className='flex flex-col gap-4'>
        <h2 className='sm:text-xl max-sm:text-lg font-medium text-secondary'>Skills</h2>
-       <div className='flex flex-row gap-4'>
+       <div className='flex flex-wrap gap-2'>
          {
            users.skills.map((skill) => (
-             <img key={skill.name} src={skill.logo} alt={skill.name} className='w-[48px] max-sm:w-[24px]' />
+             <img key={skill.name} src={skill.logo} alt={skill.name} className='w-12 max-sm:w-8 ' />
            ))
          } 
        </div>
      </div>
 
-   </div>
+  
     </motion.div>
   );
 };

@@ -2,17 +2,10 @@ import React from 'react'
 import { Button } from '../components'
 import { useForm } from 'react-hook-form'
 import { Link } from 'react-router-dom'
-import Loader from '../components/Loader'
 import { socialLinks } from '../constants'
 const Connect = () => {
 
-  const { register, control , handleSubmit} = useForm();
-  const loading = false;
-  async function onSubmit(data)
-    {
-      console.log("Form Submitted", data);
-      // const newUser = await createUserAccount(data);
-    }
+
     
   return (
     <section className='w-full h-max  flex md:flex-row flex-col justify-center items-center  lg:px-16 md:px-10 px-6 max-container lg:py-32 py-20 lg:gap-20 gap-10' >

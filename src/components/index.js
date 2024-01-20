@@ -1,11 +1,8 @@
 import Nav from "./Nav";
 import Button from "./Button";
-import Collapsible from "./Collapsible";
-import ImagesSlider  from "./ImagesSlider";
-import  HeroParallax  from "./HeroParallax";
-import ScrollParallax from "./ScrollParallax";
 import  DetailsScroll  from "./DetailsScroll";
 import Loader from "./Loader";
 import TextGenerateEffect from "./TextGenerateEffect";
 import ScrollToTop from "./ScrollToTop";
-export { Nav, Button, Collapsible, ImagesSlider, HeroParallax, ScrollParallax, DetailsScroll, Loader, TextGenerateEffect, ScrollToTop };
+import Collapsible from "./Collapsible";
+export { Nav, Button,    DetailsScroll, Loader, TextGenerateEffect, ScrollToTop , Collapsible };
