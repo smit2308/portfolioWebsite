@@ -86,7 +86,7 @@ export const Header = ({ translate, titleComponent, isMobile }) => {
      
       
        transition={{duration:2, ease: [0.22, 1, 0.36, 1], delay:1}}
-      className="div max-w-xs sm:max-w-5xl mx-auto text-center z-0"
+      className="div max-w-xs sm:max-w-5xl mx-auto text-center relative z-0"
     >
       {titleComponent}
     </motion.div>
