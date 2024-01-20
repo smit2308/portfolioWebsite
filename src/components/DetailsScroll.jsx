@@ -36,7 +36,7 @@ const DetailsScroll = ({
     return isMobile ? [1.1, 1] : [1.05, 1];
   };
 
-  const originalPosition = isMobile? 60 :40;
+  const originalPosition = isMobile? 40 :40;
   const rotate = useTransform(scrollYProgress, [0, 1], isMobile? [50,0] : [40, 0]);
   const scale = useTransform(scrollYProgress, [0, 1], scaleDimensions());
   const translate = useTransform(scrollYProgress, [0, 1], [originalPosition, isMobile? -400:-400]);
@@ -82,7 +82,7 @@ export const Header = ({ translate, titleComponent, isMobile }) => {
         translateY: translate,
       }}
       initial={{  translateY:800}}
-      animate={{  translateY: isMobile? 60 : 40}}
+      animate={{  translateY: isMobile? 40 : 40}}
      
       
        transition={{duration:2, ease: [0.22, 1, 0.36, 1], delay:1}}

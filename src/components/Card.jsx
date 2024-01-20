@@ -26,9 +26,9 @@ const Card = ({
           rotateX: rotate, // rotate in X-axis
           scale,
           boxShadow:
-          "0 0 #0000004d, 0 9px 15px #0000004a, 0 20px 20px #00000042, 0 40px 40px #00000026, 0 100px 50px #0000000a, 0 230px 30px #00000003",
+          "0 0 #0000004d, 0 9px 15px #0000004a, 0 20px 20px #00000042, 0 40px 40px #00000026, 0 100px 50px #0000000a, 0 230px 30px #00000003 ",
         }}
-        className=" max-w-5xl -mt-12 mx-auto h-[70vh] md:h-[70vh] xl:h-[85vh] w-full border-4 border-[#6C6C6C] lg:p-6 p-2 bg-[#222222] rounded-2xl lg:rounded-3xl shadow-2xl"
+        className=" max-w-5xl -mt-12 mx-auto h-[70vh] md:h-[70vh] xl:h-[85vh] w-full border-4 border-[#6C6C6C] lg:p-6 p-2 bg-[#222222] rounded-2xl lg:rounded-3xl shadow-2xl z-30"
       >
 
 
