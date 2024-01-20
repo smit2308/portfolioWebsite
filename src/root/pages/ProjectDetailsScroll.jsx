@@ -3,7 +3,8 @@ import React from "react";
 import { ProjectsData } from "../../constants";
 import { useParams } from "react-router-dom";
 import { useState, useEffect } from "react";
-import { DetailsScroll, Button, Loader, TextGenerateEffect, LoadingMessages } from "../../components";
+import { DetailsScroll, Button, Loader, TextGenerateEffect } from "../../components";
+import { LoadingMessages } from "../../constants";
 import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 import { motion,AnimatePresence, useIsPresent } from "framer-motion";
 
