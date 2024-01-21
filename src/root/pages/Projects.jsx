@@ -46,13 +46,13 @@ const Projects = () => {
   
   return (
     // lg:px-16 md:px-10 px-6 my-32 
-    <section className='w-full h-full  flex flex-col max-sm:items-center   lg:gap-20 gap-10  '>
+    <section className='w-full h-full  flex flex-col max-lg:items-center max-lg:justify-center    lg:gap-20 gap-10  '>
 
      
 
 
 
-        <div className=' sm:w-max  lg:gap-10 gap-4 max-sm:items-center  flex sm:flex-row 
+        <div className=' sm:w-max  lg:gap-10 gap-4 max-sm:items-center max-lg:justify-center  flex 
             font-montserrat text-secondary text-sm sm:text-lg lg:text-xl  '>
 
           <button id='coding' className={` hover:text-accent ${activeButton === "coding" ? "text-accent border-b-2 border-accent" : ""}`}
@@ -94,7 +94,7 @@ const Projects = () => {
 
       {/* <a href={project.demoLink!= "blank" ? project.demoLink : "/home"} target='_blank' className='w-max h-max self-center mx-auto' > */}
     {/* grid lg:grid-cols-3 grid-cols-2 sm:gap-y-16 gap-y-8  */}
-      <div className='w-full lg:flex lg:flex-wrap lg:gap-10 lg:justify-between  max-lg:grid  max-lg:grid-cols-2 sm:gap-y-16 gap-y-8 gap-x-6  '>
+      <div className='w-full lg:flex lg:flex-wrap lg:gap-x-6 lg-gap-y-10 lg:justify-between  max-lg:grid  max-lg:grid-cols-2 sm:gap-y-16 gap-y-8 gap-x-6  '>
       <AnimatePresence   mode="wait">
         {users.map((project, index ) => (
           <motion.div

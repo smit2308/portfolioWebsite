@@ -19,13 +19,13 @@ const Connect = () => {
       </div>
         <div className=' h-full items-start flex flex-row gap-20 '>
 
-          <div className=' h-full flex flex-col gap-10  '>
-            <h1 className='text-primary max-md:text-center lg:text-2xl text-xl'>sshewale@usc.edu</h1>
+          <div className=' h-full flex flex-col gap-6  '>
+            <h1 className='text-primary max-md:text-center lg:text-xl text-lg'>smitshewale@gmail.com</h1>
             <div className='flex flex-row gap-4'>
 
               {socialLinks.map((item) => (
-                <Link to={item.url} key={item.label} className='hover:text-accent transition-all ease-in-out'>
-                  <img src={item.icon} alt={item.label} className='lg:w-16 w-10' />
+                <Link to={item.link} key={item.label} target='_blank' className='hover:text-accent transition-all ease-in-out'>
+                  <img src={item.icon} alt={item.label} className='lg:w-12 w-10' />
                   
                 </Link>
               ))}

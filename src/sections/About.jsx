@@ -36,7 +36,7 @@ const About = () => {
 
 
 
-<h1 className=' h-fit font-montserrat font-light leadinng-normal sm:text-sm lg:text-lg md:text-left text-center xl:pl-20 md:pl-6 text-secondary  md:border-l-2  md:border-secondary'>
+<h1 className=' h-fit font-montserrat font-normal leadinng-normal sm:text-sm lg:text-lg md:text-left text-center xl:pl-20 md:pl-6 text-secondary  md:border-l-2  md:border-secondary'>
 Whether you're looking for information about me, what I can do, or general inquiries, 
 this section is designed to provide clear and helpful responses. 
 Save time and find the information you need

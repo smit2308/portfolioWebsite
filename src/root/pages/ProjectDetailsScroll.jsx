@@ -55,8 +55,8 @@ const ProjectDetailsScroll = (props) => {
             message={LoadingMessages[Math.floor(Math.random() * LoadingMessages.length)]}
             users={proj}
             titleComponent={
-              <div className="flex flex-col gap-10">
-                <h1 className="md:text-3xl text-xl font-display font-semibold text-secondary -mt-4  ">
+              <div className="flex flex-col gap-10 max-md:gap-6">
+                <h1 className="md:text-3xl text-xl font-display font-semibold text-secondary  -mt-6  ">
                   Project <br />
                   </h1>
                   <h2 className="font-display  text-secondary text-[3rem] md:text-[6rem] sm:text-[4rem] font-bold  leading-none">

@@ -33,7 +33,7 @@ const Hero = () => {
       className='h-full w-full flex flex-col justify-between max-sm:items-center  pr-6   overflow-hidden transition-all ease-in-out delay-100 max-sm:z-10  max-sm:px-6 '>
 
         <div className='my-auto flex flex-col gap-2 max-sm:items-center max-sm:gap-2'>
-        <h2 className='font-montserrat  lg:text-xl sm:text-sm max-sm:text-xs max-sm:text-center text-secondary max-sm:text-primary font-light leading-normal '>
+        <h2 className='font-montserrat  lg:text-xl sm:text-sm max-sm:text-xs max-sm:text-center text-secondary max-sm:text-primary font-normal leading-normal '>
                   Welcome To My Portfolio, I’m A
                 </h2>
                 {/*text-[12vw] xl:text-[150px] lg:text-[120px] md:text-[100px] sm:text-[70px]  xl:leading-[130px]  lg:leading-[100px]  md:leading-[80px]  sm:leading-[60px]  max-sm:text-[60px] max-sm:leading-[48px] */}

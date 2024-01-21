@@ -99,22 +99,23 @@ export const Content = ({ translate, users }) => {
       style={{
         translateY: translate,
       }}
-      className="div max-w-xs sm:max-w-5xl mx-auto text-center items-center justify-center flex flex-col gap-10  mt-20  relative z-30 "
+      className="div max-w-xs sm:max-w-5xl mx-auto text-center items-center justify-center flex flex-col gap-10  mt-20  relative sm:px-6 max-sm:px-3 lg:px-16 "
     >
      
      
      
      
         
-     {users.repoLink == 'coding' ? (
+     {users.section == 'coding' ? (
            <div className='flex flex-row gap-4'>
 
+{users.demoLink != "Unavailable" ?
 <a href={users.demoLink} target='_blank'>
 <Button label='Visit' 
   bgColor={'bg-none'} 
   iconReact={<HiArrowTopRightOnSquare />}/>
-</a>
-
+</a> : null
+     }
       
         <a href={users.repoLink} target='_blank'>
                    <Button label={'Github'} 
@@ -143,8 +144,8 @@ export const Content = ({ translate, users }) => {
      
 
      <div className='flex flex-col gap-2'>
-       <h2 className='sm:text-xl max-sm:text-lg font-medium text-secondary'>Description</h2>
-       <p className='text-secondary sm:text-lg max-sm:text-sm font-light'>{users.description}</p>
+       <h2 className='sm:text-xl max-sm:text-xl font-semibold text-secondary'>Description</h2>
+       <p className='text-secondary sm:text-lg max-sm:text-sm font-normal'>{users.description}</p>
      </div>
 
      <div className='flex flex-col gap-4'>
