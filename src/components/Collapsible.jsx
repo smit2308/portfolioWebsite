@@ -72,7 +72,7 @@ const Collapsible = (
               height: 0,
               opacity: 0,
             }}
-            key={children}
+            key={ open? children : ""}
             className="font-light  "
           >
             {children}

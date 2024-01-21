@@ -77,6 +77,11 @@ export const socialLinks = [
     { link: "https://vimeo.com/user139028362/", label: "Vimeo", icon: Vimeo },
 ]
 
+export const resumeLinks =[
+    { link: "https://drive.google.com/file/d/1pZVU3Zd0z4k3OqYb7z7W0Q2Q3dJzFg7b/view?usp=sharing", label: "Computer Science" },
+    { link: "https://drive.google.com/file/d/1J7OaJc7YjWQXV6Mq3aYQWl0y8kX6jX5b/view?usp=sharing", label: "Videographer "  },
+    { link: "https://drive.google.com/file/d/1J7OaJc7YjWQXV6Mq3aYQWl0y8kX6jX5b/view?usp=sharing", label: "UI/UX Design" },
+]
 
 export const workFeatured = [
 
