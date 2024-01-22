@@ -126,13 +126,13 @@ const isPresent = useIsPresent();
             <HiBars3 size={28} color='#1f1f1f'/>
           </button>
 
-{      isMenuOpen &&
+
        <div
-      //  initial={{opacity:0}}
-      //   animate={{opacity:1}}
-      //   exit={{opacity:0}}
-      //   transition={{duration:0.2}}
-        className='absolute top-0 left-0 z-20 w-screen h-screen backdrop-blur-xl' />}
+       initial={{opacity:0}}
+        animate={{opacity:1}}
+        exit={{opacity:0}}
+        transition={{duration:0.2}}
+        className={`fixed top-0 left-0 z-20 w-screen h-screen ${isMenuOpen && 'backdrop-blur-xl'}`} />
 
           
           <motion.div
