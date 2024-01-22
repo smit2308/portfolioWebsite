@@ -59,7 +59,7 @@ const animateMenu = async () => {
   } else {
     await menuAnimation.start({
       scaleX: '0%',
-      transition: { duration: 0.4, ease: 'circIn', delay: 0 },
+      transition: { duration: 0.2, ease: 'circIn', delay: 0 },
     });
   }
 };
@@ -89,13 +89,7 @@ const isPresent = useIsPresent();
   return (
     <>
       <AnimatePresence mode="wait">
-    {isMenuOpen && (
-         <motion.div
-         className="fixed inset-0 backdrop-blur-md z-20"
-         onClick={toggleMenu}
-         exit={{ opacity: 0, transition: { duration: 0.2 } }}
-       />
-    )}
+
           <motion.div
         initial={{
           opacity: 1,
@@ -106,13 +100,10 @@ const isPresent = useIsPresent();
           opacity: visible ? 1 : 0,
         }}
         transition={{
-          duration: 0.2,
+          duration: 0.1,
         }} className='max-md:hidden fixed backdrop-blur-xl py-4 rounded-xl shadow-lg flex    max-md:w-full max-md:max-container  lg:px-16 md:px-10 px-6 z-30'>
 
-        
-      {/* <Link to='/'  className='font-display text-xl max-sm:text-lg  hover:text-secondary  transition-all ease-in-out  '>
-          Smit Shewale
-        </Link> */}
+ 
        <ul className='max-md:hidden flex flex-row   gap-10 text-gray-400 text-lg font-montserrat font-medium  '>
           {navLinks.map((item)=>(
             <li key={item.label}>
@@ -135,8 +126,13 @@ const isPresent = useIsPresent();
             <HiBars3 size={28} color='#1f1f1f'/>
           </button>
 
-      
-       
+{      isMenuOpen &&
+       <div
+      //  initial={{opacity:0}}
+      //   animate={{opacity:1}}
+      //   exit={{opacity:0}}
+      //   transition={{duration:0.2}}
+        className='absolute top-0 left-0 z-20 w-screen h-screen backdrop-blur-xl' />}
 
           
           <motion.div
@@ -144,7 +140,7 @@ const isPresent = useIsPresent();
       initial={{ scaleX: '0%' }}
       animate={menuAnimation}
       style={{ originX: isPresent ? 1 : 0 }}
-      className='fixed h-screen w-[240px] text-secondary bg-primary shadow-2xl right-0 top-0 pt-24 px-8 flex flex-col gap-10 rounded-b-lg backdrop-blur-xl lg:hidden shadow-nav -mt-1 z-30'
+      className='fixed h-screen w-[220px] text-secondary bg-primary shadow-image1 right-0 top-0 pt-24 px-8 flex flex-col gap-10 rounded-b-lg lg:hidden shadow-nav -mt-1 z-30 rounded-l-lg '
     >
       <button
         className='hover:scale-110 md:hidden fixed right-6 top-6 p-2 z-30'
@@ -159,7 +155,7 @@ const isPresent = useIsPresent();
             initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { duration: 0.4, ease: 'circOut', delay: index * 0.2 } }}
             exit={{ opacity: 0, transition: { duration: 0.2 } }}
-            className='w-full text-right font-montserrat text-xl'
+            className='w-full text-right text-secondary font-montserrat text-xl'
           >
             <Link
               to={`/`}

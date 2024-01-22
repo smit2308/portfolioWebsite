@@ -15,7 +15,21 @@ const Card = ({
     const [showAnimation, setShowAnimation] = useState(true);
     const [duration, setDuration] = useState(1 + 0.5 * message.split(" ").length   );
 
+    const [isSmall, setIsSmall] = useState(false);
 
+    useEffect(() => {
+    const checkSmall = () => {
+      setIsSmall(window.innerWidth < 820);
+    };
+
+    checkSmall();
+
+    window.addEventListener("resize", checkSmall);
+
+    return () => {
+      window.removeEventListener("resize", checkSmall);
+    };
+  }, []); 
 
     return (
       <motion.div
@@ -55,7 +69,7 @@ const Card = ({
          className=" h-full w-full rounded-xl flex flex-col bg-black overflow-y-scroll  hide-scrollbar ">
  
                      
-            {users.demoLink != "Unavailable" ? 
+            {users.demoLink != "Unavailable" & !isSmall? 
             (
               <div  className="flex flex-col items-center justify-center w-full h-full   rounded-xl ">
                   
@@ -65,18 +79,23 @@ const Card = ({
                     <iframe  className='w-full h-full'  src={users.demoLink} async allowFullScreen></iframe> 
                   }
                 
- 
+
               </div>
 
-              ) : (''
+              ) : (
             
-                // <div className='flex w-full h-full items-center justify-center text-white'>
-                //   {'prototype not available :('}
-                // </div>
+                <div className='flex  items-center justify-center text-white'>
+                  {'prototype not available :('}
+                </div>
                 )
             }
+
+{users.images[0] ? <img className=' w-full object-cover' src={users.images[0]}/> :
+                                <div className='flex  items-center justify-center text-white'>
+                                {'Image not available :('}
+                              </div>}
            
-              {users.images[0] && <img className=' w-full object-cover' src={users.images[0]}/>}
+              
             
   
        </motion.div>
