@@ -59,44 +59,55 @@ const Card = ({
           onAnimationComplete={() => setShowAnimation(false)}
           className=' h-full w-full rounded-xl flex flex-col bg-black  items-center'
         >
-          <TextGenerateEffect words={message} className='font-montserrat  text-3xl text-primary p-8 mt-10' />
+          <TextGenerateEffect words={message} className='font-montserrat  md:text-3xl text-primary p-8 mt-10' />
         </motion.div>
       ) : (
          <motion.div 
          initial={{opacity:0}}
           animate={{opacity:1 , transition: {duration: 1, ease: "circOut" }}}
 
-         className=" h-full w-full rounded-xl flex flex-col bg-black overflow-y-scroll  hide-scrollbar ">
+         className=" h-full w-full rounded-xl flex flex-col bg-black overflow-y-scroll  hide-scrollbar text-white items-center">
  
-                     
-            {users.demoLink != "Unavailable" & !isSmall? 
-            (
-              <div  className="flex flex-col items-center justify-center w-full h-full   rounded-xl ">
-                  
-                  {users.section == 'ui' ?
-                    <iframe  className='w-full' height={640} src={users.demoLink} allowFullscreen></iframe>
-                    :
-                    <iframe  className='w-full h-full'  src={users.demoLink} async allowFullScreen></iframe> 
-                  }
-                
+ {
+ 
+ users.section === 'video' ? (
+  users.demoLink !== 'Unavailable' ? (
+    <iframe className='w-full h-full' src={users.demoLink} async allowFullScreen></iframe>
+  ) : (
+    'Video Unavailable'
+  )
+) 
 
-              </div>
+: 
 
-              ) : (
-            
-                <div className='flex  items-center justify-center text-white'>
-                  {'prototype not available :('}
-                </div>
-                )
-            }
+// isSmall ?
 
-{users.images[0] ? <img className=' w-full object-cover' src={users.images[0]}/> :
-                                <div className='flex  items-center justify-center text-white'>
-                                {'Image not available :('}
-                              </div>}
-           
-              
-            
+//   users.images[0] ? (
+//     <img className='w-full object-cover' src={users.images[0]} />
+//   ) : (
+//     'Image not available :('
+//   )
+
+
+
+// : 
+
+
+    users.section === 'ui' ? (
+      
+      <iframe className='w-full h-full '  src={users.demoLink} allowFullscreen></iframe>
+    ) : (
+      <iframe className='w-full h-full' src={users.demoLink} async allowFullScreen></iframe>
+    )
+
+
+
+
+
+
+
+}
+
   
        </motion.div>
       )}

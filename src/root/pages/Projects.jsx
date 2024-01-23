@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { ProjectsData } from '../../constants'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
-import { motion, AnimatePresence } from 'framer-motion'
+import { motion, AnimatePresence, useIsPresent } from 'framer-motion'
 import { HiArrowRight } from 'react-icons/hi'
 const Projects = () => {
 
@@ -22,7 +22,7 @@ const Projects = () => {
     setActiveButton(section);
   }
 
-
+  const isPresent = useIsPresent();
 
   const [users, setUsers] = useState(projects);
   const [searchTerm, setSearchTerm] = useState('');
@@ -108,18 +108,29 @@ const Projects = () => {
             <Link  to={`/projects/${project.title}`} state={{ id: project.title }}  className='flex flex-col gap-10 justify-center items-center'>
 
               <img src={project.thumbnail} alt={project.title} className=' xl:w-[340px] sm:w-[270px] xs:w-[200px] w-[150px]  
-                       place-self-center  transition-all ease-in-out group-hover:opacity-20  duration-500 group-hover:rotate-6 group-hover:scale-125 '
+                       place-self-center  transition-all ease-in-out group-hover:opacity-40   duration-500  '
 
               
               />
 
  
-              <div className='hidden text-semibold font-montserrat  absolute top-0 left-0 w-full h-full group-hover:flex  text-primary text-xl justify-center items-center gap-4 p-4  transition-all ease-in-out duration-500'>
-                Open
-    
-                <HiArrowRight size={32} color='white' />
+              <motion.div 
+
+              className='hidden text-semibold font-montserrat w-full h-full  absolute rounded-xl group-hover:flex backdrop-blur-sm l justify-center items-center gap-4 p-4  transition-all ease-in-out duration-500'>
+                <div className='flex w-full items-center justify-center gap-2'>
+                <h1 className='font-montserrat text-2xl text-primary max-sm:text-lg '>Open</h1>
+    <div className='max-sm:hidden'>
+    <HiArrowRight size={30} color='white' />
+    </div>
+
+    <div className='sm:hidden'>
+    <HiArrowRight  color='white' />
+    </div>
+
+                </div>
+
        
-              </div>
+              </motion.div>
 
               
 

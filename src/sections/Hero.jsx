@@ -72,8 +72,8 @@ const isPresent = useIsPresent();
         initial={{ opacity: '0%' }}
         animate={menuAnimation}
         style={{ opacity: isPresent ? 1 : 0 }}
-        className='fixed z-50  w-screen h-screen left-0 top-0 transform   flex items-center justify-center backdrop-blur-sm   bg-black bg-opacity-40'>
-          <div className=' bg-primary rounded-xl flex flex-col   gap-6 lg:px-10 px-6 pb-10 pt-6 shadow-xl'>
+        className='absolute z-20  w-screen h-screen left-0 top-0 transform   flex items-center justify-center backdrop-blur-sm   bg-black bg-opacity-40'>
+          <div className=' bg-primary rounded-lg flex flex-col   gap-6 lg:px-10 px-6 pb-10 pt-6 shadow-xl'>
             
 
           <button
@@ -84,6 +84,7 @@ const isPresent = useIsPresent();
               </button>
             {resumeLinks.map((item, index) => (
               <a href={item.link} target='_blank' 
+              key={index}
               onClick={toggleMenu}
               rel='noreferrer' 
               className='font-montserrat  text-secondary max-sm:text-lg text-xl hover:text-accent hover:underline transition-all ease-in-out '>{item.label}</a>
@@ -105,7 +106,7 @@ const isPresent = useIsPresent();
                   Welcome To My Portfolio, I’m A
                 </h2>
                 {/*text-[12vw] xl:text-[150px] lg:text-[120px] md:text-[100px] sm:text-[70px]  xl:leading-[130px]  lg:leading-[100px]  md:leading-[80px]  sm:leading-[60px]  max-sm:text-[60px] max-sm:leading-[48px] */}
-                <div className='max-xl:h-[20vw] h-72 max-sm:h-32 mb-4'> 
+                <div className='max-xl:h-[20vw] h-72 max-sm:h-32 mb-4 max-sm:w-80 '> 
                 <h1 className='pb-6 h-full font-display italic  xl:text-[150px] xl:leading-[130px] max-xl:text-[12vw] max-xl:leading-[10vw] max-sm:text-[72px] max-sm:leading-[56px] 
                 max-sm:text-center  text-secondary max-sm:text-primary  '>
                   {/* Software Engineer */}
@@ -120,7 +121,7 @@ const isPresent = useIsPresent();
                 </div>
                 
 
-                <div onClick={() => toggleMenu()} >
+                <div onClick={toggleMenu} >
                 <Button
                 
                 width={'w-max'}
@@ -144,10 +145,10 @@ const isPresent = useIsPresent();
       transition={{duration:2, ease: [0.22, 1, 0.36, 1]}}
       className='bg-[#b03e49] h-screen overflow-hidden  flex  xl:w-[1100px] lg:w-[800px] sm:w-[600px]  max-sm:w-screen  max-sm:z-0 max-sm:absolute  max-sm:brightness-75 ' >
 
-        <img className='sm:object-cover object-left-top  w-full   max-lg:hidden '
+        <img className='sm:object-cover object-left w-full   max-lg:hidden '
         src={Myimage}/>
 
-        <img className='sm:object-cover w-full object-left lg:hidden  max-sm:object-cover   '
+        <img className='sm:object-cover w-full object-bottom sm:object-left lg:hidden  max-sm:object-cover   '
         src={Myimage_small}/>
 
         {/* <div className='absolute bg-[#b03e49] w-full h-screen z-0 flex items-center  p-10' >
