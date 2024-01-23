@@ -59,6 +59,13 @@ import {
 }
 from '../assets/images';
 
+import{
+    Game_gif,
+    Eyespace_gif,
+    Skateboard_gif,
+    Social_gif,
+}
+from '../assets/images';
 
 export const navLinks = [
 
@@ -133,6 +140,7 @@ export const ProjectsData = {
         id: 1,
         section: "coding",  
         thumbnail: SkateboardThumbnail,
+        gif : Skateboard_gif,
         images: [],
         title: "Skateboard Retail Website",
         demoLink: "https://skateboard-tailwind.vercel.app/",
@@ -155,6 +163,7 @@ export const ProjectsData = {
         id: 2,
         section: "coding", 
         thumbnail: GameThumbnail,
+        gif : Game_gif,
         images: [],
         title: "Little Timmy’s Spooky Mansion Game",
         demoLink: "https://agormley3424.github.io/stealth_game/",
@@ -171,6 +180,7 @@ export const ProjectsData = {
         id: 3,
         section: "coding", 
         thumbnail: Ray1Thumbnail,
+        gif : Eyespace_gif,
         images: [Ray1_1],
         title: "RAY Events Management App",
         demoLink: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEz6Hwr0dsV7UFxpaUXMumk%2FRAY%3Fembed_host%3Dshare%26kind%3Dproto%26node-id%3D116-659%26page-id%3D116%253A372%26scaling%3Dscale-down%26starting-point-node-id%3D116%253A659%26t%3D4PVxERlo1GIXQILC-1%26type%3Ddesign%26mode%3Ddesign",
@@ -187,7 +197,8 @@ export const ProjectsData = {
         id: 4,
     section: "coding", 
         thumbnail: AtmThumbnail,
-        images: [],
+        gif : Social_gif,
+        images: [Social_gif],
         title: "ATM System",
         demoLink: "Unavailable",
         repoLink: "https://github.com/AtharvTam/RCTNE",
@@ -203,6 +214,7 @@ export const ProjectsData = {
         id: 5,
          section: "coding",
         thumbnail: CafeThumbnail,
+        gif : Skateboard_gif,
         images: [],
         title: "Cyber Cafe Management System",
         demoLink: "Unavailable",
@@ -240,9 +252,10 @@ export const ProjectsData = {
 
     {
         id: 2,
-        section: "ui",  
+        section: "mobile",  
+        gif: Social_gif,
         thumbnail: SocialThumbnail,
-        images: [Social_1],
+        images: [Social_gif,Social_1],
         title: "All In One Social Media App",
         demoLink: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F0ZO98SB1s19B2kp1VOQ2Uf%2FUntitled%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D4-1971%26viewport%3D-5552%252C2709%252C0.86%26t%3DXDTF03uSbtlogwiI-1%26scaling%3Dscale-down%26starting-point-node-id%3D51%253A8023%26mode%3Ddesign",
         repoLink: "https://www.behance.net/gallery/166093555/Social-Media-App",
@@ -256,7 +269,7 @@ export const ProjectsData = {
 
     {
         id: 3,
-        section: "ui",  
+        section: "mobile",  
         thumbnail: RayThumbnail,
         images: [Ray1_1],
         title: "Event Prototype App",

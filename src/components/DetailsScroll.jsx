@@ -99,7 +99,7 @@ export const Content = ({ translate, users }) => {
       style={{
         translateY: translate,
       }}
-      className="div max-w-xs sm:max-w-5xl mx-auto text-center items-center justify-center flex flex-col gap-10  mt-20  relative sm:px-6 max-sm:px-3 lg:px-16 "
+      className="div  sm:max-w-5xl  text-center items-center justify-center flex flex-col gap-10  mt-20    "
     >
      
      
@@ -107,7 +107,7 @@ export const Content = ({ translate, users }) => {
      
         
      {users.section == 'coding' ? (
-           <div className='flex flex-row gap-4'>
+           <div className='flex flex-row gap-4 sm:px-6 max-sm:px-3 lg:px-16'>
 
 {users.demoLink != "Unavailable" ?
 <a href={users.demoLink} target='_blank'>
@@ -125,7 +125,7 @@ export const Content = ({ translate, users }) => {
                    iconReact={<HiArrowTopRightOnSquare />} />
                    </a>
 
-                   </div>
+</div>
        
        )
        : (
@@ -141,9 +141,16 @@ export const Content = ({ translate, users }) => {
 
 
 
-     
+ {users.section == 'mobile' ?
+ 
+ (
+<div className="w-full h-full bg-black flex">
+  <img className='w-full h-full ' src={users.images[0]} />
+  </div>
+ )
+ :    
 
-     <div className='flex flex-col gap-2'>
+(   <section className="sm:px-6 max-sm:px-3 lg:px-16 max-w-xs">  <div className='flex flex-col gap-2 '>
        <h2 className='sm:text-xl max-sm:text-xl font-semibold text-secondary'>Description</h2>
        <p className='text-secondary sm:text-lg max-sm:text-sm font-normal'>{users.description}</p>
      </div>
@@ -158,6 +165,9 @@ export const Content = ({ translate, users }) => {
          } 
        </div>
      </div>
+     </section>
+     )
+        }
 
   
     </motion.div>
