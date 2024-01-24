@@ -30,6 +30,9 @@ import VNN2_thumbnail from './VNN2_thumbnail.png'
 import VNN3_thumbnail from './VNN3_thumbnail.png'
 
 import Skateboard_gif from './Skateboard_gif.gif'
+import Game_gif from './Game_gif.gif'
+import Social_gif from './Social_gif.gif'
+
 
 export {
   AtmThumbnail,
@@ -65,4 +68,6 @@ export {
     VNN2_thumbnail,
     VNN3_thumbnail,
     Skateboard_gif,
+    Game_gif,
+    Social_gif,
 };

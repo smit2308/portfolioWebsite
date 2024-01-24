@@ -59,7 +59,7 @@ const ProjectDetailsScroll = (props) => {
                 <h1 className="md:text-3xl text-2xl font-display font-semibold text-secondary  -mt-6  ">
                   Project <br />
                   </h1>
-                  <h2 className="font-display  text-secondary  md:text-[6rem] sm:text-[4rem] text-[3rem] font-bold  leading-none mb-10">
+                  <h2 className="font-display  text-secondary  md:text-[6rem] sm:text-[4rem] text-[3.5rem] font-bold  leading-none mb-20">
                   {proj.title}
                   </h2>
                 

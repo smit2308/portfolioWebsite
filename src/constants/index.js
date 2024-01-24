@@ -35,6 +35,7 @@ import {  AtmThumbnail,
     VNN1_thumbnail,
     VNN2_thumbnail,
     VNN3_thumbnail,
+    Social_gif,
 
     } from '../assets/images';
 
@@ -61,6 +62,8 @@ from '../assets/images';
 
 import{
     Skateboard_gif,
+    Game_gif,
+
 }
 from '../assets/images';
 
@@ -160,6 +163,7 @@ export const ProjectsData = {
         id: 2,
         section: "coding", 
         thumbnail: GameThumbnail,
+        gif : Game_gif,
         images: [],
         title: "Little Timmy’s Spooky Mansion Game",
         demoLink: "https://agormley3424.github.io/stealth_game/",
@@ -176,6 +180,7 @@ export const ProjectsData = {
         id: 3,
         section: "coding", 
         thumbnail: Ray1Thumbnail,
+        gif: Social_gif,
         images: [Ray1_1],
         title: "RAY Events Management App",
         demoLink: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEz6Hwr0dsV7UFxpaUXMumk%2FRAY%3Fembed_host%3Dshare%26kind%3Dproto%26node-id%3D116-659%26page-id%3D116%253A372%26scaling%3Dscale-down%26starting-point-node-id%3D116%253A659%26t%3D4PVxERlo1GIXQILC-1%26type%3Ddesign%26mode%3Ddesign",

@@ -94,27 +94,33 @@ const Projects = () => {
 
       {/* <a href={project.demoLink!= "blank" ? project.demoLink : "/home"} target='_blank' className='w-max h-max self-center mx-auto' > */}
     {/* grid lg:grid-cols-3 grid-cols-2 sm:gap-y-16 gap-y-8  */}
-      <div className='w-full lg:flex lg:flex-wrap lg:gap-x-6 lg-gap-y-10 lg:justify-between  max-lg:grid  max-lg:grid-cols-2 sm:gap-y-16 gap-y-8 gap-x-6  '>
+      <div className='w-full lg:flex lg:flex-wrap lg:gap-x-6  lg-gap-y-10 lg:justify-between  max-lg:grid  max-lg:grid-cols-2 sm:gap-y-16 gap-y-8 gap-x-6  '>
       <AnimatePresence   mode="wait">
         {users.map((project, index ) => (
           <motion.div
             key={project.title} // Don't forget to add a unique key for each item
-            className='w-max  max-lg:mx-auto relative group rounded-lg  bg-black justify-center items-center overflow-hidden shadow-image2 '
+            className='w-max  max-lg:mx-auto relative group rounded-lg   justify-center items-center overflow-hidden shadow-image2 '
             initial={{ opacity: 0}}
             animate={{ opacity: 1}}
             exit={{ opacity: 0}}
             transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: ( index)*0.15  }}
           >
-            <Link  to={`/projects/${project.title}`} state={{ id: project.title }}  className='flex flex-col gap-10 justify-center items-center'>
+            <Link  to={`/projects/${project.title}`} state={{ id: project.title }}  className='flex  
+            xl:w-[340px] sm:w-[270px] xs:w-[200px] w-[150px] xl:h-[340px] sm:h-[270px] xs:h-[200px] h-[150px]  '>
 
-              <img src={project.thumbnail} alt={project.title} className=' xl:w-[340px] sm:w-[270px] xs:w-[200px] w-[150px]  
-                       place-self-center  transition-all ease-in-out group-hover:opacity-40   duration-500  '
+              <img src={project.gif} alt={project.title} className=' object-center object-cover w-full
+                       transition-all ease-in-out group-hover:hidden duration-500 brightness-[90%]  '
 
               
               />
 
+            <img src={project.thumbnail} alt={project.title} className='hidden object-top object-cover w-full
+                       transition-all ease-in-out group-hover:flex  '
+
+              
+              />
  
-              <motion.div 
+              {/* <motion.div 
 
               className='hidden text-semibold font-montserrat w-full h-full  absolute rounded-xl group-hover:flex backdrop-blur-sm l justify-center items-center gap-4 p-4  transition-all ease-in-out duration-500'>
                 <div className='flex w-full items-center justify-center gap-2'>
@@ -130,7 +136,7 @@ const Projects = () => {
                 </div>
 
        
-              </motion.div>
+              </motion.div> */}
 
               
 
