@@ -29,6 +29,8 @@ import VNN1_thumbnail from './VNN1_thumbnail.png'
 import VNN2_thumbnail from './VNN2_thumbnail.png'
 import VNN3_thumbnail from './VNN3_thumbnail.png'
 
+import Skateboard_gif from './Skateboard_gif.gif'
+
 export {
   AtmThumbnail,
   CafeThumbnail,
@@ -62,4 +64,5 @@ export {
     VNN1_thumbnail,
     VNN2_thumbnail,
     VNN3_thumbnail,
+    Skateboard_gif,
 };

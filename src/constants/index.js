@@ -59,6 +59,10 @@ import {
 }
 from '../assets/images';
 
+import{
+    Skateboard_gif,
+}
+from '../assets/images';
 
 export const navLinks = [
 
@@ -131,7 +135,8 @@ export const ProjectsData = {
 'codingProjects' : [
     {
         id: 1,
-        section: "coding",  
+        section: "coding",
+        gif : Skateboard_gif,
         thumbnail: SkateboardThumbnail,
         images: [],
         title: "Skateboard Retail Website",

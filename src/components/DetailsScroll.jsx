@@ -33,13 +33,13 @@ const DetailsScroll = ({
   }, []);
 
   const scaleDimensions = () => {
-    return isMobile ? [1.1, 1] : [1.05, 1];
+    return isMobile ? [1.2, 1] : [1.05, 1];
   };
 
   const originalPosition = isMobile? 30 :40;
-  const rotate = useTransform(scrollYProgress, [0, 1], isMobile? [50,0] : [40, 0]);
-  const scale = useTransform(scrollYProgress, [0, 1], scaleDimensions());
-  const translate = useTransform(scrollYProgress, [0, 1], [originalPosition, isMobile? -400:-400]);
+  const rotate = useTransform(scrollYProgress, [0, isMobile ? 0.4 : 1], isMobile? [30,0] : [40, 0]);
+  const scale = useTransform(scrollYProgress, [0, isMobile ? 0.4 : 1], scaleDimensions());
+  const translate = useTransform(scrollYProgress, [0, isMobile ? 0.4 : 1], [originalPosition, isMobile? -400:-400]);
 
   
 
@@ -50,9 +50,9 @@ const DetailsScroll = ({
       ref={containerRef}
     >
       <div
-        className=" w-full relative "
+        className=" w-full relative"
         style={{
-          perspective: "1200px",
+          perspective: `${isMobile? '800px' : '1200px'}`,
         }}
       >
         <Header translate={translate} titleComponent={titleComponent} isMobile={isMobile}/>
@@ -64,12 +64,13 @@ const DetailsScroll = ({
           scale={scale}
           users={users}
         />
-
-        
+    
+      {isMobile && <Content  users={users} />}
       </div>
    
     </div>
-    <Content  users={users} />
+    {!isMobile &&
+    <Content  users={users} />}
     </>
   );
 };
@@ -86,7 +87,7 @@ export const Header = ({ translate, titleComponent, isMobile }) => {
      
       
        transition={{duration:2, ease: [0.22, 1, 0.36, 1], delay:1.2}}
-      className="div max-w-xs sm:max-w-5xl mx-auto text-center relative z-0"
+      className="div  sm:max-w-5xl mx-auto text-center relative z-0"
     >
       {titleComponent}
     </motion.div>
@@ -99,7 +100,7 @@ export const Content = ({ translate, users }) => {
       style={{
         translateY: translate,
       }}
-      className="div max-w-xs sm:max-w-5xl mx-auto text-center items-center justify-center flex flex-col gap-10  mt-20  relative sm:px-6 max-sm:px-3 lg:px-16 "
+      className="div max-w-xs sm:max-w-5xl mx-auto text-center items-center justify-center flex flex-col gap-10  sm:mt-20 mt-10  relative sm:px-6 max-sm:px-3 lg:px-16 "
     >
      
      
