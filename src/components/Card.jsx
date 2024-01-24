@@ -14,17 +14,8 @@ const Card = ({
 
     const [showAnimation, setShowAnimation] = useState(true);
     const [duration, setDuration] = useState(1 + 0.5 * message.split(" ").length   );
-    const [display, setDisplay] = useState(false);
+
     const [isSmall, setIsSmall] = useState(false);
-
-
-   useEffect(() => {
-      const timer = setTimeout(() => {
-        setDisplay(true);
-      }, 14000);
-      return () => clearTimeout(timer);
-    }, []);
-
 
     useEffect(() => {
     const checkSmall = () => {
@@ -89,39 +80,33 @@ const Card = ({
 
 : 
 
-isSmall ?
+// isSmall ?
 
-  users.images[0] ? (
-    <img className={` ${users.section == 'mobile'? 'w-full' : ''} w-full object-cover`} src={users.images[0]} />
-  ) : (
-    'Image not available :('
-  )
-
-
-
-: 
+//   users.images[0] ? (
+//     <img className='w-full object-cover' src={users.images[0]} />
+//   ) : (
+//     'Image not available :('
+//   )
 
 
-    users.section === 'ui' || users.section === 'mobile' ? (
-        <>
-      <iframe className='w-full h-full'   src={users.demoLink} ></iframe>
 
-      </>
+// : 
+
+
+    users.section === 'ui' ? (
+      
+      <iframe className='w-full h-full '  src={users.demoLink} allowFullscreen></iframe>
     ) : (
       <iframe className='w-full h-full' src={users.demoLink} async allowFullScreen></iframe>
     )
 
 
-    // {display && (
-    //   <img className='w-full' src={users.images[0]} />
-    // )  
-    // }
+
 
 
 
 
 }
-
 
   
        </motion.div>

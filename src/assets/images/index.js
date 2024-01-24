@@ -28,10 +28,6 @@ import MuskhaveProduct_thumbnail from './MuskhaveProduct_thumbnail.png'
 import VNN1_thumbnail from './VNN1_thumbnail.png'
 import VNN2_thumbnail from './VNN2_thumbnail.png'
 import VNN3_thumbnail from './VNN3_thumbnail.png'
-import Game_gif from './Game_gif.gif'
-import Eyespace_gif from './Eyespace_gif.gif'
-import Skateboard_gif from './Skateboard_gif.gif'
-import Social_gif from './Social_gif.gif'
 
 export {
   AtmThumbnail,
@@ -66,9 +62,4 @@ export {
     VNN1_thumbnail,
     VNN2_thumbnail,
     VNN3_thumbnail,
-
-    Game_gif,
-    Eyespace_gif,
-    Skateboard_gif,
-    Social_gif,
 };
