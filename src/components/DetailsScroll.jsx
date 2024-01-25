@@ -37,9 +37,9 @@ const DetailsScroll = ({
   };
 
   const originalPosition = isMobile? 30 :40;
-  const rotate = useTransform(scrollYProgress, [0, isMobile ? 0.4 : 1], isMobile? [30,0] : [40, 0]);
-  const scale = useTransform(scrollYProgress, [0, isMobile ? 0.4 : 1], scaleDimensions());
-  const translate = useTransform(scrollYProgress, [0, isMobile ? 0.4 : 1], [originalPosition, isMobile? -400:-400]);
+  const rotate = useTransform(scrollYProgress, [0, isMobile ? 0.6 : 1], isMobile? [30,0] : [40, 0]);
+  const scale = useTransform(scrollYProgress, [0, isMobile ? 0.6 : 1], scaleDimensions());
+  const translate = useTransform(scrollYProgress, [0, isMobile ? 0.6 : 1], [originalPosition, isMobile? -400:-400]);
 
   
 

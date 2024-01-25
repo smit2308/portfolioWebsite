@@ -65,6 +65,8 @@ import{
     Game_gif,
     Eyespace_gif,
     Social_gif,
+    Eyelabs_gif,
+    Ray_gif,
 }
 from '../assets/images';
 
@@ -278,8 +280,9 @@ export const ProjectsData = {
         id: 3,
         section: "mobile",  
         thumbnail: RayThumbnail,
-        images: [Ray1_1],
-        bg: "#FC66A5",
+        bg: "#EEE9F2",
+        gif: Ray_gif,
+        images: [Ray1_1],  
         title: "Event Prototype App",
         demoLink: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEz6Hwr0dsV7UFxpaUXMumk%2FRAY%3Fembed_host%3Dshare%26kind%3Dproto%26node-id%3D116-659%26page-id%3D116%253A372%26scaling%3Dscale-down%26starting-point-node-id%3D116%253A659%26t%3D4PVxERlo1GIXQILC-1%26type%3Ddesign%26mode%3Ddesign",
         repoLink: "https://www.behance.net/gallery/187225649/Ray-Events-Management-App",
@@ -296,8 +299,9 @@ export const ProjectsData = {
         thumbnail: EyelabsThumbnail,
         images: [Eyelabs_1],
         bg: "#FC66A5",
+        gif: Eyelabs_gif,
         title: "Eyelabs Website Front Page",
-        demoLink: "Unavailable",
+        demoLink: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2Fdg2DlqaAtfZnN9degywlAv%2FEyelabs%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-196%26viewport%3D-414%252C901%252C0.32%26t%3Dr3tMWGylMyoAIcsl-1%26scaling%3Dscale-down-width%26mode%3Ddesign",
         repoLink: "https://github.com/AtharvTam/RCTNE",
         shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
         description: "A captivating white and dark cinematic landing page designed for Eyespace.ai, the medical startup at the University of Southern California, which I personally crafted using Figma. In this redesign, I focused on infusing a modern aesthetic to elevate the overall user experience ",

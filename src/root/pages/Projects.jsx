@@ -103,13 +103,13 @@ const Projects = () => {
             initial={{ opacity: 0}}
             animate={{ opacity: 1}}
             exit={{ opacity: 0}}
-            transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: ( index)*0.15  }}
+            transition={{ duration: 0.5, ease: 'circInOut', delay: ( index)*0.1  }}
           >
             <Link  to={`/projects/${project.title}`} state={{ id: project.title }}  className={`flex  
             xl:w-[340px] sm:w-[270px] xs:w-[200px] w-[150px] xl:h-[340px] sm:h-[270px] xs:h-[200px] h-[150px]
-              bg-[${project.bg}] brightness-[90%] hover:brightness-100  ` }>
-
-              { project.section === 'mobile' ?
+              brightness-[80%] saturate-[80%] hover:saturate-100 hover:brightness-100 transition-all ease-in-out duration-75 ` }>
+                  {/*  bg-[${project.bg}] */}
+              {/* { project.section === 'mobile' ?
                             <img src={project.gif} alt={project.title} className='p-4 object-cover w-full
                             transition-all ease-in-out group-hover:hidden duration-500   '             
                              />
@@ -119,30 +119,14 @@ const Projects = () => {
               />
               
 
-              }
-            <img src={project.thumbnail} alt={project.title} className='hidden object-top object-cover w-full
-                       transition-all ease-in-out group-hover:flex  '
+              } */}
+            <img src={project.thumbnail} alt={project.title} className='object-top object-cover w-full
+                       transition-all ease-in-out flex  '
 
               
               />
  
-              {/* <motion.div 
 
-              className='hidden text-semibold font-montserrat w-full h-full  absolute rounded-xl group-hover:flex backdrop-blur-sm l justify-center items-center gap-4 p-4  transition-all ease-in-out duration-500'>
-                <div className='flex w-full items-center justify-center gap-2'>
-                <h1 className='font-montserrat text-2xl text-primary max-sm:text-lg '>Open</h1>
-    <div className='max-sm:hidden'>
-    <HiArrowRight size={30} color='white' />
-    </div>
-
-    <div className='sm:hidden'>
-    <HiArrowRight  color='white' />
-    </div>
-
-                </div>
-
-       
-              </motion.div> */}
 
               
 

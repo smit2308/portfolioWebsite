@@ -33,6 +33,8 @@ import Skateboard_gif from './Skateboard_gif.gif'
 import Game_gif from './Game_gif.gif'
 import Social_gif from './Social_gif.gif'
 import Eyespace_gif from './Eyespace_gif.gif'
+import Eyelabs_gif from './Eyelabs_gif.gif'
+import Ray_gif from './Ray_gif.gif'
 
 export {
   AtmThumbnail,
@@ -71,4 +73,6 @@ export {
     Game_gif,
     Social_gif,
     Eyespace_gif,
+    Eyelabs_gif,
+    Ray_gif,
 };
