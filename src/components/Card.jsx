@@ -83,7 +83,7 @@ const Card = ({
 isSmall ?
 
   users.gif ? (
-    users.section == 'coding' ? (
+    users.section != 'mobile' ? (
     <img className=' w-full object-top' src={users.gif} />
     ) : (
       <img className='h-full object-cover' src={users.gif} />
