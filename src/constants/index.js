@@ -35,7 +35,7 @@ import {  AtmThumbnail,
     VNN1_thumbnail,
     VNN2_thumbnail,
     VNN3_thumbnail,
-    Social_gif,
+    
 
     } from '../assets/images';
 
@@ -63,7 +63,8 @@ from '../assets/images';
 import{
     Skateboard_gif,
     Game_gif,
-
+    Eyespace_gif,
+    Social_gif,
 }
 from '../assets/images';
 
@@ -142,6 +143,7 @@ export const ProjectsData = {
         gif : Skateboard_gif,
         thumbnail: SkateboardThumbnail,
         images: [],
+        bg: "#FC66A5",
         title: "Skateboard Retail Website",
         demoLink: "https://skateboard-tailwind.vercel.app/",
         repoLink: "https://github.com/smit2308/skateboard-tailwind",
@@ -165,6 +167,7 @@ export const ProjectsData = {
         thumbnail: GameThumbnail,
         gif : Game_gif,
         images: [],
+        bg: "#FC66A5",
         title: "Little Timmy’s Spooky Mansion Game",
         demoLink: "https://agormley3424.github.io/stealth_game/",
         repoLink: "https://github.com/akashram98/littleTimmy",
@@ -182,6 +185,7 @@ export const ProjectsData = {
         thumbnail: Ray1Thumbnail,
         gif: Social_gif,
         images: [Ray1_1],
+        bg: "#FC66A5",
         title: "RAY Events Management App",
         demoLink: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEz6Hwr0dsV7UFxpaUXMumk%2FRAY%3Fembed_host%3Dshare%26kind%3Dproto%26node-id%3D116-659%26page-id%3D116%253A372%26scaling%3Dscale-down%26starting-point-node-id%3D116%253A659%26t%3D4PVxERlo1GIXQILC-1%26type%3Ddesign%26mode%3Ddesign",
         repoLink: "https://github.com/AtharvTam/RCTNE",
@@ -198,6 +202,7 @@ export const ProjectsData = {
     section: "coding", 
         thumbnail: AtmThumbnail,
         images: [],
+        bg: "#FC66A5",
         title: "ATM System",
         demoLink: "Unavailable",
         repoLink: "https://github.com/AtharvTam/RCTNE",
@@ -214,6 +219,7 @@ export const ProjectsData = {
          section: "coding",
         thumbnail: CafeThumbnail,
         images: [],
+        bg: "#FC66A5",
         title: "Cyber Cafe Management System",
         demoLink: "Unavailable",
         repoLink: "https://github.com/AtharvTam/RCTNE",
@@ -237,6 +243,8 @@ export const ProjectsData = {
         section: "ui",  
         thumbnail: EyespaceThumbnail,
         images: [Eyespace_1],
+        bg: "#FC66A5",
+        gif: Eyespace_gif,
         title: "Eyespace Opthalmology Website",
         demoLink: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FWccFv0n0b0fEoml0JR3UMe%2FEyespace%3Fpage-id%3D33%253A2%26node-id%3D33-186%26starting-point-node-id%3D33%253A186%26scaling%3Dscale-down-width%26mode%3Ddesign%26t%3DjBpmLrPPa034SlUx-1",
         repoLink: "https://www.behance.net/gallery/166388085/EYESPACE-Website-Revamp",
@@ -250,8 +258,10 @@ export const ProjectsData = {
 
     {
         id: 2,
-        section: "ui",  
+        section: "mobile",  
         thumbnail: SocialThumbnail,
+        bg: "#FC66A5",
+        gif: Social_gif,
         images: [Social_1],
         title: "All In One Social Media App",
         demoLink: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F0ZO98SB1s19B2kp1VOQ2Uf%2FUntitled%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D4-1971%26viewport%3D-5552%252C2709%252C0.86%26t%3DXDTF03uSbtlogwiI-1%26scaling%3Dscale-down%26starting-point-node-id%3D51%253A8023%26mode%3Ddesign",
@@ -266,9 +276,10 @@ export const ProjectsData = {
 
     {
         id: 3,
-        section: "ui",  
+        section: "mobile",  
         thumbnail: RayThumbnail,
         images: [Ray1_1],
+        bg: "#FC66A5",
         title: "Event Prototype App",
         demoLink: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEz6Hwr0dsV7UFxpaUXMumk%2FRAY%3Fembed_host%3Dshare%26kind%3Dproto%26node-id%3D116-659%26page-id%3D116%253A372%26scaling%3Dscale-down%26starting-point-node-id%3D116%253A659%26t%3D4PVxERlo1GIXQILC-1%26type%3Ddesign%26mode%3Ddesign",
         repoLink: "https://www.behance.net/gallery/187225649/Ray-Events-Management-App",
@@ -284,6 +295,7 @@ export const ProjectsData = {
         section: "ui",  
         thumbnail: EyelabsThumbnail,
         images: [Eyelabs_1],
+        bg: "#FC66A5",
         title: "Eyelabs Website Front Page",
         demoLink: "Unavailable",
         repoLink: "https://github.com/AtharvTam/RCTNE",
@@ -299,6 +311,7 @@ export const ProjectsData = {
         section: "ui",  
         thumbnail: RctneThumbnail,
         images: [],
+        bg: "#FC66A5",
         title: "Rotaract Club of Thane North End Website",
         demoLink: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEz6Hwr0dsV7UFxpaUXMumk%2FRAY%3Fpage-id%3D0%253A1%26node-id%3D2080-230%26scaling%3Dscale-down-width%26starting-point-node-id%3D2080%253A230%26mode%3Ddesign%26t%3DpfHoc8Z83sqaxlRK-1",
         repoLink: "https://rctne.wordpress.com/",

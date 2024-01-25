@@ -42,12 +42,12 @@ const Card = ({
           boxShadow:
           "0 0 #0000004d, 0 9px 15px #0000004a, 0 20px 20px #00000042, 0 40px 40px #00000026, 0 100px 50px #0000000a, 0 230px 30px #00000003 ",
         }}
-        className=" max-w-5xl -mt-12 mx-auto max-xs:max-h-[420px]  h-[70vh] md:h-[70vh] xl:h-[85vh] w-full border-4 border-[#6C6C6C] lg:p-6 p-1 bg-[#222222] rounded-2xl lg:rounded-3xl shadow-2xl z-30"
+        className=" max-w-5xl -mt-12 mx-auto h-max  md:h-[70vh] xl:h-[85vh] w-full border-4 border-[#6C6C6C] lg:p-6 p-1 bg-[#222222] rounded-2xl lg:rounded-3xl shadow-2xl z-30"
       >
-{/* max-xs:max-h-[420px] */}
+{/* max-xs:max-h-[420px] max-xs:max-h-[420px]  h-[70vh] */}
 
 
-      {showAnimation ? (
+      {false ? (
         <motion.div
           key="animation"
           initial={{ opacity: 0.9 }}
@@ -57,16 +57,16 @@ const Card = ({
             transition: { duration: duration, delay: 2 }, // Total duration of the animation
           }}
           onAnimationComplete={() => setShowAnimation(false)}
-          className=' h-full w-full rounded-xl flex flex-col bg-black  items-center'
+          className= {`h-full w-full rounded-xl flex flex-col   items-center`}
         >
           <TextGenerateEffect words={message} className='font-montserrat  md:text-3xl text-primary p-8 mt-10' />
         </motion.div>
       ) : (
          <motion.div 
          initial={{opacity:0}}
-          animate={{opacity:1 , transition: {duration: 1, ease: "circOut" }}}
+          animate={{opacity:1 , transition: {duration: 1, ease: "circOut", delay: 2 }}}
 
-         className=" h-full w-full rounded-xl flex flex-col bg-black overflow-y-scroll  hide-scrollbar text-white  items-center">
+         className={` h-full w-full rounded-xl flex flex-col bg-[${users.bg? users.bg : "#00000"}] overflow-y-scroll  hide-scrollbar text-white  items-center`}>
  
  {
  
@@ -83,7 +83,11 @@ const Card = ({
 isSmall ?
 
   users.gif ? (
-    <img className='w-full object-top' src={users.gif} />
+    users.section == 'coding' ? (
+    <img className=' w-full object-top' src={users.gif} />
+    ) : (
+      <img className='h-full object-cover' src={users.gif} />
+    )
   ) : (
     'Image not available :('
   )

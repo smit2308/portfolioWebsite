@@ -65,9 +65,10 @@ const Work = () => {
         </h1>
 
         <h1 className=' font-montserrat font-normal leadinng-normal sm:text-sm lg:text-lg md:text-right text-center xl:pr-20 md:pr-6 text-secondary  md:border-r-2  md:border-secondary'>
-          Crafting unique digital experiences as a Web Designer and Developer,
-          I also excel in videography and video editing.
-          Let's create something extraordinary together
+        Discover a variety of digital experiences that highlight my skills as a UI Designer and Developer.
+         Additionally, explore my work in videography and video editing for a 
+        glimpse into my creative versatility.
+        
         </h1>
 
       </div>

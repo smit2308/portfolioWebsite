@@ -105,15 +105,21 @@ const Projects = () => {
             exit={{ opacity: 0}}
             transition={{ duration: 0.5, ease: [0.22, 1, 0.36, 1], delay: ( index)*0.15  }}
           >
-            <Link  to={`/projects/${project.title}`} state={{ id: project.title }}  className='flex  
-            xl:w-[340px] sm:w-[270px] xs:w-[200px] w-[150px] xl:h-[340px] sm:h-[270px] xs:h-[200px] h-[150px]  '>
+            <Link  to={`/projects/${project.title}`} state={{ id: project.title }}  className={`flex  
+            xl:w-[340px] sm:w-[270px] xs:w-[200px] w-[150px] xl:h-[340px] sm:h-[270px] xs:h-[200px] h-[150px]
+              bg-[${project.bg}] brightness-[90%] hover:brightness-100  ` }>
 
-              <img src={project.gif} alt={project.title} className=' object-center object-cover w-full
-                       transition-all ease-in-out group-hover:hidden duration-500 brightness-[90%]  '
-
-              
+              { project.section === 'mobile' ?
+                            <img src={project.gif} alt={project.title} className='p-4 object-cover w-full
+                            transition-all ease-in-out group-hover:hidden duration-500   '             
+                             />
+                             :
+              <img src={project.gif} alt={project.title} className=' object-top object-cover w-full
+                       transition-all ease-in-out group-hover:hidden duration-500   '             
               />
+              
 
+              }
             <img src={project.thumbnail} alt={project.title} className='hidden object-top object-cover w-full
                        transition-all ease-in-out group-hover:flex  '
 
