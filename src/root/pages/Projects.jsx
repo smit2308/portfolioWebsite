@@ -94,20 +94,20 @@ const Projects = () => {
 
       {/* <a href={project.demoLink!= "blank" ? project.demoLink : "/home"} target='_blank' className='w-max h-max self-center mx-auto' > */}
     {/* grid lg:grid-cols-3 grid-cols-2 sm:gap-y-16 gap-y-8  */}
-      <div className='w-full lg:flex lg:flex-wrap lg:gap-x-6  lg-gap-y-10 lg:justify-between  max-lg:grid  max-lg:grid-cols-2 sm:gap-y-16 gap-y-8 gap-x-6  '>
+      <div className='w-full lg:flex lg:flex-wrap lg:gap-x-6  lg-gap-y-10 lg:justify-between  max-lg:grid  max-lg:grid-cols-2 max-sm:flex-col max-sm:flex sm:gap-y-16 gap-y-8 gap-x-6  '>
       <AnimatePresence   mode="wait">
         {users.map((project, index ) => (
           <motion.div
             key={project.title} // Don't forget to add a unique key for each item
-            className='w-max  max-lg:mx-auto relative group rounded-lg   justify-center items-center overflow-hidden shadow-image2 '
+            className='xs:w-max  max-lg:mx-auto relative group rounded-lg   justify-center items-center overflow-hidden shadow-image2 '
             initial={{ opacity: 0}}
             animate={{ opacity: 1}}
             exit={{ opacity: 0}}
             transition={{ duration: 0.5, ease: 'circInOut', delay: ( index)*0.1  }}
           >
             <Link  to={`/projects/${project.title}`} state={{ id: project.title }}  className={`flex  
-            xl:w-[340px] sm:w-[270px] xs:w-[200px] w-[150px] xl:h-[340px] sm:h-[270px] xs:h-[200px] h-[150px]
-              brightness-[80%] saturate-[80%] hover:saturate-100 hover:brightness-100 transition-all ease-in-out duration-75 ` }>
+            xl:w-[340px] sm:w-[270px] xs:w-[200px]  xl:h-[340px] sm:h-[270px] xs:h-[200px] w-full
+              md:brightness-[80%] max-md:brightness-100 md:saturate-[80%] max-md:saturate-100 hover:saturate-100 hover:brightness-100 transition-all ease-in-out duration-75 ` }>
                   {/*  bg-[${project.bg}] */}
               {/* { project.section === 'mobile' ?
                             <img src={project.gif} alt={project.title} className='p-4 object-cover w-full

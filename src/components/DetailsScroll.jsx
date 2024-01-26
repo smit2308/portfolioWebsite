@@ -149,7 +149,7 @@ export const Content = ({ translate, users }) => {
        <p className='text-secondary sm:text-lg max-sm:text-sm font-normal'>{users.description}</p>
      </div>
 
-     <div className='flex flex-col gap-4'>
+     <div className='flex flex-col gap-4 items-center'>
        <h2 className='sm:text-xl max-sm:text-lg font-medium text-secondary'>Skills</h2>
        <div className='flex flex-wrap gap-2'>
          {

@@ -67,6 +67,7 @@ import{
     Social_gif,
     Eyelabs_gif,
     Ray_gif,
+    Rctne_gif,
 }
 from '../assets/images';
 
@@ -199,39 +200,39 @@ export const ProjectsData = {
         ]
     },
 
-    {
-        id: 4,
-    section: "coding", 
-        thumbnail: AtmThumbnail,
-        images: [],
-        bg: "#FC66A5",
-        title: "ATM System",
-        demoLink: "Unavailable",
-        repoLink: "https://github.com/AtharvTam/RCTNE",
-        shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
-        description: "The ATM Management System is a Python-based project designed to streamline banking operations through a user-friendly graphical interface. Leveraging the power of SQL as its database, the system allows users to perform essential banking transactions effortlessly. With features such as deposit and withdrawal functionalities, users can easily manage their funds securely. The graphical user interface, developed using Tkinter, enhances the overall user experience, making the ATM Management System a reliable and efficient tool for seamless financial transactions",
-        skills: [
-            { name: "Python", logo: pythonLogo },
-            { name: "SQL", logo: sqlLogo },
-        ]
-    },
+    // {
+    //     id: 4,
+    // section: "coding", 
+    //     thumbnail: AtmThumbnail,
+    //     images: [],
+    //     bg: "#FC66A5",
+    //     title: "ATM System",
+    //     demoLink: "Unavailable",
+    //     repoLink: "https://github.com/AtharvTam/RCTNE",
+    //     shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
+    //     description: "The ATM Management System is a Python-based project designed to streamline banking operations through a user-friendly graphical interface. Leveraging the power of SQL as its database, the system allows users to perform essential banking transactions effortlessly. With features such as deposit and withdrawal functionalities, users can easily manage their funds securely. The graphical user interface, developed using Tkinter, enhances the overall user experience, making the ATM Management System a reliable and efficient tool for seamless financial transactions",
+    //     skills: [
+    //         { name: "Python", logo: pythonLogo },
+    //         { name: "SQL", logo: sqlLogo },
+    //     ]
+    // },
 
-    {
-        id: 5,
-         section: "coding",
-        thumbnail: CafeThumbnail,
-        images: [],
-        bg: "#FC66A5",
-        title: "Cyber Cafe Management System",
-        demoLink: "Unavailable",
-        repoLink: "https://github.com/AtharvTam/RCTNE",
-        shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
-        description: "The Cyber Cafe Management System, developed in C for an Operating Systems course, employs the FCFS scheduling algorithm to efficiently assign users to available desktops in a fair first-come-first-serve manner. This system optimizes the utilization of cyber cafe resources, providing a seamless experience for both users and administrators.",
-        skills: [
-            { name: "C", logo: cLogo },
+    // {
+    //     id: 5,
+    //      section: "coding",
+    //     thumbnail: CafeThumbnail,
+    //     images: [],
+    //     bg: "#FC66A5",
+    //     title: "Cyber Cafe Management System",
+    //     demoLink: "Unavailable",
+    //     repoLink: "https://github.com/AtharvTam/RCTNE",
+    //     shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
+    //     description: "The Cyber Cafe Management System, developed in C for an Operating Systems course, employs the FCFS scheduling algorithm to efficiently assign users to available desktops in a fair first-come-first-serve manner. This system optimizes the utilization of cyber cafe resources, providing a seamless experience for both users and administrators.",
+    //     skills: [
+    //         { name: "C", logo: cLogo },
            
-        ]
-    }
+    //     ]
+    // }
 
 
 ],
@@ -316,6 +317,7 @@ export const ProjectsData = {
         thumbnail: RctneThumbnail,
         images: [],
         bg: "#FC66A5",
+        gif: Rctne_gif,
         title: "Rotaract Club of Thane North End Website",
         demoLink: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEz6Hwr0dsV7UFxpaUXMumk%2FRAY%3Fpage-id%3D0%253A1%26node-id%3D2080-230%26scaling%3Dscale-down-width%26starting-point-node-id%3D2080%253A230%26mode%3Ddesign%26t%3DpfHoc8Z83sqaxlRK-1",
         repoLink: "https://rctne.wordpress.com/",

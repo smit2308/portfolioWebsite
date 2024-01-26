@@ -42,7 +42,7 @@ const Card = ({
           boxShadow:
           "0 0 #0000004d, 0 9px 15px #0000004a, 0 20px 20px #00000042, 0 40px 40px #00000026, 0 100px 50px #0000000a, 0 230px 30px #00000003 ",
         }}
-        className=" max-w-5xl -mt-12 mx-auto h-max >md::h-[70vh] xl:h-[85vh] w-full border-4 border-[#6C6C6C] lg:p-6 p-1 bg-[#222222] rounded-2xl lg:rounded-3xl shadow-2xl z-30"
+        className="bg-black max-w-5xl -mt-12 mx-auto h-max >md:h-[70vh] xl:h-[85vh] w-full border-4 border-[#6C6C6C] lg:p-6 p-1 rounded-2xl lg:rounded-3xl shadow-2xl z-30"
       >
 {/* max-xs:max-h-[420px] max-xs:max-h-[420px]  h-[70vh] */}
 
@@ -66,13 +66,13 @@ const Card = ({
          initial={{opacity:0}}
           animate={{opacity:1 , transition: {duration: 1, ease: "circOut", delay: 2.5 }}}
 
-         className={` h-full w-full rounded-xl flex flex-col bg-[${users.bg? users.bg : "#00000"}] overflow-y-scroll  hide-scrollbar text-white  items-center`}>
+         className={` h-full w-full rounded-xl flex flex-col bg-[${users.bg? users.bg : "#00000"}] overflow-y-scroll hide-scrollbar  hide-scrollbar text-white  items-center`}>
  
  {
  
  users.section === 'video' ? (
   users.demoLink !== 'Unavailable' ? (
-    <iframe className='w-full h-full' src={users.demoLink} async allowFullScreen></iframe>
+    <iframe className='  w-full h-[360px] sm:h-[600px] >md:h-full >md:w-full '  src={users.demoLink} async allowFullScreen></iframe>
   ) : (
     'Video Unavailable'
   )
@@ -101,7 +101,7 @@ isSmall ?
       
       <iframe className='w-full h-full '  src={users.demoLink} allowFullscreen></iframe>
     ) : (
-      <iframe className='w-full h-full' src={users.demoLink} async allowFullScreen></iframe>
+      <iframe className='w-full h-full ' src={users.demoLink} async allowFullScreen></iframe>
     )
 
 

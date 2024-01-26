@@ -132,7 +132,7 @@ const isPresent = useIsPresent();
       //   animate={{opacity:1}}
       //   exit={{opacity:0}}
       //   transition={{duration:0.2}}
-        className='absolute top-0 left-0 z-20 w-screen h-screen backdrop-blur-sm  ' >
+        className='fixed top-0 left-0 z-20 w-screen h-screen backdrop-blur-sm  ' >
 
           <div className='w-full h-full  bg-black opacity-40' />
           </div>
