@@ -72,7 +72,7 @@ const isPresent = useIsPresent();
         initial={{ opacity: '0%' }}
         animate={menuAnimation}
         style={{ opacity: isPresent ? 1 : 0 }}
-        className='absolute z-20  w-screen h-screen left-0 top-0 transform   flex items-center justify-center backdrop-blur-sm   bg-black bg-opacity-40'>
+        className='fixed z-20  w-screen h-screen left-0 top-0 transform   flex items-center justify-center backdrop-blur-sm   bg-black bg-opacity-40'>
           <div className=' bg-primary rounded-lg flex flex-col   gap-6 lg:px-10 px-6 pb-10 pt-6 shadow-xl'>
             
 
