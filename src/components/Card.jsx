@@ -98,8 +98,11 @@ isSmall ?
 
 
     users.section === 'ui' ? (
-      
+
       <iframe className='w-full h-full '  src={users.demoLink} allowFullscreen></iframe>
+      
+
+    
     ) : (
       <iframe className='w-full h-full ' src={users.demoLink} async allowFullScreen></iframe>
     )

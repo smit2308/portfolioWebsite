@@ -6,6 +6,7 @@ import Home from "./root/pages/Home"
 import  ProjectDetailsScroll  from "./root/pages/ProjectDetailsScroll"
 import {motion, useIsPresent, AnimatePresence } from "framer-motion"
 import { useEffect } from "react"
+import { SmitLogo } from "./assets/logos"
 
 export default function App() {
 
@@ -38,9 +39,11 @@ const scrollToSection = (sectionId) => {
   return (
 
     <main className="flex flex-col items-center w-full h-full bg-primary ">
-
-
-   
+{/* 
+    <motion.a href="./" className="fixed right-10 bottom-10 w-16 h-16 z-50">
+      <img src={SmitLogo} alt="Smit Logo" className="w-full h-full hover:scale-105 transition-all ease-in-out"/>
+    </motion.a>
+    */}
       <Nav scrollToSection={scrollToSection}/>
      
        

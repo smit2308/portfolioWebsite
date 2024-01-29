@@ -15,6 +15,7 @@ import figmalogo from './icons8-figma.svg';
 import tailwindLogo from './icons8-tailwind-css.svg';
 import premiereLogo from './icons8-adobe-premiere-pro.svg';
 import capcutLogo from './capcut_seeklogo.svg'
+import SmitLogo from './SmitLogo.png'
 // Export statements
 export {
   cSharpLogo,
@@ -33,4 +34,5 @@ export {
   tailwindLogo,
   premiereLogo,
   capcutLogo,
+  SmitLogo,
 };
