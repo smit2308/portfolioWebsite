@@ -1,5 +1,5 @@
 import {
-    CS_resume,
+    CS_resume, Video_resume,
 }from '../assets/resume';
 
 import {
@@ -94,7 +94,7 @@ export const socialLinks = [
 
 export const resumeLinks =[
     { link: CS_resume, label: "Computer Science" },
-    { link: "https://drive.google.com/file/d/1J7OaJc7YjWQXV6Mq3aYQWl0y8kX6jX5b/view?usp=sharing", label: "Videographer "  },
+    { link: Video_resume, label: "Videographer "  },
     { link: "https://drive.google.com/file/d/1J7OaJc7YjWQXV6Mq3aYQWl0y8kX6jX5b/view?usp=sharing", label: "UI/UX Design" },
 ]
 
