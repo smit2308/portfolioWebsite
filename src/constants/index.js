@@ -1,4 +1,8 @@
 import {
+    CS_resume,
+}from '../assets/resume';
+
+import {
     cSharpLogo,
     cLogo,
     cssLogo,
@@ -89,7 +93,7 @@ export const socialLinks = [
 ]
 
 export const resumeLinks =[
-    { link: "https://drive.google.com/file/d/1pZVU3Zd0z4k3OqYb7z7W0Q2Q3dJzFg7b/view?usp=sharing", label: "Computer Science" },
+    { link: CS_resume, label: "Computer Science" },
     { link: "https://drive.google.com/file/d/1J7OaJc7YjWQXV6Mq3aYQWl0y8kX6jX5b/view?usp=sharing", label: "Videographer "  },
     { link: "https://drive.google.com/file/d/1J7OaJc7YjWQXV6Mq3aYQWl0y8kX6jX5b/view?usp=sharing", label: "UI/UX Design" },
 ]
