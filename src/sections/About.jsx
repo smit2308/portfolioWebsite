@@ -11,22 +11,39 @@ const About = () => {
         setOPen(!open);
       };
 
-      useEffect(() => {
-        // Create a script element
-        const script = document.createElement('script');
+      // useEffect(() => {
+      //   // Create a script element
+      //   const script = document.createElement('script');
         
-        // Set the source and defer attribute
-        script.src = 'https://static.elfsight.com/platform/platform.js';
-        script.defer = true;
+      //   // Set the source and defer attribute
+      //   script.src = 'https://static.elfsight.com/platform/platform.js';
+      //   script.defer = true;
     
-        // Append the script to the body
+      //   // Append the script to the body
+      //   document.body.appendChild(script);
+    
+      //   // Cleanup: Remove the script when the component is unmounted
+      //   return () => {
+      //     document.body.removeChild(script);
+      //   };
+      // }, []); // The empty dependency a
+
+      useEffect(() => {
+        // Create the script element
+        const script = document.createElement('script');
+        script.type = 'text/javascript';
+        script.async = true;
+        script.charset = 'UTF-8';
+        script.src = 'https://cdn.curator.io/published/fec2a2ec-bd2c-478a-bd0a-204837af6f89.js';
+    
+        // Append the script to the end of the body
         document.body.appendChild(script);
     
-        // Cleanup: Remove the script when the component is unmounted
+        // Cleanup function to remove the script when the component unmounts
         return () => {
           document.body.removeChild(script);
         };
-      }, []); // The empty dependency a
+      }, []);
 
 
 
@@ -49,12 +66,16 @@ Save time and find the information you need
 
  
         <div className=' w-full flex lg:flex-row flex-col-reverse md:justify-center  gap-20 items-center'>
-            <div className=' max-w-2xl lg:max-w-3xl  w-full  flex h-full overflow-hidden  justify-center  rounded-lg lg:bg-black border-[12px] lg:border-[20px] border-black'> 
+            <div className=' max-w-2xl lg:max-w-3xl  w-full  flex h-full overflow-hidden  justify-center  rounded-lg '> 
                 {/* <img src={About_image} alt='about' className='w-full md:h-[600px] h-[300px] object-cover rounded-xl' /> */}
-                <div className="elfsight-app-ca5e72b0-9f8a-4038-b264-2d16ced03ce4 z-0  object-cover bg-black" data-elfsight-app-lazy></div>
+                {/* <div className="elfsight-app-ca5e72b0-9f8a-4038-b264-2d16ced03ce4 z-0  object-cover bg-black" data-elfsight-app-lazy></div>
                 <div className='absolute self-end  sel w-60 h-2 pb-10 bg-black z-10'></div>
-                <div className='absolute self-end  sel w-60 h-1  rounded-full bg-white z-20 justify-center items-center text-center text-primary'> </div>
-
+                <div className='absolute self-end  sel w-60 h-1  rounded-full bg-white z-20 justify-center items-center text-center text-primary'> </div> */}
+   <div id="curator-feed-default-feed-layout">
+      <a href="https://curator.io" target="_blank" rel="noopener noreferrer" className="crt-logo crt-tag">
+        Powered by Curator.io
+      </a>
+    </div>
             </div>
             <div className='lg:w-1/2 w-full  flex flex-col justify-start  gap-8 bg-red-200f'>
 
