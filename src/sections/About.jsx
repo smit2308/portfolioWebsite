@@ -66,7 +66,7 @@ Save time and find the information you need
 
  
         <div className=' w-full flex lg:flex-row flex-col-reverse md:justify-center  gap-20 items-center'>
-            <div className='lg:w-1/2 max-w-2xl lg:max-w-3xl  w-full  flex h-full overflow-hidden  justify-center  rounded-lg '> 
+            <div className=' max-w-2xl lg:max-w-3xl  w-full  flex h-full overflow-hidden  justify-center  rounded-lg '> 
                 {/* <img src={About_image} alt='about' className='w-full md:h-[600px] h-[300px] object-cover rounded-xl' /> */}
                 {/* <div className="elfsight-app-ca5e72b0-9f8a-4038-b264-2d16ced03ce4 z-0  object-cover bg-black" data-elfsight-app-lazy></div>
                
