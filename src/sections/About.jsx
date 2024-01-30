@@ -72,7 +72,7 @@ Save time and find the information you need
                
                 <div className='absolute self-end  sel w-60 h-1  rounded-full bg-white z-20 justify-center items-center text-center text-primary'> </div> */}
    <div id="curator-feed-default-feed-layout" >
-      <a href="https://curator.io" target="_blank" rel="noopener noreferrer" className="crt-logo crt-tag">
+      <a href="https://curator.io" target="_blank" rel="noopener noreferrer" className="crt-logo crt-tag text-white">
         Powered by Curator.io
       </a>
     </div>
