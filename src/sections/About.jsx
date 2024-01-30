@@ -71,9 +71,9 @@ Save time and find the information you need
                 {/* <div className="elfsight-app-ca5e72b0-9f8a-4038-b264-2d16ced03ce4 z-0  object-cover bg-black" data-elfsight-app-lazy></div>
                
                 <div className='absolute self-end  sel w-60 h-1  rounded-full bg-white z-20 justify-center items-center text-center text-primary'> </div> */}
-   <div className='absolute self-end   w-full h-10 rounded-full bg-primary z-60 justify-center items-center text-center text-primary'> </div> 
+   <div className='absolute self-end   w-full h-10 rounded-full  z-100 justify-center items-center text-center text-primary'> </div> 
    <div id="curator-feed-default-feed-layout" >
-      <a href="https://curator.io" target="_blank" rel="noopener noreferrer" className="crt-logo crt-tag text-white">
+      <a href="https://curator.io" target="_blank" rel="noopener noreferrer" className="crt-logo  text-white">
         Powered by Curator.io
       </a>
     </div>
