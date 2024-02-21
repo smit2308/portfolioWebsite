@@ -190,7 +190,7 @@ export const ProjectsData = {
         id: 3,
         section: "coding", 
         thumbnail: Ray1Thumbnail,
-        gif: Social_gif,
+        gif: Ray_gif,
         images: [Ray1_1],
         bg: "#FC66A5",
         title: "RAY Events Management App",
