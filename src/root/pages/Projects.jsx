@@ -107,20 +107,35 @@ const Projects = () => {
           >
             <Link  to={`/projects/${project.title}`} state={{ id: project.title }}  className={`flex  
             xl:w-[340px] sm:w-[270px] xs:w-[200px]  xl:h-[340px] sm:h-[270px] xs:h-[200px] w-full brightness-90
-             md:saturate-[100%] max-md:saturate-100 hover:saturate-80 hover:brightness-75 transition-all ease-in-out duration-300 ` }>
+              transition-all ease-in-out duration-300 ` }>
+                {/* md:saturate-[100%] max-md:saturate-100 hover:saturate-80 hover:brightness-75 */}
                   {/*  bg-[${project.bg}] */}
 
-              <img src={project.gif} alt={project.title} className=' object-top object-cover w-full
-                       transition-all ease-in-out  duration-500   '             
-              />
+            {project.gif != null ? 
+            <>
+                        <img src={project.gif} alt={project.title} className=' object-top object-cover w-full
+                        transition-all ease-in-out  duration-500 group-hover:hidden  '             
+               />
+               <img src={project.thumbnail} alt={project.title} className='object-top object-cover w-full
+               transition-all ease-in-out flex hidden group-hover:block  '
+
+      
+      />
+      </>
+
+               
+                :
+                <img src={project.thumbnail} alt={project.title} className='object-top object-cover w-full
+                transition-all ease-in-out flex  '
+
+       
+       />
+            }
+  
               
 
      
-            {/* <img src={project.thumbnail} alt={project.title} className='object-top object-cover w-full
-                       transition-all ease-in-out flex  '
 
-              
-              /> */}
  
 
 
