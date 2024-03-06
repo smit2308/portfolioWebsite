@@ -39,7 +39,7 @@ import {  AtmThumbnail,
     VNN1_thumbnail,
     VNN2_thumbnail,
     VNN3_thumbnail,
-    
+    Dora_thumbnail,
 
     } from '../assets/images';
 
@@ -148,6 +148,28 @@ export const ProjectsData = {
         id: 1,
         section: "coding",
         gif : Skateboard_gif,
+        thumbnail: Dora_thumbnail,
+        images: [],
+        bg: "#FC66A5",
+        title: "Skateboard Retail Website",
+        demoLink: "https://dora-ai.vercel.app/",
+        repoLink: "https://github.com/smit2308/Dora",
+        shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
+        description: "Discover my revamped skateboard website, inspired by Zumiez. It includes user-friendly Home, Products, About, and Contact pages. Sign up or log in to connect with the skate community. Currently front-end only, with an interactive back-end coming soon!",
+        skills: [
+            { name: "HTML", logo: htmlLogo },
+            { name: "Tailwind", logo: tailwindLogo },
+            { name: "CSS", logo: cssLogo },
+            { name: "JavaScript", logo: javascriptLogo },
+            { name: "React", logo: reactLogo },
+            { name: "Figma", logo: figmalogo },
+        ]
+        
+    },
+    {
+        id: 2,
+        section: "coding",
+        gif : Skateboard_gif,
         thumbnail: SkateboardThumbnail,
         images: [],
         bg: "#FC66A5",
@@ -169,7 +191,7 @@ export const ProjectsData = {
 
 
     {
-        id: 2,
+        id: 3,
         section: "coding", 
         thumbnail: GameThumbnail,
         gif : Game_gif,
@@ -187,7 +209,7 @@ export const ProjectsData = {
     },
 
     {
-        id: 3,
+        id: 4,
         section: "coding", 
         thumbnail: Ray1Thumbnail,
         gif: Ray_gif,

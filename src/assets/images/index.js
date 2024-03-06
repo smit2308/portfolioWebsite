@@ -28,6 +28,7 @@ import MuskhaveProduct_thumbnail from './MuskhaveProduct_thumbnail.png'
 import VNN1_thumbnail from './VNN1_thumbnail.png'
 import VNN2_thumbnail from './VNN2_thumbnail.png'
 import VNN3_thumbnail from './VNN3_thumbnail.png'
+import Dora_thumbnail from './Dora_thumbnail.png'
 
 import Skateboard_gif from './Skateboard_gif.gif'
 import Game_gif from './Game_gif.gif'
@@ -70,6 +71,8 @@ export {
     VNN1_thumbnail,
     VNN2_thumbnail,
     VNN3_thumbnail,
+    Dora_thumbnail,
+    
     Skateboard_gif,
     Game_gif,
     Social_gif,

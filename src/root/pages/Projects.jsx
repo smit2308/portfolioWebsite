@@ -111,7 +111,10 @@ const Projects = () => {
                 {/* md:saturate-[100%] max-md:saturate-100 hover:saturate-80 hover:brightness-75 */}
                   {/*  bg-[${project.bg}] */}
 
-            {project.gif != null ? 
+
+            {/* Change this for thumbnails */}
+            {/*  {project.gif != null ? for gifs  */}
+            {false? 
             <>
                         <img src={project.gif} alt={project.title} className=' object-top object-cover w-full
                         transition-all ease-in-out  duration-500 group-hover:hidden  '             
@@ -126,7 +129,7 @@ const Projects = () => {
                
                 :
                 <img src={project.thumbnail} alt={project.title} className='object-top object-cover w-full
-                transition-all ease-in-out flex  '
+                transition-all ease-in-out flex hover:scale-105 duration-500  '
 
        
        />
