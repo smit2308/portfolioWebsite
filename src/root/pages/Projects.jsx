@@ -72,41 +72,20 @@ const Projects = () => {
 
         </div>
 
-        {/* <div className=  ' w-full  max-w-sm  flex flex-1 items-center max-sm:flex-col gap-8 p-2  border-b-2  border-slate-400 '>
-        <input 
-        type='text'
-        placeholder='Search by projects, skills, etc'
-        className='text-lg h-10 focus-visible:outline-none w-full bg-transparent' 
-        value={searchTerm}
-        
-        onChange={Searchproducts}
-      
-        />
-
-      
-
-   
-
-
-      </div>
-
-
-
-      {/* <a href={project.demoLink!= "blank" ? project.demoLink : "/home"} target='_blank' className='w-max h-max self-center mx-auto' > */}
-    {/* grid lg:grid-cols-3 grid-cols-2 sm:gap-y-16 gap-y-8  */}
-      <div className='w-full lg:flex lg:flex-wrap lg:gap-x-6  lg-gap-y-10 lg:justify-between  max-lg:grid  max-lg:grid-cols-2 max-sm:flex-col max-sm:flex sm:gap-y-16 gap-y-8 gap-x-6  '>
+    
+      <div className='w-full lg:grid lg:grid-cols-3 lg:gap-6  max-lg:gap-4  max-lg:grid  max-lg:grid-cols-2 max-xs:flex-col max-xs:flex  gap-y-8 gap-x-6  '>
       <AnimatePresence   mode="wait">
         {users.map((project, index ) => (
           <motion.div
             key={project.title} // Don't forget to add a unique key for each item
-            className='xs:w-max  max-lg:mx-auto relative group rounded-lg   justify-center items-center overflow-hidden shadow-image2 '
+            className=' max-lg:mx-auto relative group rounded-lg   justify-center items-center overflow-hidden shadow-image2 '
             initial={{ opacity: 0}}
             animate={{ opacity: 1}}
             exit={{ opacity: 0}}
             transition={{ duration: 0.5, ease: 'circInOut', delay: ( index)*0.1  }}
           >
             <Link  to={`/projects/${project.title}`} state={{ id: project.title }}  className={`flex  
-            xl:w-[340px] sm:w-[270px] xs:w-[200px]  xl:h-[340px] sm:h-[270px] xs:h-[200px] w-full brightness-90
+             w-full brightness-90
               transition-all ease-in-out duration-300 ` }>
                 {/* md:saturate-[100%] max-md:saturate-100 hover:saturate-80 hover:brightness-75 */}
                   {/*  bg-[${project.bg}] */}
