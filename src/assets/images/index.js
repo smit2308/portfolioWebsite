@@ -37,7 +37,7 @@ import Eyespace_gif from './Eyespace_gif.gif'
 import Eyelabs_gif from './Eyelabs_gif.gif'
 import Ray_gif from './Ray_gif.gif'
 import Rctne_gif from './Rctne_gif.gif'
-
+import Dora_gif from './Dora_gif.gif'
 export {
   AtmThumbnail,
   CafeThumbnail,
@@ -79,5 +79,6 @@ export {
     Eyespace_gif,
     Eyelabs_gif,
     Ray_gif,
-    Rctne_gif
+    Rctne_gif,
+    Dora_gif
 };

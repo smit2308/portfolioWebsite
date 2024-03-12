@@ -72,6 +72,7 @@ import{
     Eyelabs_gif,
     Ray_gif,
     Rctne_gif,
+    Dora_gif
 }
 from '../assets/images';
 
@@ -147,7 +148,7 @@ export const ProjectsData = {
     {
         id: 1,
         section: "coding",
-        gif : Skateboard_gif,
+        gif : Dora_gif,
         thumbnail: Dora_thumbnail,
         images: [],
         bg: "#FC66A5",
