@@ -9,49 +9,49 @@ const Work = () => {
 
 
   // To change the color of the text in the navbar when the user scrolls to a certain section
-  useEffect(() => {
-    const pairs = [
-      { mainDivId: 'coding', childDivId: 'Coding', textColor: 'text-accent' },
-      { mainDivId: 'ui', childDivId: 'UI/UX', textColor: 'text-accent' },
-      { mainDivId: 'video', childDivId: 'Video Editing', textColor: 'text-accent' }
-    ];
+  // useEffect(() => {
+  //   const pairs = [
+  //     { mainDivId: 'coding', childDivId: 'Coding', textColor: 'text-accent' },
+  //     { mainDivId: 'ui', childDivId: 'UI/UX', textColor: 'text-accent' },
+  //     { mainDivId: 'video', childDivId: 'Video Editing', textColor: 'text-accent' }
+  //   ];
 
-    const observers = pairs.map(pair => {
-      const mainDiv = document.getElementById(pair.mainDivId);
-      const childDiv = document.getElementById(pair.childDivId);
+  //   const observers = pairs.map(pair => {
+  //     const mainDiv = document.getElementById(pair.mainDivId);
+  //     const childDiv = document.getElementById(pair.childDivId);
 
-      if (mainDiv && childDiv) {
-        const observer = new IntersectionObserver((entries) => {
-          entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-              mainDiv.classList.add(pair.textColor);
-            } else {
-              mainDiv.classList.remove(pair.textColor);
-            }
-          });
-        }, {
-          root: null,
-          threshold: 0.4
-        });
+  //     if (mainDiv && childDiv) {
+  //       const observer = new IntersectionObserver((entries) => {
+  //         entries.forEach((entry) => {
+  //           if (entry.isIntersecting) {
+  //             mainDiv.classList.add(pair.textColor);
+  //           } else {
+  //             mainDiv.classList.remove(pair.textColor);
+  //           }
+  //         });
+  //       }, {
+  //         root: null,
+  //         threshold: 0.4
+  //       });
 
-        observer.observe(childDiv);
-        return observer;
-      }
-    });
+  //       observer.observe(childDiv);
+  //       return observer;
+  //     }
+  //   });
 
-    return () => {
-      observers.forEach(observer => {
-        if (observer) {
-          pairs.forEach(pair => {
-            const childDiv = document.getElementById(pair.childDivId);
-            if (childDiv) {
-              observer.unobserve(childDiv);
-            }
-          });
-        }
-      });
-    };
-  }, []);
+  //   return () => {
+  //     observers.forEach(observer => {
+  //       if (observer) {
+  //         pairs.forEach(pair => {
+  //           const childDiv = document.getElementById(pair.childDivId);
+  //           if (childDiv) {
+  //             observer.unobserve(childDiv);
+  //           }
+  //         });
+  //       }
+  //     });
+  //   };
+  // }, []);
 
 
 
