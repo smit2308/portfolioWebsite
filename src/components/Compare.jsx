@@ -1,6 +1,6 @@
 
 import React, { useState, useEffect, useRef, useCallback } from "react";
-import { SparklesCore } from "./sparkles";
+import { SparklesCore } from "./Sparkles";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "../../utils/cn"
 import { IconDotsVertical } from "@tabler/icons-react";
@@ -120,7 +120,7 @@ const Compare = ({
   return (
     <div
       ref={sliderRef}
-      className={cn("w-[400px]  h-max >md:h-[70vh] xl:h-[85vh] overflow-hidden", className)}
+      className={cn("w-[400px]  h-max >md:h-[70vh] xl:h-[85vh] overflow-hidden rounded-xl shadow-xl ", className)}
       style={{
         position: "relative",
         cursor: slideMode === "drag" ? "grab" : "col-resize",

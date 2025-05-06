@@ -6,7 +6,7 @@ import { loadSlim } from "@tsparticles/slim";
 import { cn } from "../../utils/cn"
 import { motion, useAnimation } from "framer-motion";
 
-const SparklesCore = (props) => {
+export const SparklesCore = (props) => {
   const {
     id,
     className,
@@ -419,5 +419,3 @@ const SparklesCore = (props) => {
     </motion.div>
   );
 };
-
-export default SparklesCore;
