@@ -10,8 +10,15 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "clsx": "^2.1.0",
+    "@radix-ui/react-slot": "^1.2.1",
+    "@tabler/icons-react": "^3.31.0",
+    "@tsparticles/engine": "^3.8.1",
+    "@tsparticles/react": "^3.0.0",
+    "@tsparticles/slim": "^3.8.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
     "framer-motion": "^10.17.9",
+    "lucide-react": "^0.507.0",
     "motion": "^10.16.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
@@ -21,7 +28,8 @@
     "react-scroll": "^1.9.0",
     "react-simple-typewriter": "^5.0.1",
     "react-text-transition": "^3.1.0",
-    "tailwind-merge": "^2.2.0"
+    "tailwind-merge": "^2.6.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@kamona/tailwindcss-perspective": "^0.1.1",

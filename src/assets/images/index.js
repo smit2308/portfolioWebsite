@@ -38,6 +38,12 @@ import Eyelabs_gif from './Eyelabs_gif.gif'
 import Ray_gif from './Ray_gif.gif'
 import Rctne_gif from './Rctne_gif.gif'
 import Dora_gif from './Dora_gif.gif'
+
+import MyViterbiMain from './MyViterbiMain.png'
+import MyViterbiCourseSelection from './MyViterbiCourseSelection.png'
+import MyViterbiCourseSelectionAfter from './MyViterbiCourseSelectionAfter.png'
+import MyViterbiMainAfter from './MyViterbiMainAfter.png'
+import MyUSC from './MyUSC.png'
 export {
   AtmThumbnail,
   CafeThumbnail,
@@ -80,5 +86,12 @@ export {
     Eyelabs_gif,
     Ray_gif,
     Rctne_gif,
-    Dora_gif
+    Dora_gif,
+
+    MyViterbiMain,
+    MyViterbiCourseSelection,
+    MyViterbiCourseSelectionAfter,
+    MyViterbiMainAfter,
+    MyUSC
+
 };

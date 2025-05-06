@@ -40,6 +40,11 @@ import {  AtmThumbnail,
     VNN2_thumbnail,
     VNN3_thumbnail,
     Dora_thumbnail,
+    MyViterbiMain,
+    MyViterbiCourseSelection,
+    MyViterbiCourseSelectionAfter,
+    MyViterbiMainAfter,
+    MyUSC,
 
     } from '../assets/images';
 
@@ -266,10 +271,43 @@ export const ProjectsData = {
 
 'uiProjects' : [
 
-
-    
     {
         id: 1,
+        section: "ux",  
+        thumbnail: EyespaceThumbnail,
+        images: MyUSC,
+        bg: "#FC66A5",
+        gif: Eyespace_gif,
+        title: "MyViterbi Redesign",
+        demoLink: "https://embed.figma.com/proto/UW2o7l0Fx3xZfme9EQgnc7/MyViterbi?page-id=1%3A4&node-id=249-3799&viewport=437%2C-1972%2C0.21&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=249%3A3795&show-proto-sidebar=1&embed-host=share",
+        repoLink: "https://www.behance.net/gallery/166388085/EYESPACE-Website-Revamp",
+        shortDescription: "Revamped design for Eyespace.ai, the medical startup at the University of Southern California, which I personally crafted using Figma. In this redesign, I focused on infusing a modern aesthetic to elevate the overall user experience",
+        description: "A UX-driven redesign of the MyViterbi portal — the academic dashboard used by USC Viterbi School of Engineering students — focused specifically on improving the D-Clearance (course selection) workflow and homepage usability. The redesign addressed core pain points such as cluttered layout, confusing task flows, lack of system feedback, and poor mobile support. Inspired by the modular design and visual clarity of the university-wide MyUSC portal, the project aimed to create a more cohesive and consistent digital experience across USC platforms. The result is a responsive, task-oriented interface that enhances clarity, efficiency, and usability for both desktop and mobile users.",
+        skills: [
+            { name: "Figma", logo: figmalogo },
+           
+        ],
+        imageBefore: MyViterbiMain,
+        imageAfter: MyViterbiMainAfter,
+        results: [
+          'Reduced navigation time by 43%',
+          'User satisfaction increased from 62% to 88%',
+          'Information findability improved by 51%'
+        ],
+        highlights: [
+          'Reorganized links into clear categories',
+          'Introduced a responsive, accessible layout',
+          'Integrated event previews on the dashboard'
+        ],
+        methods: [
+          { name: 'Usability Testing', outcome: 'Identified key friction points in navigation' },
+          { name: 'Card Sorting', outcome: 'Validated new categorization of features' },
+          { name: 'A/B Testing', outcome: 'Confirmed the new design led to 30% faster task completion' }
+        ]
+    },
+    
+    {
+        id: 2,
         section: "ui",  
         thumbnail: EyespaceThumbnail,
         images: [Eyespace_1],
@@ -287,7 +325,7 @@ export const ProjectsData = {
     },
 
     {
-        id: 2,
+        id: 3,
         section: "mobile",  
         thumbnail: SocialThumbnail,
         bg: "#FC66A5",
@@ -305,7 +343,7 @@ export const ProjectsData = {
 
 
     {
-        id: 3,
+        id: 4,
         section: "mobile",  
         thumbnail: RayThumbnail,
         bg: "#EEE9F2",
@@ -322,7 +360,7 @@ export const ProjectsData = {
     },
 
     {
-        id: 4,
+        id: 5,
         section: "ui",  
         thumbnail: EyelabsThumbnail,
         images: [Eyelabs_1],
@@ -339,7 +377,7 @@ export const ProjectsData = {
     },
 
     {
-        id: 5,
+        id: 6,
         section: "ui",  
         thumbnail: RctneThumbnail,
         images: [],

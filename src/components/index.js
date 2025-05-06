@@ -5,4 +5,5 @@ import Loader from "./Loader";
 import TextGenerateEffect from "./TextGenerateEffect";
 import ScrollToTop from "./ScrollToTop";
 import Collapsible from "./Collapsible";
-export { Nav, Button,    DetailsScroll, Loader, TextGenerateEffect, ScrollToTop , Collapsible };
+import  Compare  from "./Compare";
+export { Nav, Button, DetailsScroll, Loader, TextGenerateEffect, ScrollToTop , Collapsible, Compare };

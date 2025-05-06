@@ -48,7 +48,7 @@ const Card = ({
 
 
       {/* set to false to stop the text animation */}
-      {showAnimation ? (
+      {showAnimation && !isSmall? (
         <motion.div
           key="animation"
           initial={{ opacity: 0.9 }}

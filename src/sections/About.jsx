@@ -72,11 +72,17 @@ Save time and find the information you need
                
                 <div className='absolute self-end  sel w-60 h-1  rounded-full bg-white z-20 justify-center items-center text-center text-primary'> </div> */}
    <div className='absolute self-end   w-full h-10 rounded-full  z-100 justify-center items-center text-center text-primary'> </div> 
-   <div id="curator-feed-default-feed-layout" >
+   {/* <div id="curator-feed-default-feed-layout" >
       <a href="https://curator.io" target="_blank" rel="noopener noreferrer" className="crt-logo  text-white">
         Powered by Curator.io
       </a>
-    </div>
+    </div> */}
+    <div id="curator-feed-default-feed-layout">
+      <a href="https://curator.io" target="_blank" rel="noopener noreferrer" class="crt-logo text-white">
+      Powered by Curator.io
+      </a>
+      </div>
+
             </div>
             <div className='lg:w-1/2 w-full  flex flex-col justify-start  gap-8 bg-red-200f'>
 
