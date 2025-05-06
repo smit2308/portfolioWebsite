@@ -78,7 +78,8 @@ import{
     Eyelabs_gif,
     Ray_gif,
     Rctne_gif,
-    Dora_gif
+    Dora_gif,
+    MyViterbi_Gif
 }
 from '../assets/images';
 
@@ -278,12 +279,12 @@ export const ProjectsData = {
         thumbnail: MyViterbiThumbnail,
         images: MyUSC,
         bg: "#FC66A5",
-        gif: Eyespace_gif,
+        gif: MyViterbi_Gif,
         title: "MyViterbi Redesign",
         demoLink: "https://embed.figma.com/proto/UW2o7l0Fx3xZfme9EQgnc7/MyViterbi?page-id=1%3A4&node-id=249-3799&viewport=437%2C-1972%2C0.21&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=249%3A3795&show-proto-sidebar=1&embed-host=share",
         repoLink: "https://1drv.ms/w/c/1d4459fca6928190/ERkxvvNwUsFFtDwl493vzG8BTkBYF8hUSZBOChDPdrX3DQ?e=8cd49j",
         shortDescription: "Revamped design for Eyespace.ai, the medical startup at the University of Southern California, which I personally crafted using Figma. In this redesign, I focused on infusing a modern aesthetic to elevate the overall user experience",
-        description: "A UX-driven redesign of the MyViterbi portal, the academic dashboard used by USC Viterbi School of Engineering students, focused specifically on improving the D-Clearance (course selection) workflow and homepage usability. The redesign addressed core pain points such as cluttered layout, confusing task flows, lack of system feedback, and poor mobile support. Inspired by the modular design and visual clarity of the university-wide MyUSC portal, the project aimed to create a more cohesive and consistent digital experience across USC platforms. The result is a responsive, task-oriented interface that enhances clarity, efficiency, and usability for both desktop and mobile users.",
+        description: "A UX-focused redesign of the portal for USC Viterbi students, aimed at improving homepage usability and the D-Clearance process (Engineering student's system for requesting course enrollment permission). By addressing layout clutter, confusing flows, and poor mobile support, and aligning with the USC universal portal’s design, the result is a responsive, task-driven interface that enhances clarity and efficiency across devices.",
         skills: [
             { name: "Figma", logo: figmalogo },
            

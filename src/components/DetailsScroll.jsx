@@ -101,7 +101,7 @@ export const Content = ({ translate, users }) => {
       style={{
         translateY: translate,
       }}
-      className="div max-w-xs sm:max-w-5xl mx-auto text-center items-center justify-center flex flex-col gap-10  sm:mt-20 mt-10  relative sm:px-6 max-sm:px-3 lg:px-16 "
+      className="div max-w-xs sm:max-w-5xl mx-auto text-center items-center justify-center flex flex-col gap-10  sm:mt-20 mt-10  relative sm:px-6  lg:px-16 "
     >
 
 
@@ -131,14 +131,14 @@ export const Content = ({ translate, users }) => {
 
       )
         : (<>
-        <p className="-mb-2">ChatGPT said:
+        <p className="">ChatGPT said:
         Your report covers the UX case study of the MyViterbi portal redesign, detailing the research process, key usability issues, design solutions, and measurable improvements. Click below to find out.</p>
           <a href={users.repoLink} target='_blank'>
             <Button label={users.section === 'ux' ? 'Report' : 'Visit'}
               bgColor={'bg-none'}
               iconReact={<HiArrowTopRightOnSquare />} />
           </a>
-          {users.section === 'ux' && (<br />)}
+    
           </>
         )
 
@@ -150,16 +150,7 @@ export const Content = ({ translate, users }) => {
         <h2 className='sm:text-xl max-sm:text-xl font-semibold text-secondary'>Description</h2>
         <p className='text-secondary sm:text-lg max-sm:text-sm font-normal'>{users.description}</p>
       </div>
-            {users.section === 'ux' && (
-        <UxResearch
-          imageBefore={users.imageBefore}
-          imageAfter={users.imageAfter}
-          results={users.results}
-          highlights={users.highlights}
-          methods={users.methods}
-          image={users.images}
-        />
-      )}
+
       <div className='flex flex-col gap-4 items-center'>
         <h2 className='sm:text-xl max-sm:text-lg font-medium text-secondary'>Tools</h2>
         <div className='flex flex-wrap gap-2'>

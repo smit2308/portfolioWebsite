@@ -7,7 +7,7 @@ import { DetailsScroll, Button, Loader, TextGenerateEffect } from "../../compone
 import { LoadingMessages } from "../../constants";
 import { HiArrowTopRightOnSquare } from "react-icons/hi2";
 import { motion,AnimatePresence, useIsPresent } from "framer-motion";
-
+import { UxResearch } from "../../sections";
 
 
 
@@ -68,6 +68,18 @@ const ProjectDetailsScroll = (props) => {
 
 
           />
+                      {proj.section === 'ux' && (
+        <UxResearch
+          imageBefore={proj.imageBefore}
+          imageAfter={proj.imageAfter}
+          results={proj.results}
+          highlights={proj.highlights}
+          methods={proj.methods}
+          image={proj.images}
+        />
+      )}
+
+
 
 
 

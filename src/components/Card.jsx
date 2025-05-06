@@ -98,7 +98,7 @@ const Card = ({
                 :
 
 
-                users.section === 'ui' ? (
+                users.section === 'ui' || users.section === 'ux' ? (
 
                   <iframe className='w-full h-full ' src={users.demoLink} allowFullscreen></iframe>
 

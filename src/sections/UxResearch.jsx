@@ -3,11 +3,11 @@ import { Compare } from "../components"; // Adjust path based on your structure
 
  const UxResearch = ({ imageBefore, imageAfter, image }) => {
   return (
-    <div className="flex flex-col gap-12 text-left text-secondary mt-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div className="flex flex-col gap-12 text-left text-secondary mt-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
       {/* Image Comparison */}
       <section>
-        <h3 className="text-2xl font-semibold leading-1">Before & After Comparison </h3>
+        <h3 className="text-2xl font-semibold max-sm:leading-[30px] mb-1">Before & After Comparison </h3>
         <p className="font-light text-sm  mb-8">Swipe to reveal the change</p>
         <Compare
           firstImage={imageBefore}
@@ -20,7 +20,7 @@ import { Compare } from "../components"; // Adjust path based on your structure
         
         />
       </section>
-    <section className="flex flex-row gap-4">
+    <section className="flex flex-row gap-4 max-sm:flex-col">
       <p>Aligned homepage structure and visual language with USC’s centralized 
         <span className="font-bold"> MyUSC portal </span> 
         for a unified student experience</p>
@@ -30,7 +30,7 @@ import { Compare } from "../components"; // Adjust path based on your structure
          {/* Methods */}
          <section>
   <h3 className="text-2xl font-semibold mb-4">Research Methods</h3>
-  <ul className="list-disc pl-6 space-y-4">
+  <ul className="list-disc pl-6 space-y-2">
     <li>
       <strong>Pilot Testing & Design Gallery</strong><br />
       <span className="text-sm">

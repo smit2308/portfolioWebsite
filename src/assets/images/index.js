@@ -38,6 +38,7 @@ import Eyelabs_gif from './Eyelabs_gif.gif'
 import Ray_gif from './Ray_gif.gif'
 import Rctne_gif from './Rctne_gif.gif'
 import Dora_gif from './Dora_gif.gif'
+import MyViterbi_Gif from './MyViterbi_Gif.png'
 
 import MyViterbiMain from './MyViterbiMain.png'
 import MyViterbiCourseSelection from './MyViterbiCourseSelection.png'
@@ -95,5 +96,6 @@ export {
     MyViterbiMainAfter,
     MyUSC,
     MyViterbiThumbnail,
+    MyViterbi_Gif,
 
 };
