@@ -130,15 +130,21 @@ export const Content = ({ translate, users }) => {
         </div>
 
       )
-        : (
+        : (<>
+        <p className="-mb-2">ChatGPT said:
+        Your report covers the UX case study of the MyViterbi portal redesign, detailing the research process, key usability issues, design solutions, and measurable improvements. Click below to find out.</p>
           <a href={users.repoLink} target='_blank'>
             <Button label={users.section === 'ux' ? 'Report' : 'Visit'}
               bgColor={'bg-none'}
               iconReact={<HiArrowTopRightOnSquare />} />
           </a>
+          {users.section === 'ux' && (<br />)}
+          </>
         )
 
       }
+
+  
 
       <div className='flex flex-col gap-2'>
         <h2 className='sm:text-xl max-sm:text-xl font-semibold text-secondary'>Description</h2>

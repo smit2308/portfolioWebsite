@@ -7,7 +7,8 @@ import { Compare } from "../components"; // Adjust path based on your structure
 
       {/* Image Comparison */}
       <section>
-        <h3 className="text-2xl font-semibold mb-4">Before & After Comparison</h3>
+        <h3 className="text-2xl font-semibold leading-1">Before & After Comparison </h3>
+        <p className="font-light text-sm  mb-8">Swipe to reveal the change</p>
         <Compare
           firstImage={imageBefore}
           secondImage={imageAfter}
@@ -151,6 +152,13 @@ import { Compare } from "../components"; // Adjust path based on your structure
   </p>
 </section>
 
+{/* Takeaways */}
+<section>
+  <h3 className="text-2xl font-semibold mb-4">Takeaway</h3>
+  <p className="text-base">
+    This project reinforced the importance of user-centered design and iterative testing. It highlighted the need for continuous feedback loops and the value of heuristic evaluations in identifying usability issues. It completely changed my workflow, now I spend more time studying people than designing.
+  </p>
+</section>
 
 
    
