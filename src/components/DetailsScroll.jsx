@@ -132,7 +132,7 @@ export const Content = ({ translate, users }) => {
       )
         : (
           <a href={users.repoLink} target='_blank'>
-            <Button label={'Visit'}
+            <Button label={users.section === 'ux' ? 'Report' : 'Visit'}
               bgColor={'bg-none'}
               iconReact={<HiArrowTopRightOnSquare />} />
           </a>

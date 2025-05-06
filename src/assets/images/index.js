@@ -44,6 +44,7 @@ import MyViterbiCourseSelection from './MyViterbiCourseSelection.png'
 import MyViterbiCourseSelectionAfter from './MyViterbiCourseSelectionAfter.png'
 import MyViterbiMainAfter from './MyViterbiMainAfter.png'
 import MyUSC from './MyUSC.png'
+import MyViterbiThumbnail from './MyViterbiThumbnail.png'
 export {
   AtmThumbnail,
   CafeThumbnail,
@@ -92,6 +93,7 @@ export {
     MyViterbiCourseSelection,
     MyViterbiCourseSelectionAfter,
     MyViterbiMainAfter,
-    MyUSC
+    MyUSC,
+    MyViterbiThumbnail,
 
 };
