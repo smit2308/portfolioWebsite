@@ -7,7 +7,7 @@ import { Compare, Video_Comparison } from "../components"; // Adjust path based 
 
       {/* Image Comparison */}
       <section>
-        <h3 className="text-2xl font-semibold max-sm:leading-[30px] mb-1">Before & After Comparison </h3>
+        <h3 className="text-2xl font-semibold max-sm:leading-[30px] mb-1">Before & After Comparison (Home Page) </h3>
         <p className="font-light text-sm  mb-8">Swipe to reveal the change</p>
         <Compare
           firstImage={imageBefore}
