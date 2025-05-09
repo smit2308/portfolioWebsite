@@ -106,8 +106,8 @@ export const socialLinks = [
 ]
 
 export const resumeLinks =[
-    { link: CS_resume, label: "Computer Science" },
-    { link: Video_resume, label: "Videographer "  },
+    { link: CS_resume, label: "Developer" },
+    // { link: Video_resume, label: "Videographer "  },
     { link: UI_resume, label: "UI/UX Design" },
 ]
 
@@ -286,7 +286,7 @@ export const ProjectsData = {
         bg: "#FC66A5",
         gif: MyViterbi_Gif,
         title: "MyViterbi Redesign",
-        demoLink: "https://embed.figma.com/proto/UW2o7l0Fx3xZfme9EQgnc7/MyViterbi?page-id=1%3A4&node-id=25-786&p=f&viewport=59%2C361%2C0.08&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=249%3A3795&embed-host=share",
+        demoLink: "https://embed.figma.com/proto/UW2o7l0Fx3xZfme9EQgnc7/MyViterbi?page-id=1%3A4&node-id=25-786&p=f&viewport=59%2C361%2C0.08&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=249%3A3795&embed-host=share",
         repoLink: "https://1drv.ms/w/c/1d4459fca6928190/ERkxvvNwUsFFtDwl493vzG8B6zHmLOZQ_7YbJ2j3ktsNRg?e=bujeEB",
         shortDescription: "Revamped design for Eyespace.ai, the medical startup at the University of Southern California, which I personally crafted using Figma. In this redesign, I focused on infusing a modern aesthetic to elevate the overall user experience",
         description: "A UX-focused redesign of the portal for USC Viterbi students, aimed at improving homepage usability and the D-Clearance process (Engineering student's system for requesting course enrollment permission). By addressing layout clutter, confusing flows, and poor mobile support, and aligning with the USC universal portal’s design, the result is a responsive, task-driven interface that enhances clarity and efficiency across devices.",
