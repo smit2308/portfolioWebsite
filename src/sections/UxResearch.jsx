@@ -61,7 +61,7 @@ import { Compare, Video_Comparison } from "../components"; // Adjust path based 
       {/* UX Highlights */}
       <section>
         <h3 className="text-2xl font-semibold mb-4">Key Improvements with comparison</h3>
-        <ul className="list-disc pl-6 space-y-2">
+        <ul className="list-disc pl-6 space-y-1 font-regular">
           <li>Redesigned D-Clearance into a single screen with structured dropdowns to reduce cognitive overload</li>
           <li>Added pop-up confirmation dialogs to prevent accidental submissions</li>
           <li>Added Search and Filters that help you sort valid courses according to your program requirements</li>
@@ -86,7 +86,7 @@ import { Compare, Video_Comparison } from "../components"; // Adjust path based 
     <div className="flex h-[700px] content-center justify-center  ">
     <iframe 
     className=" w-full h-full"
-    src="https://embed.figma.com/design/MH4YAFDAG4GwvC2rFn46ZW/MyViterbiDuplicate?node-id=0-1&embed-host=share" 
+    src="https://embed.figma.com/proto/MH4YAFDAG4GwvC2rFn46ZW/MyViterbiDuplicate?page-id=0%3A1&node-id=1-1081&p=f&viewport=241%2C40%2C0.33&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A1081&embed-host=share " 
     allowfullscreen>
     </iframe>
     </div>
