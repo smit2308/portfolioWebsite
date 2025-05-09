@@ -7,8 +7,11 @@ import  ProjectDetailsScroll  from "./root/pages/ProjectDetailsScroll"
 import {motion, useIsPresent, AnimatePresence } from "framer-motion"
 import { useEffect } from "react"
 import { SmitLogo } from "./assets/logos"
+import { useGoogleAnalytics } from "./components"
 
 export default function App() {
+
+  useGoogleAnalytics();
 
   const location = useLocation();
 

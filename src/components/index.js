@@ -6,4 +6,5 @@ import TextGenerateEffect from "./TextGenerateEffect";
 import ScrollToTop from "./ScrollToTop";
 import Collapsible from "./Collapsible";
 import  Compare  from "./Compare";
-export { Nav, Button, DetailsScroll, Loader, TextGenerateEffect, ScrollToTop , Collapsible, Compare };
+import useGoogleAnalytics from "./useGoogleAnalytics";
+export { Nav, Button, DetailsScroll, Loader, TextGenerateEffect, ScrollToTop , Collapsible, Compare, useGoogleAnalytics };

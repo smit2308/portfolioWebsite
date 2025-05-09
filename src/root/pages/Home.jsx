@@ -7,6 +7,8 @@ import { TextGenerateEffect, Loader } from "../../components"
 
 const Home = ({ scrollToSection }) => {
 
+  
+
   // Red Banner behind the photo
   const gradientAnimation = {
     background: [
@@ -21,6 +23,7 @@ const Home = ({ scrollToSection }) => {
 
 
   return (
+
 
 
     <div
