@@ -62,7 +62,7 @@ import { Compare, Video_Comparison } from "../components"; // Adjust path based 
       <section>
         <h3 className="text-2xl font-semibold mb-4">Key Improvements with comparison</h3>
         <ul className="list-disc pl-6 space-y-2">
-          <li>Redesigned D-Clearance into a single screen with dropdowns and inline guidance</li>
+          <li>Redesigned D-Clearance into a single screen with structured dropdowns to reduce cognitive overload</li>
           <li>Added pop-up confirmation dialogs to prevent accidental submissions</li>
           <li>Added Search and Filters that help you sort valid courses according to your program requirements</li>
           <li>Users can now view available seats directly on the course selection page, instead of navigating to a separate page</li>
