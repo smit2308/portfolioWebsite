@@ -106,9 +106,9 @@ export const socialLinks = [
 ]
 
 export const resumeLinks =[
-    { link: CS_resume, label: "Computer Science" },
-    { link: Video_resume, label: "Videographer "  },
+    { link: CS_resume, label: "Developer" },
     { link: UI_resume, label: "UI/UX Design" },
+    //   { link: Video_resume, label: "Videographer "  },
 ]
 
 export const workFeatured = [
