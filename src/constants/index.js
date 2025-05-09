@@ -46,6 +46,10 @@ import {  AtmThumbnail,
     MyViterbiCourseSelectionAfter,
     MyViterbiMainAfter,
     MyUSC,
+    D_Before,
+    D_After,
+    ViewD_Before,
+    ViewD_After,
 
     } from '../assets/images';
 
@@ -82,6 +86,7 @@ import{
     MyViterbi_Gif
 }
 from '../assets/images';
+import { Video } from 'lucide-react';
 
 export const navLinks = [
 
@@ -291,6 +296,9 @@ export const ProjectsData = {
         ],
         imageBefore: MyViterbiMain,
         imageAfter: MyViterbiMainAfter,
+        videoBefore: [D_Before, ViewD_Before],
+        videoAfter: [D_After, ViewD_After],
+
         results: [
           'Reduced navigation time by 43%',
           'User satisfaction increased from 62% to 88%',

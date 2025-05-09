@@ -46,6 +46,11 @@ import MyViterbiCourseSelectionAfter from './MyViterbiCourseSelectionAfter.png'
 import MyViterbiMainAfter from './MyViterbiMainAfter.png'
 import MyUSC from './MyUSC.png'
 import MyViterbiThumbnail from './MyViterbiThumbnail.png'
+import D_Before from './D_Before.mp4'
+import D_After from './D_After.mp4'
+import ViewD_Before from './ViewD_Before.mp4'
+import ViewD_After from './ViewD_After.mp4'
+
 export {
   AtmThumbnail,
   CafeThumbnail,
@@ -98,4 +103,8 @@ export {
     MyViterbiThumbnail,
     MyViterbi_Gif,
 
+    D_Before,
+    D_After,
+    ViewD_Before,
+    ViewD_After,
 };

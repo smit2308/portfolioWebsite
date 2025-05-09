@@ -76,6 +76,8 @@ const ProjectDetailsScroll = (props) => {
           highlights={proj.highlights}
           methods={proj.methods}
           image={proj.images}
+          videoBefore={proj.videoBefore}
+          videoAfter={proj.videoAfter}
         />
       )}
 

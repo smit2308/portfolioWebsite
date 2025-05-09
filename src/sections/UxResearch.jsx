@@ -1,7 +1,7 @@
 import React from "react";
-import { Compare } from "../components"; // Adjust path based on your structure
+import { Compare, Video_Comparison } from "../components"; // Adjust path based on your structure
 
- const UxResearch = ({ imageBefore, imageAfter, image }) => {
+ const UxResearch = ({ imageBefore, imageAfter, image, videoBefore, videoAfter }) => {
   return (
     <div className="flex flex-col gap-12 text-left text-secondary mt-16 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
 
@@ -60,16 +60,44 @@ import { Compare } from "../components"; // Adjust path based on your structure
 
       {/* UX Highlights */}
       <section>
-        <h3 className="text-2xl font-semibold mb-4">Key UX Improvements</h3>
+        <h3 className="text-2xl font-semibold mb-4">Key Improvements with comparison</h3>
         <ul className="list-disc pl-6 space-y-2">
           <li>Redesigned D-Clearance into a single screen with dropdowns and inline guidance</li>
-          <li>Created mobile responsive version of the website</li>
           <li>Added pop-up confirmation dialogs to prevent accidental submissions</li>
-          <li>Replaced ambiguous red X icons with labeled trash bin buttons</li>
+          <li>Added Search and Filters that help you sort valid courses according to your program requirements</li>
+          <li>Users can now view available seats directly on the course selection page, instead of navigating to a separate page</li>
+          
+          <Video_Comparison
+            videoBefore={videoBefore[0]}
+            videoAfter={videoAfter[0]}
+          />
+ 
+
+            <li>Created a request manager with distinct Sent, Deleted and Approved tabs</li>   
+            <li>Replaced ambiguous "red X icon inside Request Deletion column inside"  with labeled trash bin buttons</li>
+
+              <Video_Comparison
+            videoBefore={videoBefore[1]}
+            videoAfter={videoAfter[1]}
+          />
+
           <li>Implemented a responsive mobile layout with optimized spacing and input accessibility</li>
-          <li>Added search and filter capabilities for faster content discovery</li>
+
+    <div className="flex h-[700px] content-center justify-center  ">
+    <iframe 
+    className=" w-full h-full"
+    src="https://embed.figma.com/proto/MH4YAFDAG4GwvC2rFn46ZW/MyViterbiDuplicate?page-id=0%3A1&node-id=1-1081&viewport=129%2C-11%2C0.51&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A1081&embed-host=share" 
+    allowfullscreen>
+    </iframe>
+    </div>
         </ul>
       </section>
+
+  
+   <section>
+      
+      </section>
+     
 
          {/* Results Table */}
          <section>

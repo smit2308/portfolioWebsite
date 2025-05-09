@@ -7,4 +7,5 @@ import ScrollToTop from "./ScrollToTop";
 import Collapsible from "./Collapsible";
 import  Compare  from "./Compare";
 import useGoogleAnalytics from "./useGoogleAnalytics";
-export { Nav, Button, DetailsScroll, Loader, TextGenerateEffect, ScrollToTop , Collapsible, Compare, useGoogleAnalytics };
+import Video_Comparison from "./Video_Comparison";
+export { Nav, Button, DetailsScroll, Loader, TextGenerateEffect, ScrollToTop , Collapsible, Compare, useGoogleAnalytics, Video_Comparison };
