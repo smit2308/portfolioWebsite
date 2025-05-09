@@ -3,7 +3,7 @@ import React from 'react'
 
 const Video_Comparison = ({videoBefore, videoAfter}) => {
   return (
-              <section className='-pl-6'> 
+              <section className='-pl-6 mb-4'> 
       
 
         <div className="flex flex-col justify-center content-center  gap-4 max-sm:flex-col py-8 w-full sm:px-16 px-2">
