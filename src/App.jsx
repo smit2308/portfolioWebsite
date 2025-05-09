@@ -8,6 +8,7 @@ import {motion, useIsPresent, AnimatePresence } from "framer-motion"
 import { useEffect } from "react"
 import { SmitLogo } from "./assets/logos"
 import { useGoogleAnalytics } from "./components"
+import { Analytics } from '@vercel/analytics/react';
 
 export default function App() {
 
@@ -79,7 +80,7 @@ const scrollToSection = (sectionId) => {
 
         </div>
        
-   
+        <Analytics />
     </main>
   )
 }
