@@ -86,7 +86,7 @@ import { Compare, Video_Comparison } from "../components"; // Adjust path based 
     <div className="flex h-[700px] content-center justify-center  ">
     <iframe 
     className=" w-full h-full"
-    src="https://embed.figma.com/proto/MH4YAFDAG4GwvC2rFn46ZW/MyViterbiDuplicate?page-id=0%3A1&node-id=1-1081&viewport=129%2C-11%2C0.51&scaling=scale-down&content-scaling=fixed&starting-point-node-id=1%3A1081&embed-host=share" 
+    src="https://embed.figma.com/design/MH4YAFDAG4GwvC2rFn46ZW/MyViterbiDuplicate?node-id=0-1&embed-host=share" 
     allowfullscreen>
     </iframe>
     </div>
