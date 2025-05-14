@@ -8,8 +8,8 @@ import { PinContainer } from "../components/ThreedPin";
 import { HiArrowSmallDown } from "react-icons/hi2";
 import { ProjectsData } from "../constants";
 import { Link } from "react-router-dom";
-const StickyScroll = () => {
 
+const StickyScroll = () => {
   const content = [
     {
       title: "Collaborative Editing",
@@ -48,63 +48,55 @@ const StickyScroll = () => {
         setActiveCard(() => index);
       }
     });
-
-
   });
 
-  const backgroundColors = [
-    "#F1F1F1",
-    "#00A896",
-    "#EAE6E5",
-  ];
-  const linearGradients = [
-    "#333333",
-    "#333333",
-    "#333333",
-  ];
+  const backgroundColors = ["#F1F1F1", "#00A896", "#EAE6E5"];
+  const linearGradients = ["#333333", "#333333", "#333333"];
   return (
     <motion.div
       // animate={{
       //   backgroundColor: backgroundColors[activeCard % backgroundColors.length],
       // }}
-      className='w-full max-container  flex flex-col max-sm:gap-10  lg:px-16 md:px-10 px-6  h-max '>
-      <div className='w-full flex sm:flex-row flex-col sm:gap-10 md:gap-20 lg:gap-40 sm:justify-between  items-center max-container  '>
-
-        <h1 className='font-display italic text-[80px] lg:text-[120px]   text-secondary'>
+      className="w-full max-container  flex flex-col max-sm:gap-10  lg:px-16 md:px-10 px-6  h-max "
+    >
+      <div className="w-full flex sm:flex-row flex-col sm:gap-10 md:gap-20 lg:gap-40 sm:justify-between  items-center max-container  ">
+        <h1 className="font-display italic text-[80px] lg:text-[120px]   text-secondary">
           Work
         </h1>
 
-        <h1 className='  h-fit font-montserrat font-light leadinng-normal sm:text-sm lg:text-lg sm:text-right text-center lg:pr-10 pr-6 text-secondary  sm:border-r-2  sm:border-secondary '>
-          Crafting unique digital experiences as a Web Designer and Developer,
-          I also excel in videography and video editing.
-          Let's create something extraordinary together
+        <h1 className="  h-fit font-montserrat font-light leadinng-normal sm:text-sm lg:text-lg sm:text-right text-center lg:pr-10 pr-6 text-secondary  sm:border-r-2  sm:border-secondary ">
+          Crafting unique digital experiences as a Web Designer and Developer, I
+          also excel in videography and video editing. Let's create something
+          extraordinary together
         </h1>
-
       </div>
 
-      
-   
-
       <motion.div
-        animate={{
-          // backgroundColor: backgroundColors[activeCard % backgroundColors.length],
-        }}
+        animate={
+          {
+            // backgroundColor: backgroundColors[activeCard % backgroundColors.length],
+          }
+        }
         className="h-[640px]  w-full  overflow-y-scroll hide-scrollbar flex flex-row-reverse justify-center gap-20     xl:px-16  rounded-2xl"
         ref={ref}
       >
-
-
-        <a href={activeCard <= 3 ? workFeatured[activeCard].demoLink : "/home"} target="_blank" className=" flex   sticky top-0 items-center justify-center mr-10">
+        <a
+          href={activeCard <= 3 ? workFeatured[activeCard].demoLink : "/home"}
+          target="_blank"
+          className=" flex   sticky top-0 items-center justify-center mr-10"
+        >
           <PinContainer
-            title={activeCard <= 3 ? workFeatured[activeCard].demoLink : "/home"}
+            title={
+              activeCard <= 3 ? workFeatured[activeCard].demoLink : "/home"
+            }
             href={activeCard <= 3 ? workFeatured[activeCard].demoLink : "/home"}
           >
-
             <motion.div
               //   animate={{
               //     background: linearGradients[activeCard % linearGradients.length],
               //   }}
-              className="flex  w-max h-full sticky  rounded-3xl">
+              className="flex  w-max h-full sticky  rounded-3xl"
+            >
               <motion.img
                 initial={{
                   opacity: 0,
@@ -112,7 +104,7 @@ const StickyScroll = () => {
                 animate={{
                   opacity: 1,
                 }}
-                className='h-[320px] md:h-[400px] xl:h-[500px] xl:w-[500px] rounded-xl md:shadow-image1 shadow-image2 object-cover'
+                className="h-[320px] md:h-[400px] xl:h-[500px] xl:w-[500px] rounded-xl md:shadow-image1 shadow-image2 object-cover"
                 src={activeCard <= 3 ? workFeatured[activeCard].thumbnail : ""}
               />
             </motion.div>
@@ -120,7 +112,6 @@ const StickyScroll = () => {
         </a>
 
         <div className=" div relative flex items-start   ">
-
           <div className="max-w-xl">
             {workFeatured.map((item, index) => (
               <div key={item.title + index} className="my-20 ">
@@ -155,40 +146,32 @@ const StickyScroll = () => {
                   animate={{
                     opacity: activeCard === index ? 1 : 0.3,
                   }}
-                  className="text-lg text-slate-300 max-w-sm mt-10 flex gap-2 ">
-
-                  {item.skills.map(skill => (
-                    <img className='sm:w-[48px] w-[24px]'
+                  className="text-lg text-slate-300 max-w-sm mt-10 flex gap-2 "
+                >
+                  {item.skills.map((skill) => (
+                    <img
+                      className="sm:w-[48px] w-[24px]"
                       src={skill.logo}
-                      alt={skill.name} />
+                      alt={skill.name}
+                    />
                   ))}
                 </motion.div>
               </div>
             ))}
-            <div className="h-40" >
-              <Link
-                to='/projects'>
-              
-              <Button
-                label='More'
-                bgColor={'bg-primary'}
-                textColor={'text-secondary'}
-                logoTilt={' -rotate-90'}
-                iconReact={<HiArrowSmallDown size={24} />}
+            <div className="h-40">
+              <Link to="/projects">
+                <Button
+                  label="More"
+                  bgColor={"bg-primary"}
+                  textColor={"text-secondary"}
+                  logoTilt={" -rotate-90"}
+                  iconReact={<HiArrowSmallDown size={24} />}
                 />
-                
-                </Link>
-
-
-              
+              </Link>
             </div>
           </div>
         </div>
-
       </motion.div>
-
-      
-
     </motion.div>
   );
 };

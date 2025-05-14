@@ -1,21 +1,12 @@
-import React, { useEffect } from 'react'
-import { motion } from 'framer-motion'
-import { TextGenerateEffect } from '../components'
-import { useState } from 'react';
+import React, { useEffect } from "react";
+import { motion } from "framer-motion";
+import { TextGenerateEffect } from "../components";
+import { useState } from "react";
 
-const Card = ({
-  message,
-  rotate,
-  scale,
-  translate,
-  users,
-
-}) => {
-
-  const [showAnimation, setShowAnimation] = useState(true);
-  const [duration, setDuration] = useState(1 + 0.5 * message.split(" ").length);
-
-  const [isSmall, setIsSmall] = useState(false);
+const Card = ({ message, rotate, scale, translate, users }) => {
+  const [showAnimation, setShowAnimation] = useState(true); //show loading text animation
+  const [duration, setDuration] = useState(1 + 0.5 * message.split(" ").length); // Calculate duration based on the number of words in loading message
+  const [isSmall, setIsSmall] = useState(false); //Check if the screen is small
 
   useEffect(() => {
     const checkSmall = () => {
@@ -35,7 +26,7 @@ const Card = ({
     <motion.div
       initial={{ translateY: 10000 }}
       animate={{ translateY: 0 }}
-      transition={{ duration: 2, ease: [0.22, 1, 0.36, 1], }}
+      transition={{ duration: 2, ease: [0.22, 1, 0.36, 1] }}
       style={{
         rotateX: rotate, // rotate in X-axis
         scale,
@@ -46,9 +37,8 @@ const Card = ({
     >
       {/* max-xs:max-h-[420px] max-xs:max-h-[420px]  h-[70vh] */}
 
-
       {/* set to false to stop the text animation */}
-      {showAnimation && !isSmall? (
+      {showAnimation && !isSmall ? (
         <motion.div
           key="animation"
           initial={{ opacity: 0.9 }}
@@ -60,66 +50,58 @@ const Card = ({
           onAnimationComplete={() => setShowAnimation(false)}
           className={`h-full w-full rounded-xl flex flex-col   items-center`}
         >
-          <TextGenerateEffect words={message} className='font-montserrat  md:text-3xl text-primary p-8 mt-10' />
+          <TextGenerateEffect
+            words={message}
+            className="font-montserrat  md:text-3xl text-primary p-8 mt-10"
+          />
         </motion.div>
       ) : (
         <motion.div
           initial={{ opacity: 0 }}
-          animate={{ opacity: 1, transition: { duration: 1, ease: "circOut", delay: 0 } }}
-
-          className={` h-full w-full rounded-xl flex flex-col bg-[${users.bg ? users.bg : "#00000"}] overflow-y-scroll hide-scrollbar  hide-scrollbar text-white  items-center`}>
-
-          {
-
-            users.section === 'video' ? (
-              users.demoLink !== 'Unavailable' ? (
-                <iframe className='  w-full h-[360px] sm:h-[600px] >md:h-full >md:w-full ' src={users.demoLink} async allowFullScreen></iframe>
-              ) : (
-                'Video Unavailable'
-              )
+          animate={{
+            opacity: 1,
+            transition: { duration: 1, ease: "circOut", delay: 0 },
+          }}
+          className={` h-full w-full rounded-xl flex flex-col bg-[${users.bg ? users.bg : "#00000"}] overflow-y-scroll hide-scrollbar  hide-scrollbar text-white  items-center`}
+        >
+          {users.section === "video" ? (
+            users.demoLink !== "Unavailable" ? (
+              <iframe
+                className="  w-full h-[360px] sm:h-[600px] >md:h-full >md:w-full "
+                src={users.demoLink}
+                async
+                allowFullScreen
+              ></iframe>
+            ) : (
+              "Video Unavailable"
             )
-
-              :
-
-              isSmall ?
-
-                users.gif ? (
-                  users.section != 'mobile' ? (
-                    <img className=' w-full object-top' src={users.gif} />
-                  ) : (
-                    <img className='h-full object-cover' src={users.gif} />
-                  )
-                ) : (
-                  'Image not available :('
-                )
-
-
-
-                :
-
-
-                users.section === 'ui' || users.section === 'ux' ? (
-
-                  <iframe className='w-full h-full ' src={users.demoLink} allowFullscreen></iframe>
-
-
-
-                ) : (
-                  <iframe className='w-full h-full ' src={users.demoLink} async allowFullScreen></iframe>
-                )
-
-
-
-
-
-
-
-          }
-
-
+          ) : isSmall ? ( //if !VideoProject &  screen is small
+            users.gif ? (
+              users.section != "mobile" ? (
+                <img className=" w-full object-top" src={users.gif} />
+              ) : (
+                <img className="h-full object-cover" src={users.gif} />
+              )
+            ) : (
+              "Image not available :("
+            )
+          ) : users.section === "ui" || users.section === "ux" ? ( //if !VideoProject !small &  is UI / UX project
+            <iframe
+              className="w-full h-full "
+              src={users.demoLink}
+              allowFullscreen
+            ></iframe>
+          ) : (
+            //if !VideoProject & !Small & !UI / UX project
+            <iframe
+              className="w-full h-full "
+              src={users.demoLink}
+              async
+              allowFullScreen
+            ></iframe>
+          )}
         </motion.div>
       )}
-
     </motion.div>
   );
 };

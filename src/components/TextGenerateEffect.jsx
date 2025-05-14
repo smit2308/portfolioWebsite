@@ -4,11 +4,7 @@ import { motion, stagger, useAnimate } from "framer-motion";
 import { cn } from "../../utils/cn";
 import { LoadingMessages } from "../constants";
 
-const TextGenerateEffect = ({
-  words,
-  className,
-  
-}) => {
+const TextGenerateEffect = ({ words, className }) => {
   const [scope, animate] = useAnimate();
   let wordsArray = words ? words.split(" ") : [];
 
@@ -25,21 +21,18 @@ const TextGenerateEffect = ({
     );
   }, [scope.current]);
 
-
-
   const renderWords = () => {
     return (
-      <motion.div ref={scope} >
+      <motion.div ref={scope}>
         {wordsArray.map((word, idx) => {
-                if (word == "/n") {
-                  
-                } else {
-                    return (
-                        <motion.span  key={word + idx} className="opacity-0">
-                          {word}{" "}
-                        </motion.span>
-                      );
-                    }
+          if (word == "/n") {
+          } else {
+            return (
+              <motion.span key={word + idx} className="opacity-0">
+                {word}{" "}
+              </motion.span>
+            );
+          }
         })}
       </motion.div>
     );
@@ -48,8 +41,7 @@ const TextGenerateEffect = ({
   return (
     <div className={` ${className}`}>
       <div className="">
-        <div className="leading-snug tracking-wide">
-            {renderWords()}</div>
+        <div className="leading-snug tracking-wide">{renderWords()}</div>
       </div>
     </div>
   );
