@@ -289,7 +289,7 @@ export const ProjectsData = {
       gif: MyViterbi_Gif,
       title: "MyViterbi Redesign",
       demoLink:
-        "https://embed.figma.com/proto/UW2o7l0Fx3xZfme9EQgnc7/MyViterbi?page-id=1%3A4&node-id=25-786&p=f&viewport=59%2C361%2C0.08&scaling=min-zoom&content-scaling=fixed&starting-point-node-id=249%3A3795&embed-host=share",
+        "https://embed.figma.com/proto/UW2o7l0Fx3xZfme9EQgnc7/MyViterbi?page-id=1%3A4&node-id=25-786&p=f&viewport=642%2C334%2C0.05&scaling=scale-down-width&content-scaling=fixed&starting-point-node-id=249%3A3795&embed-host=share",
       repoLink:
         "https://1drv.ms/w/c/1d4459fca6928190/ERkxvvNwUsFFtDwl493vzG8B6zHmLOZQ_7YbJ2j3ktsNRg?e=bujeEB",
       shortDescription:
