@@ -421,133 +421,133 @@ export const ProjectsData = {
     },
   ],
 
-  videoProjects: [
-    {
-      id: 1,
-      section: "video",
-      thumbnail: Kenko_thumbnail,
-      images: [],
-      title: "Interview -Kenko Startup",
-      demoLink: "https://player.vimeo.com/video/897082575?h=dc6ae2d29a",
-      repoLink: "https://www.kenkopt.com/",
-      shortDescription:
-        "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
-      description:
-        "Uncover the narrative of Kenko, a University of Southern California-based physical therapy startup, through an insightful interview I shot and edited using the Sony FS5 Mark II. Gain a firsthand look at their innovative approach to physical therapy and the individuals behind this transformative initiative.",
-      skills: [{ name: "PremierePro", logo: premiereLogo }],
-    },
+  // videoProjects: [
+  //   {
+  //     id: 1,
+  //     section: "video",
+  //     thumbnail: Kenko_thumbnail,
+  //     images: [],
+  //     title: "Interview -Kenko Startup",
+  //     demoLink: "https://player.vimeo.com/video/897082575?h=dc6ae2d29a",
+  //     repoLink: "https://www.kenkopt.com/",
+  //     shortDescription:
+  //       "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
+  //     description:
+  //       "Uncover the narrative of Kenko, a University of Southern California-based physical therapy startup, through an insightful interview I shot and edited using the Sony FS5 Mark II. Gain a firsthand look at their innovative approach to physical therapy and the individuals behind this transformative initiative.",
+  //     skills: [{ name: "PremierePro", logo: premiereLogo }],
+  //   },
 
-    {
-      id: 2,
-      section: "video",
-      thumbnail: MuskhaveWeb_thumbnail,
-      images: [],
-      title: "Muskhave Brand Campaign",
-      demoLink:
-        "https://player.vimeo.com/video/897086895?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-      repoLink: "https://muskhaveshop.com/",
-      shortDescription:
-        "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
-      description:
-        "Explore the latest video edit for muskhaveshop.com, edited in Premiere Pro with added color grading for a polished and professional aesthetic. Dive into the world of fashion and discover the brand's offerings in this visually enhanced video.",
-      skills: [{ name: "PremierePro", logo: premiereLogo }],
-    },
+  //   {
+  //     id: 2,
+  //     section: "video",
+  //     thumbnail: MuskhaveWeb_thumbnail,
+  //     images: [],
+  //     title: "Muskhave Brand Campaign",
+  //     demoLink:
+  //       "https://player.vimeo.com/video/897086895?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+  //     repoLink: "https://muskhaveshop.com/",
+  //     shortDescription:
+  //       "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
+  //     description:
+  //       "Explore the latest video edit for muskhaveshop.com, edited in Premiere Pro with added color grading for a polished and professional aesthetic. Dive into the world of fashion and discover the brand's offerings in this visually enhanced video.",
+  //     skills: [{ name: "PremierePro", logo: premiereLogo }],
+  //   },
 
-    {
-      id: 3,
-      section: "video",
-      thumbnail: MuskhaveProduct_thumbnail,
-      images: [],
-      title: "Muskhave Product Showcase",
-      demoLink:
-        "https://player.vimeo.com/video/897086726?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-      repoLink: "https://www.instagram.com/reel/CwNb3I5NheA/",
-      shortDescription:
-        "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
-      description:
-        "Take a peek at Muskhave's newest styles on Instagram! I put together a short video to show off their latest products. ",
-      skills: [{ name: "PremierePro", logo: premiereLogo }],
-    },
+  //   {
+  //     id: 3,
+  //     section: "video",
+  //     thumbnail: MuskhaveProduct_thumbnail,
+  //     images: [],
+  //     title: "Muskhave Product Showcase",
+  //     demoLink:
+  //       "https://player.vimeo.com/video/897086726?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+  //     repoLink: "https://www.instagram.com/reel/CwNb3I5NheA/",
+  //     shortDescription:
+  //       "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
+  //     description:
+  //       "Take a peek at Muskhave's newest styles on Instagram! I put together a short video to show off their latest products. ",
+  //     skills: [{ name: "PremierePro", logo: premiereLogo }],
+  //   },
 
-    {
-      id: 4,
-      section: "video",
-      thumbnail: TvishAd_thumbnail,
-      images: [],
-      title: "Tvish AR App Advertisement",
-      demoLink:
-        "https://player.vimeo.com/video/817028335?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-      repoLink: "https://tvish.co.in/",
-      shortDescription:
-        "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
-      description:
-        "Check out the ad I created for Tvish, the AR/VR clothing shopping app. I'm featured in the ad, demonstrating how the app works. It's not just a promo but also a pitch for funding. Experience a new way of clothes shopping with Tvish!",
-      skills: [{ name: "PremierePro", logo: premiereLogo }],
-    },
+  //   {
+  //     id: 4,
+  //     section: "video",
+  //     thumbnail: TvishAd_thumbnail,
+  //     images: [],
+  //     title: "Tvish AR App Advertisement",
+  //     demoLink:
+  //       "https://player.vimeo.com/video/817028335?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+  //     repoLink: "https://tvish.co.in/",
+  //     shortDescription:
+  //       "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
+  //     description:
+  //       "Check out the ad I created for Tvish, the AR/VR clothing shopping app. I'm featured in the ad, demonstrating how the app works. It's not just a promo but also a pitch for funding. Experience a new way of clothes shopping with Tvish!",
+  //     skills: [{ name: "PremierePro", logo: premiereLogo }],
+  //   },
 
-    {
-      id: 5,
-      section: "video",
-      thumbnail: EventCoverage_thumbnail,
-      images: [],
-      title: "USC Welcome Experience Coverage",
-      demoLink:
-        "https://player.vimeo.com/video/902471896?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-      repoLink: "https://www.instagram.com/uscviterbi/",
-      shortDescription:
-        "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
-      description:
-        "Step into the lively USC New Student Welcome through my lens – the event coverage video shot on the Sony FS5. Immerse yourself in the vibrant atmosphere as new students kick off their USC journey. ",
-      skills: [{ name: "PremierePro", logo: premiereLogo }],
-    },
+  //   {
+  //     id: 5,
+  //     section: "video",
+  //     thumbnail: EventCoverage_thumbnail,
+  //     images: [],
+  //     title: "USC Welcome Experience Coverage",
+  //     demoLink:
+  //       "https://player.vimeo.com/video/902471896?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+  //     repoLink: "https://www.instagram.com/uscviterbi/",
+  //     shortDescription:
+  //       "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
+  //     description:
+  //       "Step into the lively USC New Student Welcome through my lens – the event coverage video shot on the Sony FS5. Immerse yourself in the vibrant atmosphere as new students kick off their USC journey. ",
+  //     skills: [{ name: "PremierePro", logo: premiereLogo }],
+  //   },
 
-    {
-      id: 6,
-      section: "video",
-      thumbnail: VNN1_thumbnail,
-      images: [],
-      title: "Short Form Content Veterans Day",
-      demoLink:
-        "https://player.vimeo.com/video/897106789?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-      repoLink: "https://www.instagram.com/uscviterbi/",
-      shortDescription:
-        "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
-      description:
-        "Crafting dynamic short-form content for USC Viterbi's News Network, my videos are a fusion of storytelling and creativity. Packed with trending motion graphics, backgrounds, sound effects, moving captions and more. These concise videos provide an engaging snapshot of groundbreaking stories within the engineering realm",
-      skills: [{ name: "Capcut", logo: capcutLogo }],
-    },
+  //   {
+  //     id: 6,
+  //     section: "video",
+  //     thumbnail: VNN1_thumbnail,
+  //     images: [],
+  //     title: "Short Form Content Veterans Day",
+  //     demoLink:
+  //       "https://player.vimeo.com/video/897106789?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+  //     repoLink: "https://www.instagram.com/uscviterbi/",
+  //     shortDescription:
+  //       "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
+  //     description:
+  //       "Crafting dynamic short-form content for USC Viterbi's News Network, my videos are a fusion of storytelling and creativity. Packed with trending motion graphics, backgrounds, sound effects, moving captions and more. These concise videos provide an engaging snapshot of groundbreaking stories within the engineering realm",
+  //     skills: [{ name: "Capcut", logo: capcutLogo }],
+  //   },
 
-    {
-      id: 7,
-      section: "video",
-      thumbnail: VNN2_thumbnail,
-      images: [],
-      title: "Short Form Content Neil Seigel",
-      demoLink:
-        "https://player.vimeo.com/video/897106858?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
-      repoLink: "https://www.instagram.com/uscviterbi/",
-      shortDescription:
-        "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
-      description:
-        "Crafting dynamic short-form content for USC Viterbi's News Network, my videos are a fusion of storytelling and creativity. Packed with trending motion graphics, backgrounds, sound effects, moving captions and more. These concise videos provide an engaging snapshot of groundbreaking stories within the engineering realm",
-      skills: [{ name: "Capcut", logo: capcutLogo }],
-    },
+  //   {
+  //     id: 7,
+  //     section: "video",
+  //     thumbnail: VNN2_thumbnail,
+  //     images: [],
+  //     title: "Short Form Content Neil Seigel",
+  //     demoLink:
+  //       "https://player.vimeo.com/video/897106858?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479",
+  //     repoLink: "https://www.instagram.com/uscviterbi/",
+  //     shortDescription:
+  //       "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
+  //     description:
+  //       "Crafting dynamic short-form content for USC Viterbi's News Network, my videos are a fusion of storytelling and creativity. Packed with trending motion graphics, backgrounds, sound effects, moving captions and more. These concise videos provide an engaging snapshot of groundbreaking stories within the engineering realm",
+  //     skills: [{ name: "Capcut", logo: capcutLogo }],
+  //   },
 
-    // {
-    //     id: 8,
-    //     section: "video",
-    //     thumbnail: VNN3_thumbnail,
-    //     images: [],
-    //     title: "Short Form Content With Captions",
-    //     demoLink: "https://player.vimeo.com/video/897096199?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" ,
-    //     repoLink: "https://www.instagram.com/uscviterbi/",
-    //     shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
-    //     description: "Crafting dynamic short-form content for USC Viterbi's News Network, my videos are a fusion of storytelling and creativity. Packed with trending motion graphics, backgrounds, sound effects, moving captions and more. These concise videos provide an engaging snapshot of groundbreaking stories within the engineering realm",
-    //     skills: [
-    //         { name: "Capcut", logo: capcutLogo },
-    //     ]
-    // },
-  ],
+  // {
+  //     id: 8,
+  //     section: "video",
+  //     thumbnail: VNN3_thumbnail,
+  //     images: [],
+  //     title: "Short Form Content With Captions",
+  //     demoLink: "https://player.vimeo.com/video/897096199?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" ,
+  //     repoLink: "https://www.instagram.com/uscviterbi/",
+  //     shortDescription: "React Skateboard Retail website, inspired by Zumiez. Currently front-end only, with an interactive back-end coming soon!",
+  //     description: "Crafting dynamic short-form content for USC Viterbi's News Network, my videos are a fusion of storytelling and creativity. Packed with trending motion graphics, backgrounds, sound effects, moving captions and more. These concise videos provide an engaging snapshot of groundbreaking stories within the engineering realm",
+  //     skills: [
+  //         { name: "Capcut", logo: capcutLogo },
+  //     ]
+  // },
+  // ],
 };
 
 export const LoadingMessages = [

@@ -21,7 +21,11 @@ const TEXTS = ["Software Engineer", "UI/UX Designer", "Video-Editor"];
 const Hero = () => {
   // Typewriter effect in Hero
   const [text] = useTypewriter({
-    words: ["Software Engineer", "UI/UX Designer", "Film -maker"],
+    words: [
+      "Software Engineer",
+      "UI/UX Designer",
+      //  "Film -maker"
+    ],
     loop: {},
     typeSpeed: 100,
     deleteSpeed: 80,

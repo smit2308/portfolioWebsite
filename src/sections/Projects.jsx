@@ -15,9 +15,10 @@ const Projects = () => {
       setUsers(ProjectsData["codingProjects"]);
     } else if (section === "ui") {
       setUsers(ProjectsData["uiProjects"]);
-    } else if (section === "video") {
-      setUsers(ProjectsData["videoProjects"]);
     }
+    // else if (section === "video") {
+    //   setUsers(ProjectsData["videoProjects"]);
+    // }
 
     setActiveButton(section);
   };
@@ -66,13 +67,13 @@ const Projects = () => {
           UI/UX
         </button>
 
-        <button
+        {/* <button
           id="video"
           className={` hover:text-accent w-max ${activeButton === "video" ? "text-accent border-b-2 border-accent" : ""}`}
           onClick={() => changeSection("video")}
         >
           Content-Creation
-        </button>
+        </button> */}
       </div>
 
       <div className="w-full lg:grid lg:grid-cols-3 lg:gap-6  max-lg:gap-4  max-lg:grid  max-lg:grid-cols-2 max-xs:flex-col max-xs:flex  gap-y-8 gap-x-6  ">
